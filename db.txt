@@ -1,0 +1,290 @@
+ Main|Home Theater|1|1|Remote Central|0|http://www.remotecentral.com/
+ Main|Home Theater|1|1|Icon Harmony|1|http://www.iconharmony.com/
+ Main|Home Theater|1|1|My Harmony|1|https://setup.myharmony.com
+ Main|Home Theater|1|1|AV Science Forum|0|http://www.avsforum.com/forum/index.php
+ Main|Home Theater|1|1|AVS-CLT|1|http://www.avsforum.com/forum/45-local-hdtv-info-reception/128876-charlotte-nc-twc-new-post.html
+ Main|Home Theater|1|1|TiVo Forum|0|http://www.tivocommunity.com/tivo-vb
+ Main|Home Theater|1|1|Yamaha Electronics|0|http://www.yamaha.com/yec/
+ Main|Home Theater|1|1|MonoPrice|0|http://www.monoprice.com/home/index.asp
+ Main|Home Theater|1|1|Sony Electronics|0|http://www.sony.com/
+ Main|Home Theater|1|1|Klipsch|0|http://www.klipsch.com/
+ Main|Home Theater|1|1|Best Buy|0|http://www.bestbuy.com
+ Main|Home Theater|1|1|Weekly Ad|1|http://deals.bestbuy.com/?category=featured+deals
+ Main|Home Theater|1|1|Crutchfield|0|http://www.crutchfield.com
+ Main|Home Theater|1|1|Denon|0|http://usa.denon.com/us/pages/home.aspx
+ Main|Gadgets!|2|1|Apple|0|http://www.apple.com/
+ Main|Gadgets!|2|1|Find My...|1|https://www.icloud.com/#find
+ Main|Gadgets!|2|1|MacRumors|0|http://www.macrumors.com/
+ Main|Gadgets!|2|1|Engadget|0|http://www.engadget.com/
+ Main|Gadgets!|2|1|Apple Today|0|http://www.appleworld.today
+ Main|Gadgets!|2|1|9to5mac|0|https://9to5mac.com
+ Main|Gadgets!|2|1|Gizmodo|0|http://gizmodo.com
+ Main|Gadgets!|2|1|Digital Trends|0|http://www.digitaltrends.com
+ Main|Gadgets!|2|1|Gear Patrol|0|http://gearpatrol.com
+ Main|Gadgets!|2|1|Cool Material|0|http://coolmaterial.com/
+ Main|Gadgets!|2|1|Geeky Gadgets|0|http://www.geeky-gadgets.com
+ Main|Gadgets!|2|1|sdotd|0|http://www.musiciansfriend.com/stupid
+ Main|Remotes|3|1|Nest|0|https://home.nest.com/home
+ Main|Remotes|3|1|Grill|0|https://myflameboss.com
+ Main|Remotes|3|1|MyQ|0|https://www.mychamberlain.com/Devices.aspx
+ Main|Remotes|3|1|Theater AVR|0|http://theater-avr.jamieandamy.com/index.html?topmenu=0&zone=1&settings=0
+ Main|Remotes|3|1|Office AVR|0|http://office-avr.jamieandamy.com/index.html?topmenu=0&zone=1&settings=0
+ Main|Remotes|3|1|Alexa|0|https://alexa.amazon.com/
+ Main|Remotes|3|1|My Home Assistant|0|http://nuclet:8123
+ Main|Remotes|3|1|Docs|1|https://home-assistant.io/docs/
+ Main|Remotes|3|1|HA-Dash Docs|1|http://appdaemon.readthedocs.io/en/latest/DASHBOARD_CREATION.html#widget-reference
+ Main|Remotes|3|1|MD-Icons|1|https://materialdesignicons.com
+ Main|Remotes|3|1|FA-Icons|1|https://fontawesome.com/icons?d=gallery&m=free
+ Main|Remotes|3|1|HA Forums|1|https://community.home-assistant.io
+ Main|Remotes|3|1|Dashboard|1|http://nuclet:5050/kitchen
+ Main|Remotes|3|1|MotoSafety|0|https://www.motosafety.com/customer-login/
+ Main|Work Stuff|4|1|Mail|0|https://mail.google.com/a/elastic.co
+ Main|Work Stuff|4|1|Google Drive|1|https://drive.google.com/a/elastic.co
+ Main|Work Stuff|4|1|G-Drive Recent|1|https://drive.google.com/drive/u/0/recent
+ Main|Work Stuff|4|1|Calendar|1|http://calendar.google.com/a/elastic.co
+ Main|Work Stuff|4|1|Okta|0|https://elastic.okta.com/app/UserHome
+ Main|Work Stuff|4|1|Slacker|0|https://elastic.slack.com/
+ Main|Work Stuff|4|1|Wiki|0|https://wiki.elastic.co
+ Main|Work Stuff|4|1|Expenses|0|https://www.concursolutions.com
+ Main|Work Stuff|4|1|Elastic Github|0|https://github.com/elastic
+ Main|Work Stuff|4|1|Content Issues|1|https://github.com/elastic/content/issues
+ Main|Work Stuff|4|1|Examples|1|https://github.com/elastic/examples
+ Main|Work Stuff|4|1|demos|1|http://github.com/elastic/demos
+ Main|Work Stuff|4|1|PingBoard|0|https://elastic.pingboard.com/
+ Main|Work Stuff|4|1|My PingBoard|1|https://elastic.pingboard.com/users/874614
+ Main|Woodworking|1|2|NC Woodworker|0|https://www.ncwoodworker.net/forums/search.php?do=getnew&contenttype=vBForum_Post
+ Main|Woodworking|1|2|Festool Owners|0|http://festoolownersgroup.com/
+ Main|Woodworking|1|2|Sawmill Creek|0|http://sawmillcreek.org/forumdisplay.php?f=3
+ Main|Woodworking|1|2|Felder Owners|0|http://hammerfelderowners.com/index.php?action=unread
+ Main|Woodworking|1|2|NYW|0|http://www.newyankee.com/
+ Main|Woodworking|1|2|...Tool List|1|http://www.normstools.com/index.shtml
+ Main|Woodworking|1|2|This is Carpentry|0|http://www.thisiscarpentry.com/
+ Main|Woodworking|1|2|Wood Whisperer|0|http://thewoodwhisperer.com/
+ Main|Woodworking|1|2|Wood Talk|1|https://www.woodtalkonline.com
+ Main|Movies|2|2|IMDB|0|http://www.imdb.com
+ Main|Movies|2|2|YouTube|0|https://www.youtube.com
+ Main|Movies|2|2|Netflix|0|http://www.netflix.com
+ Main|Movies|2|2|Hulu|0|https://www.hulu.com
+ Main|Movies|2|2|RedBox|0|http://www.redbox.com/movies
+ Main|AudioHolic|3|2|Audiophile Style|0|http://www.computeraudiophile.com
+ Main|AudioHolic|3|2|Sound & Vision|0|https://www.soundandvision.com
+ Main|AudioHolic|3|2|Absolute Sound|0|http://www.theabsolutesound.com
+ Main|AudioHolic|3|2|AudioStream|0|https://www.audiostream.com
+ Main|AudioHolic|3|2|HiFi Plus|0|http://www.hifiplus.com
+ Main|AudioHolic|3|2|Analog Planet|0|http://www.analogplanet.com
+ Main|AudioHolic|3|2|What Hi-Fi?|0|http://www.whathifi.com
+ Main|AudioHolic|3|2|Inner Fidelity|0|https://www.innerfidelity.com
+ Main|AudioHolic|3|2|Headphonia|0|https://www.headfonia.com
+ Main|Music|4|2|Sonos|0|http://www.sonos.com
+ Main|Music|4|2|Grateful Dead|0|http://www.dead.net/
+ Main|Music|4|2|GDIA|1|http://www.archive.org/search.php?query=collection%3AGratefulDead%20-%2Fmetadata%2Fstream_only%3A%281%29&sort=-avg_rating%3B-num_reviews
+ Main|Music|4|2|Archive HiRez|1|http://archive.org/search.php?query=%28format%3A%2824Bit%20FLAC%29%20OR%20%28flac24%29%20OR%20%2824-bit%29%20OR%2024bit%29%20AND%20collection%3Aetree&sort=-avg_rating%3B-num_reviews
+ Main|Music|4|2|Dead HiRez|1|https://archive.org/search.php?query=%28format%3A%2824Bit%20FLAC%29%20OR%20%28flac24%29%20OR%20%2824-bit%29%20OR%2024bit%29%20%20AND%20collection%3AGratefulDead
+ Main|Music|4|2|SiriusXM|0|http://www.sirius.com/
+ Main|Music|4|2|Acoustic Sounds|0|http://store.acousticsounds.com
+ Main|Music|4|2|Music Direct|0|http://www.musicdirect.com
+ Main|Music|4|2|Audio Advice|0|https://www.audioadvice.com
+ Main|2nd Amendment|5|2|Handgun Forum|0|http://www.handgunforum.net
+ Main|2nd Amendment|5|2|Point Blank|0|http://pointblankrange.com
+ Main|2nd Amendment|5|2|Slick Guns|0|https://gun.deals
+ Main|Weather|6|2|Matthews T&D|0|https://www.timeanddate.com/weather/@z-us-28104/hourly
+ Main|Weather|6|2|WU (Home)|0|https://www.wunderground.com/q/zmw:28104.2.99999
+ Main|Weather|6|2|Hourly|1|https://www.wunderground.com/hourly/us/nc/matthews/28104?cm_ven=localwx_hour
+ Main|Weather|6|2|10 Day|1|https://www.wunderground.com/forecast/us/nc/matthews/28104?cm_ven=localwx_10day
+ Main|Weather|6|2|DarkSky|0|https://darksky.net/forecast/35.0654,-80.7252/us12/en
+ Main|Weather|6|2|TWC (CLT)|0|https://weather.com/weather/today/l/28104:4:US
+ Main|Weather|6|2|Hourly|1|https://weather.com/weather/hourbyhour/l/28104:4:US
+ Main|Weather|6|2|10 Day|1|http://www.weather.com/weather/tenday/Matthews+NC+28104:4:US
+ Main|Weather|6|2|Radar|1|https://weather.com/weather/radar/interactive/l/28104:4:US?animation=true&layer=radarConus&zoom=8
+ Main|Weather|6|2|WU (OKI)|0|https://www.wunderground.com/weather/us/nc/oak-island/28465?cm_ven=localwx_today
+ Main|Weather|6|2|Hourly|1|https://www.wunderground.com/hourly/us/nc/oak-island/28465?cm_ven=localwx_hour
+ Main|Weather|6|2|10 Day|1|https://www.wunderground.com/forecast/us/nc/oak-island/28465?cm_ven=localwx_10day
+ Main|Weather|6|2|Mt View 10 Day|0|https://weather.com/weather/tenday/l/USCA0746:1:US
+ Main|Weather|6|2|AccuWeather (CLT)|0|http://www.accuweather.com/us/nc/matthews/28104/city-weather-forecast.asp
+ Main|Weather|6|2|AW-CLT hourly|1|http://www.accuweather.com/en/us/matthews-nc/28104/hourly-weather-forecast/11679_pc
+ Main|Weather|6|2|USGS Earthquakes|0|http://goo.gl/xKRxeP
+ Main|Weather|6|2|Closings & Delays|0|http://wcnc.com/closings/
+ Main|Cooking|1|3|Chef Steps|0|http://www.chefsteps.com/
+ Main|Cooking|1|3|Serious Eats|0|http://www.seriouseats.com/
+ Main|Cooking|1|3|Dad Cooks Dinner|0|http://dadcooksdinner.com
+ Main|Cooking|1|3|Amazing Ribs|0|http://amazingribs.com
+ Main|Web Hosting|2|3|BitBucket|0|https://bitbucket.org
+ Main|Web Hosting|2|3|DreamHost|0|https://panel.dreamhost.com
+ Main|Web Hosting|2|3|Heroku|0|http://www.heroku.com
+ Main|Kindle|3|3|Manage your Kindle|0|https://www.amazon.com/mn/dcw/myx.html/ref=kinw_myk_redirect#/home/content/booksAll/dateDsc/
+ Main|Kindle|3|3|Jack Reacher|0|http://www.squidoo.com/jack-reacher-books-in-order
+ Main|Kindle|3|3|Top 100 Books|0|http://www.amazon.com/gp/bestsellers/digital-text/154606011/ref=tsm_1_fb_frb_20101127
+ Main|BigData, Cloud, IoT|4|3|Elastic|0|http://www.elastic.co
+ Main|BigData, Cloud, IoT|4|3|Elastic Docs|1|https://www.elastic.co/guide/index.html
+ Main|BigData, Cloud, IoT|4|3|Careers|1|https://www.elastic.co/about/careers
+ Main|BigData, Cloud, IoT|4|3|Kibana|1|http://www.elasticsearch.org/overview/kibana/
+ Main|BigData, Cloud, IoT|4|3|Forum|1|https://discuss.elastic.co
+ Main|BigData, Cloud, IoT|4|3|NodeJS|0|http://nodejs.org
+ Main|BigData, Cloud, IoT|4|3|mongoDB|0|http://www.mongodb.org/
+ Main|BigData, Cloud, IoT|4|3|Docker|0|https://www.docker.com
+ Main|BigData, Cloud, IoT|4|3|Docker Docs|1|https://docs.docker.com/userguide/
+ Main|BigData, Cloud, IoT|4|3|Hub|1|https://hub.docker.com
+ Main|BigData, Cloud, IoT|4|3|Official Images|1|https://github.com/docker-library/official-images
+ Main|Photography|5|3|Nikon USA|0|http://nikonusa.com/
+ Main|Photography|5|3|Nikon Rumors|0|http://nikonrumors.com/
+ Main|Photography|5|3|Alpha Rumors|0|https://www.sonyalpharumors.com
+ Main|Photography|5|3|dpreview|0|http://www.dpreview.com/
+ Main|Photography|5|3|DPS|0|http://www.digital-photography-school.com/
+ Main|Photography|5|3|4/3 Rumors|0|https://www.43rumors.com
+ Main|Road Warrior|6|3|Misery Map|0|http://flightaware.com/miserymap/
+ Main|Road Warrior|6|3|US Air|0|http://usairways.com
+ Main|Road Warrior|6|3|Kayak|0|https://www.kayak.com/trips
+ Main|Road Warrior|6|3|Hipmunk|0|https://www.hipmunk.com
+ Main|Game Sites|7|3|GameSpot|0|http://www.gamespot.com/
+ Main|Game Sites|7|3|IGN|0|http://www.ign.com
+ Main|Game Sites|7|3|Playstation|0|http://www.us.playstation.com/
+ Main|Game Sites|7|3|PSN Status|1|https://support.us.playstation.com/
+ Main|Game Sites|7|3|Xbox|0|http://www.xbox.com
+ Main|Game Sites|7|3|Games with Gold|1|http://www.xbox.com/en-US/live/games-with-gold
+ Main|Game Sites|7|3|New Leaf Guide|0|http://www.thonky.com/animal-crossing-new-leaf/
+ Main|Game Sites|7|3|GameFAQs|0|http://www.gamefaqs.com/
+ Main|Misc Stuff|8|3|Time Zones (grid)|0|http://www.timeanddate.com/worldclock/custom.html?cities=412,224,248,166,197,438,236,195,239,101,240
+ Main|Misc Stuff|8|3|More Times (rows)|0|https://www.worldtimebuddy.com/?pl=1&lid=4460243,5380748,2643743,1850147&h=4460243
+ Main|Misc Stuff|8|3|RR Network|0|http://help.rr.com/HMSLogic/network_status.aspx
+ Main|Misc Stuff|8|3|OpenSpeedTest|0|http://openspeedtest.com
+ Main|Misc Stuff|8|3|SpeedTest|0|http://www.speedtest.net/
+ Main|Misc Stuff|8|3|TWC Speedtest|0|http://speedtest.southeast.rr.com
+ Main|Social Ties|1|4|facebook|0|https://www.facebook.com/?sk=h_chr
+ Main|Social Ties|1|4|Tumblr|0|http://jamiesmithnc.tumblr.com/
+ Main|Social Ties|1|4|twitter|0|http://www.twitter.com/
+ Main|Social Ties|1|4|Tweet Deck|1|https://tweetdeck.twitter.com
+ Main|Social Ties|1|4|About Me|0|http://about.me/jamiesmith
+ Main|Social Ties|1|4|linked in|0|http://www.linkedin.com/
+ Main|Astronomy|2|4|My Astrobin|0|http://www.astrobin.com/users/jamiesmithnc/
+ Main|Astronomy|2|4|Celestron|0|http://www.celestron.com/
+ Main|Astronomy|2|4|Orion Telescopes|0|http://www.telescope.com/
+ Main|Astronomy|2|4|Astronomics|0|http://www.astronomics.com
+ Main|Astronomy|2|4|OPT Corp|0|https://www.optcorp.com
+ Main|Astronomy|2|4|Cloudy Nights|0|http://www.cloudynights.com/index.php
+ Main|Astronomy|2|4|Favorites|1|http://www.cloudynights.com/index.php?app=core&module=search&do=followed
+ Main|Astronomy|2|4|Forums|1|http://www.cloudynights.com/index
+ Main|Astronomy|2|4|CCD Forum|1|https://www.cloudynights.com/forum/76-ccdcmos-astro-camera-imaging-processing/
+ Main|Astronomy|2|4|Beginner AP|1|http://www.cloudynights.com/forum/80-beginning-and-intermediate-imaging/
+ Main|Astronomy|2|4|Astronomy Forum|0|http://www.astronomyforum.net/forum.php
+ Main|Astronomy|2|4|CAAC|0|http://www.charlotteastronomers.org/
+ Main|Astronomy|2|4|FB Page|1|https://www.facebook.com/CharlotteAstronomers/
+ Main|Astronomy|2|4|APOD|0|http://apod.nasa.gov/apod/astropix.html
+ Main|Astronomy|2|4|PixInsight Forum|0|http://pixinsight.com/forum/
+ Main|Astronomy|2|4|FOV Calc|0|http://astronomy.tools/calculators/field_of_view/
+ Main|Astronomy|2|4|Astro Imaging Ch|0|http://www.theastroimagingchannel.com/
+ Main|Astronomy|2|4|SB / Paramount|0|http://www.bisque.com
+ Main|Astronomy|2|4|Camera Add-On|1|https://www.bisque.com/help/theskyx%20pro%20info/Welcome.htm#t=Camera_Add_On.htm
+ Main|Astronomy|2|4|TheSkyX Manual|1|https://www.bisque.com/help/theskyx%20pro%20info/Welcome.htm#t=Welcome_1.htm
+ Main|Astronomy|2|4|Forums|1|http://www.bisque.com/sc/forums/
+ Main|Astronomy|2|4|DSO Browser|0|https://dso-browser.com
+ Main|AstroWeather|3|4|MB Home|0|https://www.meteoblue.com/en/weather/forecast/seeing/matthews_united-states-of-america_4478334
+ Main|AstroWeather|3|4|CSC-Indian Trail|1|http://www.cleardarksky.com/c/IndnTrNCkey.html
+ Main|AstroWeather|3|4|Stargazing|1|http://www.accuweather.com/us/nc/matthews/28104/outdoor-astronomy.asp
+ Main|AstroWeather|3|4|MB GHRO|0|https://www.meteoblue.com/en/weather/forecast/seeing/taxahaw_united-states-of-america_4598334
+ Main|AstroWeather|3|4|CAAC Weather|1|http://charlotteastronomers.org/weather/
+ Main|AstroWeather|3|4|CSC GHRO|1|http://www.cleardarksky.com/c/TaxaSCkey.html
+ Main|AstroWeather|3|4|GHRO - Hourly|1|https://www.wunderground.com/hourly/us/sc/taxahaw/date/2018-09-23?cm_ven=localwx_hour
+ Main|AstroWeather|3|4|GHRO - 10 day|1|https://www.wunderground.com/forecast/us/sc/taxahaw?cm_ven=localwx_10day
+ Main|AstroWeather|3|4|GHRO SG|1|https://www.accuweather.com/en/us/taxahaw-sc/29067/astronomy-weather/2131162
+ Main|AstroWeather|3|4|GHRO - Clear Out|1|https://clearoutside.com/forecast/34.69/-80.52?view=midday
+ Main|Cars & Bikes|4|4|Left Lane News|0|http://www.leftlanenews.com/
+ Main|Cars & Bikes|4|4|Mini Forums|0|http://www.northamericanmotoring.com
+ Main|Cars & Bikes|4|4|CarPoint|0|http://autos.msn.com/
+ Main|Cars & Bikes|4|4|Lexus|0|http://www.lexus.com/
+ Main|Cars & Bikes|4|4|Hendrick Lexus|1|http://www.hendricklexuscharlotte.com
+ Main|Cars & Bikes|4|4|Lexus CPO|1|http://www.hendrickcars.com/all-inventory/index.htm?compositeType=certified&make=Lexus&geoZip=28277&geoRadius=50&sortBy=internetPrice+asc&
+ Main|Cars & Bikes|4|4|Lexus All Opts|1|http://www.hendrickcars.com/all-inventory/index.htm?geoZip=28277&geoRadius=250&search=&compositeType=&year=2018&year=2017&year=2016&year=2015&year=2014&make=Lexus&model=GS+200t&model=GS+350&model=GS+F&model=IS+200t&model=IS+250&model=IS+250C&model=IS+300&model=IS+350&model=NX+200t&model=RC+300&model=RC+350&model=RC+F&odometer=1-60000&gvOption=Navigation+System&geoZip=28277&geoRadius=250&sortBy=internetPrice+asc
+ Main|Cars & Bikes|4|4|Porsche|0|http://www.porsche.com/usa/
+ Main|Cars & Bikes|4|4|Hendrick Porsche|1|http://www.hendrickporsche.com/index.htm
+ Main|Cars & Bikes|4|4|Used Porsche|2|http://www.hendrickcars.com/all-inventory/index.htm?geoZip=28277&geoRadius=100&search=&compositeType=certified&make=Porsche&geoZip=28277&geoRadius=50&sortBy=internetPrice+asc&saveFacetState=true&lastFacetInteracted=
+ Main|Cars & Bikes|4|4|AutoTrader|0|http://www.autotrader.com
+ Main|Cars & Bikes|4|4|Harley-Davidson|0|http://harley-davidson.com
+ Main|Cars & Bikes|4|4|Harley CLT|1|http://harleydavidsonofcharlotte.com
+ Main|Cars & Bikes|4|4|HD Forums|1|http://hdforums.com/forum/
+ Main|Cars & Bikes|4|4|Charlotte HOG|1|http://charlottehog.org/Code/Home.aspx
+ Main|Cars & Bikes|4|4|REVƎЯ|0|https://a.rever.co
+ Main|Cars & Bikes|4|4|Honda Cars|0|http://automobiles.honda.com
+ Main|Cars & Bikes|4|4|BMW|0|https://www.bmwusa.com
+ Main|Cars & Bikes|4|4|BMW CPO|1|http://www.hendrickcars.com/all-inventory/index.htm?geoZip=28277&geoRadius=100&search=&compositeType=certified&make=BMW&gvOption=Navigation+System&geoZip=28277&geoRadius=50&sortBy=internetPrice+asc&saveFacetState=true&lastFacetInteracted=
+ Main|Cars & Bikes|4|4|New|1|https://www.hendrickbmw.com/new-inventory/index.htm?sortBy=internetPrice+asc&
+ Basement|More Astronomy|1|1|SkyChart for home|0|http://skychart.skytonight.com/observing/skychart/skychart.asp?lat=+35.08&amp;lng=-80.68&amp;timezone=-5&amp;dst=off&amp;city=Stallings&amp;state=NC&amp;country=US&amp;
+ Basement|More Astronomy|1|1|Sky and Telescope|0|http://skyandtelescope.com/
+ Basement|More Astronomy|1|1|SkyChart (DST)|0|http://skychart.skytonight.com/observing/skychart/skychart.asp?lat=+35.08&amp;lng=-80.68&amp;timezone=-5&amp;dst=on&amp;city=Stallings&amp;state=NC&amp;country=US&amp;
+ Basement|More Astronomy|1|1|Astropix|0|http://www.astropix.com/
+ Basement|More Astronomy|1|1|Photo Gallery|0|http://www.macnmotion.com/
+ Basement|More Astronomy|1|1|The Nine Planets|0|http://www.nineplanets.org/
+ Basement|More Astronomy|1|1|Messier Objects|0|http://www.seds.org/messier/
+ Basement|More Astronomy|1|1|SkyMaps|0|http://skymaps.com/downloads.html
+ Basement|More Astronomy|1|1|INDI Forum|0|http://indilib.org/forum/recent.html
+ Basement|Tool Manufacturers|3|1|Felder USA|0|http://www.felderusa.com/
+ Basement|Tool Manufacturers|3|1|Festool|0|http://www.festoolusa.com/
+ Basement|Tool Manufacturers|3|1|Hammer USA|0|http://www.hammerusa.com/
+ Basement|Tool Manufacturers|3|1|Leigh Jigs|0|http://www.leighjigs.com/home.php
+ Basement|Tool Manufacturers|3|1|Jet|0|http://www.jettools.com/us/en/c/woodworking/20
+ Basement|Tool Manufacturers|3|1|Bosch|0|http://www.boschtools.com/
+ Basement|Tool Manufacturers|3|1|Kreg|0|http://www.kregtool.com/
+ Basement|Tool Manufacturers|3|1|Incra|0|http://www.incra.com/
+ Basement|Tool Manufacturers|3|1|Laguna Tools|0|http://www.lagunatools.com/
+ Basement|Tool Manufacturers|3|1|Grizzly|0|http://www.grizzlytools.com/
+ Basement|Tool Manufacturers|3|1|JessEm|0|http://www.jessem.com/
+ Basement|Tool Manufacturers|3|1|Powermatic|0|http://www.powermatic.com/
+ Basement|Tool Manufacturers|3|1|DEWALT|0|http://www.dewalt.com/us/core/
+ Basement|Tool Manufacturers|3|1|Steel City|0|http://www.steelcitytoolworks.com/
+ Basement|Tool Manufacturers|3|1|SawStop|0|http://www.sawstop.com
+ Basement|Tool Sites|4|2|Rockler|0|http://www.rockler.com/
+ Basement|Misc Java|4|2|apache|0|http://www.apache.org/
+ Basement|Misc Java|4|2|Struts|1|http://struts.apache.org/
+ Basement|Tool Sites|4|2|Amazon's Tool Crib|0|http://www.amazon.com/tools
+ Basement|Tool Sites|4|2|Woodcraft|0|http://www.woodcraft.com/
+ Basement|Misc Java|4|2|Maven|1|http://maven.apache.org/
+ Basement|Tool Sites|4|2|Lee Valley Tools|0|http://www.leevalley.com/en/Wood/Index.aspx
+ Basement|Misc Java|4|2|Cassandra|1|http://cassandra.apache.org/
+ Basement|Tool Sites|4|2|Highland Hardware|0|http://www.tools-for-woodworking.com/
+ Basement|Misc Java|4|2|JBoss|0|http://www.jboss.org/
+ Basement|Misc Java|4|2|Hibernate|1|http://www.hibernate.org/
+ Basement|Tool Sites|4|2|Garrett Wade|0|http://www.garrettwade.com/
+ Basement|Tool Sites|4|2|Hartville Tool|0|http://www.hartvilletool.com/
+ Basement|Misc Java|4|2|JUnit|0|http://junit.org
+ Basement|Tool Sites|4|2|McFeelys|0|http://www.mcfeelys.com/
+ Basement|Tool Sites|4|2|Bob Marino's|0|http://www.bobmarinosbesttools.com/
+ Basement|Utilities|5|2|Java Regex|0|http://myregexp.com
+ Basement|Utilities|5|2|Ruby Regex|0|http://rubular.com
+ Basement|Utilities|5|2|JS Fiddle|0|http://jsfiddle.net
+ Basement|Utilities|5|2|Mockaroo|0|http://www.mockaroo.com
+ Basement|Lego Sites|1|3|Lugnet|0|http://www.lugnet.com/
+ Basement|Lego Sites|1|3|FBTB Forums|0|http://www.fbtb.net/forums/
+ Basement|Lego Sites|1|3|Lego|0|http://www.lego.com/
+ Basement|Guitar|2|3|SDOTD|0|http://www.musiciansfriend.com/stupid
+ Basement|More Woodworking|3|3|Shelf Sag Calculator|0|http://www.woodbin.com/calcs/sagulator.htm
+ Basement|More Woodworking|3|3|Compound Miter|0|http://www.compoundmiter.com/
+ Basement|More Woodworking|3|3|Wood Whisperer|0|http://thewoodwhisperer.com/
+ Basement|More Woodworking|3|3|The Dovetail Joint|0|http://www.jerrywork.com/
+ Basement|WebDev|4|3|XSD Help|0|http://www.w3schools.com/schema/schema_example.asp
+ Basement|WebDev|4|3|Rails Forum|0|http://railsforum.com/
+ Basement|WebDev|4|3|Ruby|0|http://www.ruby-lang.org/en/
+ Basement|WebDev|4|3|Ruby on Rails|0|http://rubyonrails.org/
+ Basement|WebDev|4|3|api|1|http://api.rubyonrails.org/
+ Basement|WebDev|4|3|RailsCasts.com|0|http://railscasts.com/
+ Basement|WebDev|4|3|CSS-Tricks|0|http://css-tricks.com/
+ Basement|Old Games|5|3|Nintendogs Map|0|http://www5d.biglobe.ne.jp/%7Emint-f/dogs/map.html
+ Basement|Mobile|6|3|talk maemo|0|http://talk.maemo.org/
+ Basement|Old Home Theater|1|4|McIntosh|0|http://mcintoshlabs.com/
+ Basement|Old Home Theater|1|4|Martin Logan|0|http://www.martinlogan.com
+ Basement|Old Home Theater|1|4|Marantz|0|http://us.marantz.com/default.asp
+ Basement|Misc|2|4|Well Known Ports|0|http://www.iana.org/assignments/port-numbers
+ Basement|Misc|2|4|Solaris Signals|0|http://developers.sun.com/solaris/articles/signalprimer.html
+ Basement|Videography|3|4|EosHD|0|http://www.eoshd.com
+ Basement|Videography|3|4|Philip Bloom|0|http://philipbloom.net
+ Basement|Videography|3|4|Planet 5D|0|http://blog.planet5d.com
+ Basement|Videography|3|4|Cinema5d|0|https://www.cinema5d.com
+ Basement|Videography|3|4|No Film School|0|http://nofilmschool.com
+ Basement|Videography|3|4|Blackmagic Design|0|http://www.blackmagicdesign.com
+ Basement|Videography|3|4|Blackmagic Forum|1|http://www.blackmagicdesign.com/forum
+ Basement|Videography|3|4|BMC User|1|http://www.bmcuser.com
+ Basement|Videography|3|4|Color Grading|0|http://www.colorgradingcentral.com
+ Basement|Videography|3|4|Final Cut King|0|http://finalcutking.com
+ Basement|Videography|3|4|Izzy Video|0|http://www.izzyvideo.com/final-cut-pro-x-tutorial/
+ Basement|Videography|3|4|FCP.co|0|http://www.fcp.co/?view=featured
+ Basement|Videography|3|4|Music Sites|0|http://socialtimes.com/royalty-free-music_b37470
+ Basement|Videography|3|4|incompetech|1|http://incompetech.com
+ Basement|Videography|3|4|BeatPick|1|http://www.beatpick.com

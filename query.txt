@@ -1,0 +1,21 @@
+select
+    lp.name as page_name,
+    lg.name as group_name,
+    lg.position as pos,
+    lg.section as column,
+    lx.name,
+    lx.indent_level,
+    lx.url
+from 
+    link_pages lp,
+    link_groups lg,
+    links lx
+where
+    lp.id = lg.link_page_id
+    and lx.link_group_id = lg.id
+order by
+    lp.id
+    , lg.section
+    , lg.position
+    , lx.position
+;

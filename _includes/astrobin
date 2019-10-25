@@ -1,0 +1,18 @@
+
+<figure class="{{ include.class }}">
+  <a href="https://astrob.in/{{ include.image_id }}/0/">
+  <img
+    {% if include.is_local %}
+      {% assign source = "/assets/images/astrobin/" | append: include.image_id | append: ".jpg" %}
+    {% else %}
+      {% assign source = "https://astrob.in/" | append: include.image_id | append: "/0/rawthumb/gallery/get.jpg?insecure" %}
+    {% endif %}
+    src="{{source}}"
+    alt="{% if include.alt %}{{ include.alt }}{% else if include.caption %}{{ include.caption }}{% endif %}"
+  >
+  </a>
+  {% if include.caption %}
+    <figcaption>{{ include.caption | remove: "<p>" | remove: "</p>" | append: " [click it to see it on astrobin]"}}</figcaption>
+  {% endif %}
+</figure>
+

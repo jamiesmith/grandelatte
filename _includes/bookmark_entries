@@ -1,0 +1,34 @@
+{% if include.id %}
+  {% assign bookmark_entries = page[include.id] %}
+{% else %}
+  {% assign bookmark_entries = page.bookmark_entries %}
+{% endif %}
+
+<div class="bookmark__wrapper">
+  {% for column in bookmark_entries %}
+    <div class="feature__item{% if include.type %}--{{ include.type }}{% endif %}">
+      <div class="archive__item">
+
+      {% for group in column.groups %}
+        <div class="archive__item-body">
+          <h3 class="archive__item-title">{{ group.name }}</h3>
+          <ul>
+            {% for link in group.links %}
+                {% if link.indent %}
+                  {% assign indent = "&nbsp;&nbsp;&nbsp;" %}
+                {% else %}
+                  {% assign indent = "" %}
+                {% endif %}
+              
+              <li>{{indent}}<a href="{{link.url}}" target="_blank">{{link.name}}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endfor %}
+
+      </div>
+    </div>
+  {% endfor %}
+
+</div>
+
