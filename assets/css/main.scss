@@ -4,7 +4,12 @@
 
 @charset "utf-8";
 
-$sans-serif: "Fira Sans", sans-serif !default;
+$sans-serif: "Walter Turncoat", sans-serif !default;
+
+$serif              : "PT Serif", Georgia, Times, serif;
+$sans-serif-narrow  : "PT Sans Narrow", -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+
+
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
