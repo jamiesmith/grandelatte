@@ -20,12 +20,18 @@ foo:
 
 # main links
 main:
-  - title: "Posts"
-    url: /year-archive/
-  - title: "Tags"
-    url: /tags/
+  - title: "Main"
+    url: /
+  - title: "Basement"
+    url: /basement
+  # - title: "Posts"
+  #   url: /year-archive/
+  # - title: "Tags"
+  #   url: /tags/
   # - title: "Notes"
   #   url: /collection-archive/
+  - title: "AstroSaloon"
+    url: https://www.astrosaloon.com
   - title: "About"
     url: /about/
   - title: "Terms &amp; Privacy"
