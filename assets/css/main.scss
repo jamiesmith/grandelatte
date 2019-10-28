@@ -5,7 +5,6 @@
 @charset "utf-8";
 
 $sans-serif         : "Walter Turncoat", sans-serif !default;
-$bookmarks          : "Walter Turncoat";
 $serif              : Georgia, Times, serif;
 $sans-serif-narrow  : -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
 $masthead           : "Rock Salt";
@@ -31,8 +30,6 @@ $masthead           : "Rock Salt";
 figcaption {
   font-style: italic;
 }
-
-
 
 /* ==========================================================================
    MASTHEAD
@@ -92,7 +89,7 @@ ul.group_list li{
     margin-left: 30px;
     margin: 0 0 5px;
     list-style-type:none;
-    font-weight:normal;
+    font-weight:bold;
     font-size:16px; 
 }   
 
@@ -135,7 +132,7 @@ p{font-size:14px; line-height:21px}
   @include breakpoint($small) {
     float: left;
     margin-bottom: 0;
-    width: span(3 of 12);
+    width: span(2 of 12);
 
     &:nth-child(4n + 1) {
       clear: both;
