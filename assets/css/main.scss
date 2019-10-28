@@ -8,12 +8,10 @@ $sans-serif: "Walter Turncoat", sans-serif !default;
 
 $serif              : "PT Serif", Georgia, Times, serif;
 $sans-serif-narrow  : "PT Sans Narrow", -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
-
-
+$masthead           : "Rock Salt";
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
-
 
 .toc {
   .nav__title {
@@ -43,6 +41,7 @@ figcaption {
 .masthead {
   border-bottom: 0px solid $border-color;
   background-color: $masthead-background-color;
+  font-family: $masthead;
 }
 
 
@@ -63,6 +62,16 @@ h2 {
   }
 }
 
+
+.page__hero,.page_lead {
+    font-family: $masthead;
+}
+
+.page__hero--overlay {
+    margin-bottom:1em;
+    padding:1em 0;    
+}
+
 /*
    bookmarks
    ========================================================================== */
@@ -71,11 +80,52 @@ h2 {
   @include clearfix();
   margin-bottom: 2em;
   border-bottom: 1px solid $border-color;
-
+  
   .archive__item-title {
     margin-bottom: 0;
   }
 }
+
+ul.group_list li{
+    line-height:1em;
+    text-indent:-1em; 
+    margin-left: 30px;
+    margin: 0 0 5px;
+    list-style-type:none;
+    font-weight:normal;
+    font-size:16px; 
+}   
+
+div.link_group_name {
+	font-weight: bold;
+    font-size:16px; 
+    line-height: 1.5;
+}
+
+li.link_indent_0 {
+	left: 0em;
+	position: relative;
+}
+li.link_indent_1 {
+	left: 1.5em;
+	position: relative;
+}
+li.link_indent_2 {
+	left: 3em;
+	position: relative;
+}
+li.link_indent_3 {
+	left: 4.5em;
+	position: relative;
+}
+
+a:link, a:visited{color:#bfbfbf}
+a {
+    text-decoration: none !important;
+    font-family: 'Walter Turncoat', 'Helvetica Neue';
+}
+
+p{font-size:14px; line-height:21px}
 
 .bookmark__item {
   position: relative;
