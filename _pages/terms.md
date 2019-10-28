@@ -22,7 +22,7 @@ Like many other websites, this site uses log files to help learn about when, fro
 * Referring and exit pages
 * Number of clicks
 
-None of this information is **not** linked to anything that is personally identifiable.
+None of this information is linked to anything that is personally identifiable.
 
 ### Cookies and Web Beacons
 
