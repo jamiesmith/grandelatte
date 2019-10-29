@@ -124,10 +124,6 @@ bookmark_entries:
         url: http://www.fbtb.net/forums/
       - name: Lego
         url: http://www.lego.com/
-    - name: Guitar
-      links:
-      - name: SDOTD
-        url: http://www.musiciansfriend.com/stupid
     - name: More Woodworking
       links:
       - name: Shelf Sag Calculator
