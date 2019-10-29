@@ -18,6 +18,13 @@ foo:
         url: /child-3-page-url/
 
 
+# Bookmark Sections
+sections:
+  - title: "Main"
+    url: /
+  - title: "Basement"
+    url: /basement
+
 # main links
 main:
   - title: "Main"

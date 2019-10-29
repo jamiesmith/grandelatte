@@ -12,6 +12,16 @@ $masthead           : "Rock Salt";
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
+#main {
+	max-width: 1000px
+}
+.masthead__inner-wrap {
+	max-width: 1000px;
+}
+
+.masthead {
+    font-family: $masthead;
+}
 .toc {
   .nav__title {
     color: #333;
