@@ -17,6 +17,7 @@ $masthead           : "Rock Salt";
 }
 .masthead__inner-wrap {
 	max-width: 1000px;
+    padding: 0em;
 }
 
 .masthead {
@@ -55,7 +56,6 @@ figcaption {
   background-color: $masthead-background-color;
   font-family: $masthead;
 }
-
 
 .greedy-nav {
   background-color: $masthead-background-color;

@@ -25,6 +25,14 @@ sections:
   - title: "Basement"
     url: /basement
 
+ribbon:
+  - title: "AstroSaloon"
+    url: https://www.astrosaloon.com
+  - title: "About"
+    url: /about/
+  - title: "Terms &amp; Privacy"
+    url: /terms/
+  
 # main links
 main:
   - title: "Main"
