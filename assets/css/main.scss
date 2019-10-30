@@ -22,6 +22,11 @@ $masthead           : "Rock Salt";
 .masthead {
     font-family: $masthead;
 }
+
+.masthead__menu-item {
+    font-family: $masthead;
+}
+
 .toc {
   .nav__title {
     color: #333;
@@ -54,6 +59,13 @@ figcaption {
 
 .greedy-nav {
   background-color: $masthead-background-color;
+  font-family: $masthead;
+}
+
+.greedy-nav a {
+  font-family: $masthead;
+  font-size: $type-size-4;
+  color: #000000;
 }
 
 
