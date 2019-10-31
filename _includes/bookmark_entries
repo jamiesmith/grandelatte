@@ -8,7 +8,6 @@
   {% for column in bookmark_entries %}
     <div class="feature__item{% if include.type %}--{{ include.type }}{% endif %}">
       <div class="archive__item">
-
       {% for group in column.groups %}
         <div class="link_group_name" >{{ group.name }}
           <ul class="group_list">
@@ -17,8 +16,7 @@
                   {% assign indent = link.indent %}
                 {% else %}
                   {% assign indent = 0 %}
-                {% endif %}
-              
+                {% endif %}              
               <li class="link link_indent_{{indent}}"><a href="{{link.url}}" target="_blank">{{link.name}}</a></li>
             {% endfor %}
           </ul>

@@ -1,0 +1,18 @@
+<div class="ribbon__inner-wrap">
+  <div class="ribbon__menu">
+    <nav id="ribbon-nav">
+      <ul class="inline-list">
+        {%- for link in site.data.navigation.ribbon -%}
+          {%- if link.url contains '://' -%}
+            {%- assign url = link.url -%}
+          {%- else -%}
+            {%- assign url = link.url | relative_url -%}
+          {%- endif -%}
+          <li class="ribbon__menu-item">
+            <a href="{{ url }}" {% if link.description %}title="{{ link.description }}"{% endif %}>{{ link.title }}</a>
+          </li>
+        {%- endfor -%}
+      </ul>
+    </nav>
+  </div>
+</div>

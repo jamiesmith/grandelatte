@@ -4,19 +4,21 @@
 
 @charset "utf-8";
 
-$sans-serif         : "Walter Turncoat", sans-serif !default;
-$serif              : Georgia, Times, serif;
-$sans-serif-narrow  : -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
-$masthead           : "Rock Salt";
+$sans-serif              : "Walter Turncoat", sans-serif !default;
+$serif                   : Georgia, Times, serif;
+$sans-serif-narrow       : -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+$masthead                : "Rock Salt";
+$ribbon-background-color : #212121;
+$x-large                 : 1000px !default;
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
 #main {
-	max-width: 1000px
+//    max-width: 1000px
 }
 .masthead__inner-wrap {
-	max-width: 1000px;
+//    max-width: 1000px;
     padding: 0em;
 }
 
@@ -65,7 +67,9 @@ figcaption {
 .greedy-nav a {
   font-family: $masthead;
   font-size: $type-size-3;
-  color: #000000;
+  link {
+      color:#ffffff
+  }
 }
 
 
@@ -524,4 +528,77 @@ p{font-size:14px; line-height:21px}
   }
 }
 
+// ################## RIBBON ##################
 
+.ribbon {
+  position: relative;
+//  border-bottom: 1px solid $border-color;
+  -webkit-animation: $intro-transition;
+  animation: $intro-transition;
+  -webkit-animation-delay: 0.15s;
+  animation-delay: 0.15s;
+  z-index: 20;
+  font-size: $type-size-7;
+
+  &__inner-wrap {
+    @include clearfix;
+    margin-left: auto;
+    margin-right: auto;
+//    padding: 1em;
+    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    font-family: $sans-serif-narrow;
+
+    @include breakpoint($x-large) {
+      max-width: $x-large;
+    }
+
+    nav {
+      z-index: 10;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+.ribbon {
+    background-color: $ribbon-background-color;
+}
+
+.ribbon__menu-item {
+  display: block;
+  list-style-type: none;
+  white-space: nowrap;
+
+  &--lg {
+    padding-right: 2em;
+    font-weight: 700;
+  }
+}
+
+
+.jrs {
+    color: #FF0000;
+}
+
+.inline-list {
+    float: right;
+    li {
+        display: inline;
+      padding: 1em;
+    }
+    
+    ul {
+        float: right;
+      margin: 0;
+      clear: both;
+      list-style-type: none;
+    }
+}    

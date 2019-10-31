@@ -28,8 +28,10 @@ sections:
     url: /tools
 
 ribbon:
-  - title: "AstroSaloon"
+  - title: "AstroSaloon Blog"
     url: https://www.astrosaloon.com
+  - title: "My Astrobin"
+    url: http://www.astrobin.com/users/jamiesmithnc/
   - title: "About"
     url: /about/
   - title: "Terms &amp; Privacy"
