@@ -30,8 +30,10 @@ sections:
 ribbon:
   - title: "AstroSaloon Blog"
     url: https://www.astrosaloon.com
+    target: "_blank"
   - title: "My Astrobin"
     url: http://www.astrobin.com/users/jamiesmithnc/
+    target: "_blank"
   - title: "About"
     url: /about/
   - title: "Terms &amp; Privacy"
