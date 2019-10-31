@@ -545,9 +545,6 @@ bookmark_entries:
       - name: New
         url: https://www.hendrickbmw.com/new-inventory/index.htm?sortBy=internetPrice+asc&
         indent: 1
-
-outro:
-  - excerpt: '[<i class="fab fa-paypal"></i> Tip Me](https://paypal.me/jamiesmithnc){: .btn .btn--primary}'
 ---
 
 {% include bookmark_entries %}

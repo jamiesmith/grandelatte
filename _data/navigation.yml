@@ -24,6 +24,8 @@ sections:
     url: /
   - title: "Basement"
     url: /basement
+  - title: "Tools"
+    url: /tools
 
 ribbon:
   - title: "AstroSaloon"

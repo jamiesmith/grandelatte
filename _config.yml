@@ -11,7 +11,7 @@ minimal_mistakes_skin    : "astrosaloon"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "GrandeLatte"
+title                    : "GrandeLatte - Jamie's Bookmarker"
 title_separator          : "-"
 name                     : &name "Jamie Smith" # &name is a YAML anchor which can be *referenced later
 description              : &description "Join us as we photograph the stars, drink booze, and listen to music."

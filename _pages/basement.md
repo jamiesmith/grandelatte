@@ -30,38 +30,42 @@ bookmark_entries:
         url: http://skymaps.com/downloads.html
       - name: INDI Forum
         url: http://indilib.org/forum/recent.html
-    - name: Tool Manufacturers
+    - name: Videography
       links:
-      - name: Felder USA
-        url: http://www.felderusa.com/
-      - name: Festool
-        url: http://www.festoolusa.com/
-      - name: Hammer USA
-        url: http://www.hammerusa.com/
-      - name: Leigh Jigs
-        url: http://www.leighjigs.com/home.php
-      - name: Jet
-        url: http://www.jettools.com/us/en/c/woodworking/20
-      - name: Bosch
-        url: http://www.boschtools.com/
-      - name: Kreg
-        url: http://www.kregtool.com/
-      - name: Incra
-        url: http://www.incra.com/
-      - name: Laguna Tools
-        url: http://www.lagunatools.com/
-      - name: Grizzly
-        url: http://www.grizzlytools.com/
-      - name: JessEm
-        url: http://www.jessem.com/
-      - name: Powermatic
-        url: http://www.powermatic.com/
-      - name: DEWALT
-        url: http://www.dewalt.com/us/core/
-      - name: Steel City
-        url: http://www.steelcitytoolworks.com/
-      - name: SawStop
-        url: http://www.sawstop.com
+      - name: EosHD
+        url: http://www.eoshd.com
+      - name: Philip Bloom
+        url: http://philipbloom.net
+      - name: Planet 5D
+        url: http://blog.planet5d.com
+      - name: Cinema5d
+        url: https://www.cinema5d.com
+      - name: No Film School
+        url: http://nofilmschool.com
+      - name: Blackmagic Design
+        url: http://www.blackmagicdesign.com
+      - name: Blackmagic Forum
+        url: http://www.blackmagicdesign.com/forum
+        indent: 1
+      - name: BMC User
+        url: http://www.bmcuser.com
+        indent: 1
+      - name: Color Grading
+        url: http://www.colorgradingcentral.com
+      - name: Final Cut King
+        url: http://finalcutking.com
+      - name: Izzy Video
+        url: http://www.izzyvideo.com/final-cut-pro-x-tutorial/
+      - name: FCP.co
+        url: http://www.fcp.co/?view=featured
+      - name: Music Sites
+        url: http://socialtimes.com/royalty-free-music_b37470
+      - name: incompetech
+        url: http://incompetech.com
+        indent: 1
+      - name: BeatPick
+        url: http://www.beatpick.com
+        indent: 1
   - column: Column 2
     groups:
     - name: Misc Java
@@ -84,26 +88,6 @@ bookmark_entries:
         indent: 1
       - name: JUnit
         url: http://junit.org
-    - name: Tool Sites
-      links:
-      - name: Rockler
-        url: http://www.rockler.com/
-      - name: Amazon's Tool Crib
-        url: http://www.amazon.com/tools
-      - name: Woodcraft
-        url: http://www.woodcraft.com/
-      - name: Lee Valley Tools
-        url: http://www.leevalley.com/en/Wood/Index.aspx
-      - name: Highland Hardware
-        url: http://www.tools-for-woodworking.com/
-      - name: Garrett Wade
-        url: http://www.garrettwade.com/
-      - name: Hartville Tool
-        url: http://www.hartvilletool.com/
-      - name: McFeelys
-        url: http://www.mcfeelys.com/
-      - name: Bob Marino's
-        url: http://www.bobmarinosbesttools.com/
     - name: Utilities
       links:
       - name: Java Regex
@@ -175,50 +159,6 @@ bookmark_entries:
         url: http://www.iana.org/assignments/port-numbers
       - name: Solaris Signals
         url: http://developers.sun.com/solaris/articles/signalprimer.html
-    - name: Videography
-      links:
-      - name: EosHD
-        url: http://www.eoshd.com
-      - name: Philip Bloom
-        url: http://philipbloom.net
-      - name: Planet 5D
-        url: http://blog.planet5d.com
-      - name: Cinema5d
-        url: https://www.cinema5d.com
-      - name: No Film School
-        url: http://nofilmschool.com
-      - name: Blackmagic Design
-        url: http://www.blackmagicdesign.com
-      - name: Blackmagic Forum
-        url: http://www.blackmagicdesign.com/forum
-        indent: 1
-      - name: BMC User
-        url: http://www.bmcuser.com
-        indent: 1
-      - name: Color Grading
-        url: http://www.colorgradingcentral.com
-      - name: Final Cut King
-        url: http://finalcutking.com
-      - name: Izzy Video
-        url: http://www.izzyvideo.com/final-cut-pro-x-tutorial/
-      - name: FCP.co
-        url: http://www.fcp.co/?view=featured
-      - name: Music Sites
-        url: http://socialtimes.com/royalty-free-music_b37470
-      - name: incompetech
-        url: http://incompetech.com
-        indent: 1
-      - name: BeatPick
-        url: http://www.beatpick.com
-        indent: 1
-
-outro:
-  - excerpt: '[<i class="fab fa-paypal"></i> Tip Me](https://paypal.me/jamiesmithnc){: .btn .btn--primary}'
 ---
 
 {% include bookmark_entries %}
-
-{%- for post in site.posts limit:7 -%}
-  {% include archive-single.html %}
-{%- endfor -%}
-
