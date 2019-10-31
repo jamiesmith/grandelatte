@@ -338,16 +338,24 @@ bookmark_entries:
       links:
       - name: Nikon USA
         url: http://nikonusa.com/
+      - name: Photo Rumors
+        url: http://photorumors.com/
       - name: Nikon Rumors
         url: http://nikonrumors.com/
+        indent: 1
       - name: Alpha Rumors
         url: https://www.sonyalpharumors.com
+        indent: 1
+      - name: 4/3 Rumors 
+        url: https://www.43rumors.com
+        indent: 1
+      - name: Leica Rumors 
+        url: https://leicarumors.com
+        indent: 1        
       - name: dpreview
         url: http://www.dpreview.com/
       - name: DPS
         url: http://www.digital-photography-school.com/
-      - name: 4/3 Rumors
-        url: https://www.43rumors.com
     - name: Road Warrior
       links:
       - name: Misery Map
