@@ -352,6 +352,9 @@ bookmark_entries:
       - name: Leica Rumors 
         url: https://leicarumors.com
         indent: 1        
+      - name: Fuji Rumors 
+        url: https://fujirumors.com
+        indent: 1        
       - name: dpreview
         url: http://www.dpreview.com/
       - name: DPS
