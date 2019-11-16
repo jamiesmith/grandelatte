@@ -476,6 +476,8 @@ bookmark_entries:
         indent: 1
       - name: DSO Browser
         url: https://dso-browser.com
+      - name: ZWO ASI
+        url: https://astronomy-imaging-camera.com	
     - name: AstroWeather
       links:
       - name: MB Home
