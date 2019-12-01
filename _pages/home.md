@@ -287,6 +287,8 @@ bookmark_entries:
         url: http://dadcooksdinner.com
       - name: Amazing Ribs
         url: http://amazingribs.com
+      - name: Meck ABC
+        url: https://www.meckabc.com/Products/Product-Search
     - name: Web Hosting
       links:
       - name: BitBucket
