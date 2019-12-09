@@ -149,7 +149,7 @@ bookmark_entries:
     - name: Woodworking
       links:
       - name: NC Woodworker
-        url: https://www.ncwoodworker.net/forums/search.php?do=getnew&contenttype=vBForum_Post
+        url: https://www.ncwoodworker.net/
       - name: Festool Owners
         url: http://festoolownersgroup.com/
       - name: Sawmill Creek
