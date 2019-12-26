@@ -76,7 +76,7 @@ bookmark_entries:
       - name: Nest
         url: https://home.nest.com/home
       - name: Grill
-        url: https://myflameboss.com
+        url: https://fireboard.io
       - name: MyQ
         url: https://www.mychamberlain.com/Devices.aspx
       - name: Theater AVR
