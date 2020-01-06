@@ -495,6 +495,9 @@ bookmark_entries:
       - name: CAAC Weather
         url: http://charlotteastronomers.org/weather/
         indent: 1
+      - name: AstroSpheric
+        url: https://www.astrospheric.com/?Latitude=34.695736&Longitude=-80.536855
+        indent: 1
       - name: CSC GHRO
         url: http://www.cleardarksky.com/c/TaxaSCkey.html
         indent: 1
