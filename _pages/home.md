@@ -534,6 +534,9 @@ bookmark_entries:
         indent: 1
       - name: Porsche
         url: http://www.porsche.com/usa/
+      - name: Macan Manual
+        url: http://www.porscheownersmanuals.com/2017-macan-manual/table-of-contents
+        indent: 1
       - name: Hendrick Porsche
         url: http://www.hendrickporsche.com/index.htm
         indent: 1
