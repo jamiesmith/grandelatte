@@ -38,8 +38,6 @@ bookmark_entries:
         url: http://www.powermatic.com/
       - name: DEWALT
         url: http://www.dewalt.com/us/core/
-      - name: Steel City
-        url: http://www.steelcitytoolworks.com/
       - name: SawStop
         url: http://www.sawstop.com
   - column: Column 2

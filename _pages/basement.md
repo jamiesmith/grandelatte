@@ -157,8 +157,6 @@ bookmark_entries:
       links:
       - name: Well Known Ports
         url: http://www.iana.org/assignments/port-numbers
-      - name: Solaris Signals
-        url: http://developers.sun.com/solaris/articles/signalprimer.html
 ---
 
 {% include bookmark_entries %}
