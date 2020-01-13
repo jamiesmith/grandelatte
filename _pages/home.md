@@ -399,14 +399,8 @@ bookmark_entries:
         url: http://www.timeanddate.com/worldclock/custom.html?cities=412,224,248,166,197,438,236,195,239,101,240
       - name: More Times (rows)
         url: https://www.worldtimebuddy.com/?pl=1&lid=4460243,5380748,2643743,1850147&h=4460243
-      - name: RR Network
-        url: http://help.rr.com/HMSLogic/network_status.aspx
-      - name: OpenSpeedTest
-        url: http://openspeedtest.com
       - name: SpeedTest
         url: http://www.speedtest.net/
-      - name: TWC Speedtest
-        url: http://speedtest.southeast.rr.com
   - column: Column 4
     groups:
     - name: Social Ties
@@ -519,8 +513,6 @@ bookmark_entries:
         url: http://www.leftlanenews.com/
       - name: Mini Forums
         url: http://www.northamericanmotoring.com
-      - name: CarPoint
-        url: http://autos.msn.com/
       - name: Lexus
         url: http://www.lexus.com/
       - name: Hendrick Lexus
@@ -543,15 +535,10 @@ bookmark_entries:
       - name: Used Porsche
         url: http://www.hendrickcars.com/all-inventory/index.htm?geoZip=28277&geoRadius=100&search=&compositeType=certified&make=Porsche&geoZip=28277&geoRadius=50&sortBy=internetPrice+asc&saveFacetState=true&lastFacetInteracted=
         indent: 2
-      - name: AutoTrader
-        url: http://www.autotrader.com
       - name: Harley-Davidson
         url: http://harley-davidson.com
       - name: Harley CLT
         url: http://harleydavidsonofcharlotte.com
-        indent: 1
-      - name: HD Forums
-        url: http://hdforums.com/forum/
         indent: 1
       - name: Charlotte HOG
         url: http://charlottehog.org/Code/Home.aspx
