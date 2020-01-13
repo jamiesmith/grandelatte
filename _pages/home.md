@@ -264,13 +264,6 @@ bookmark_entries:
       - name: 10 Day
         url: https://www.wunderground.com/forecast/us/nc/oak-island/28465?cm_ven=localwx_10day
         indent: 1
-      - name: Mt View 10 Day
-        url: https://weather.com/weather/tenday/l/USCA0746:1:US
-      - name: AccuWeather (CLT)
-        url: http://www.accuweather.com/us/nc/matthews/28104/city-weather-forecast.asp
-      - name: AW-CLT hourly
-        url: http://www.accuweather.com/en/us/matthews-nc/28104/hourly-weather-forecast/11679_pc
-        indent: 1
       - name: USGS Earthquakes
         url: http://goo.gl/xKRxeP
       - name: Closings & Delays
