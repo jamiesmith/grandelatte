@@ -59,6 +59,8 @@ bookmark_entries:
         url: http://www.appleworld.today
       - name: 9to5mac
         url: https://9to5mac.com
+      - name: Macworld
+        url: http://www.macworld.com/
       - name: Gizmodo
         url: http://gizmodo.com
       - name: Digital Trends
