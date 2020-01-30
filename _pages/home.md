@@ -496,7 +496,7 @@ bookmark_entries:
       - name: GHRO - 10 day
         url: https://www.wunderground.com/forecast/us/sc/taxahaw?cm_ven=localwx_10day
         indent: 1
-      - name: GHRO SG
+      - name: GHRO - SG
         url: https://www.accuweather.com/en/us/taxahaw-sc/29067/astronomy-weather/2131162
         indent: 1
       - name: GHRO - Clear Out
