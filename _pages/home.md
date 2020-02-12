@@ -364,8 +364,6 @@ bookmark_entries:
         url: http://usairways.com
       - name: Kayak
         url: https://www.kayak.com/trips
-      - name: Hipmunk
-        url: https://www.hipmunk.com
     - name: Game Sites
       links:
       - name: GameSpot
