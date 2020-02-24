@@ -502,8 +502,8 @@ bookmark_entries:
         indent: 1
     - name: Cars & Bikes
       links:
-      - name: Left Lane News
-        url: http://www.leftlanenews.com/
+      - name: Motortrend
+        url: https://www.motortrend.com
       - name: Mini Forums
         url: http://www.northamericanmotoring.com
       - name: Lexus
