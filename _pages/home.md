@@ -506,17 +506,6 @@ bookmark_entries:
         url: https://www.motortrend.com
       - name: Mini Forums
         url: http://www.northamericanmotoring.com
-      - name: Lexus
-        url: http://www.lexus.com/
-      - name: Hendrick Lexus
-        url: http://www.hendricklexuscharlotte.com
-        indent: 1
-      - name: Lexus CPO
-        url: http://www.hendrickcars.com/all-inventory/index.htm?compositeType=certified&make=Lexus&geoZip=28277&geoRadius=50&sortBy=internetPrice+asc&
-        indent: 1
-      - name: Lexus All Opts
-        url: http://www.hendrickcars.com/all-inventory/index.htm?geoZip=28277&geoRadius=250&search=&compositeType=&year=2018&year=2017&year=2016&year=2015&year=2014&make=Lexus&model=GS+200t&model=GS+350&model=GS+F&model=IS+200t&model=IS+250&model=IS+250C&model=IS+300&model=IS+350&model=NX+200t&model=RC+300&model=RC+350&model=RC+F&odometer=1-60000&gvOption=Navigation+System&geoZip=28277&geoRadius=250&sortBy=internetPrice+asc
-        indent: 1
       - name: Porsche
         url: http://www.porsche.com/usa/
       - name: Macan Manual
