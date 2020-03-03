@@ -455,7 +455,7 @@ bookmark_entries:
       - name: SB / Paramount
         url: http://www.bisque.com
       - name: Camera Add-On
-        url: https://www.bisque.com/help/theskyx%20pro%20info/Welcome.htm#t=Camera_Add_On.htm
+        url: https://www.bisque.com/wp-content/cs-content/help/theskyx%20pro%20info/welcome.htm#t=camera_add_on.htm
         indent: 1
       - name: TheSkyX Manual
         url: https://www.bisque.com/help/theskyx%20pro%20info/Welcome.htm#t=Welcome_1.htm
