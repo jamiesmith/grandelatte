@@ -458,10 +458,10 @@ bookmark_entries:
         url: https://www.bisque.com/wp-content/cs-content/help/theskyx%20pro%20info/welcome.htm#t=camera_add_on.htm
         indent: 1
       - name: TheSkyX Manual
-        url: https://www.bisque.com/help/theskyx%20pro%20info/Welcome.htm#t=Welcome_1.htm
+        url: https://www.bisque.com/wp-content/cs-content/help/theskyx%20pro%20info/welcome.htm
         indent: 1
       - name: Forums
-        url: http://www.bisque.com/sc/forums/
+        url: https://www.bisque.com/forums/
         indent: 1
       - name: DSO Browser
         url: https://dso-browser.com
