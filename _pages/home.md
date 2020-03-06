@@ -318,8 +318,6 @@ bookmark_entries:
         indent: 1
       - name: NodeJS
         url: http://nodejs.org
-      - name: mongoDB
-        url: http://www.mongodb.org/
       - name: Docker
         url: https://www.docker.com
       - name: Docker Docs
