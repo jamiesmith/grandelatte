@@ -284,7 +284,7 @@ bookmark_entries:
         url: http://amazingribs.com
       - name: Meck ABC
         url: https://www.meckabc.com/Products/Product-Search
-    - name: Web Hosting
+    - name: Misc Dashboards
       links:
       - name: BitBucket
         url: https://bitbucket.org
@@ -292,6 +292,8 @@ bookmark_entries:
         url: https://panel.dreamhost.com
       - name: Heroku
         url: http://www.heroku.com
+      - name: RAID Calculator
+        url: https://www.synology.com/en-uk/support/RAID_calculator
     - name: Kindle
       links:
       - name: Manage your Kindle
