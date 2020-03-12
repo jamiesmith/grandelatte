@@ -176,6 +176,9 @@ bookmark_entries:
         url: http://www.imdb.com
       - name: YouTube
         url: https://www.youtube.com
+	- name: edit it
+	  url: https://www.youtube.com/playlist?list=WL&disable_polymer=true
+	  indent: 1
       - name: Netflix
         url: http://www.netflix.com
       - name: Hulu
