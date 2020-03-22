@@ -271,6 +271,10 @@ bookmark_entries:
         indent: 1
       - name: USGS Earthquakes
         url: http://goo.gl/xKRxeP
+      - name: Union COVID
+        url: http://www.unioncountync.gov/news/coronavirus-what-you-need-know
+      - name: Arcgis Map
+        url: https://www.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6
       - name: Closings & Delays
         url: http://wcnc.com/closings/
   - column: Column 3
