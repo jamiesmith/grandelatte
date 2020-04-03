@@ -60,7 +60,7 @@ bookmark_entries:
       - name: 9to5mac
         url: https://9to5mac.com
       - name: 9to5 Toys
-	url: https://9to5toys.com
+        url: https://9to5toys.com
       - name: Macworld
         url: http://www.macworld.com/
       - name: Gizmodo
