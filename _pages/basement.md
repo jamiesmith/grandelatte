@@ -36,8 +36,6 @@ bookmark_entries:
         url: http://www.eoshd.com
       - name: Philip Bloom
         url: http://philipbloom.net
-      - name: Planet 5D
-        url: http://blog.planet5d.com
       - name: Cinema5d
         url: https://www.cinema5d.com
       - name: No Film School
@@ -52,8 +50,6 @@ bookmark_entries:
         indent: 1
       - name: Color Grading
         url: http://www.colorgradingcentral.com
-      - name: Final Cut King
-        url: http://finalcutking.com
       - name: Izzy Video
         url: http://www.izzyvideo.com/final-cut-pro-x-tutorial/
       - name: FCP.co
