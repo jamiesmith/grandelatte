@@ -344,10 +344,12 @@ bookmark_entries:
       links:
       - name: Nikon USA
         url: http://nikonusa.com/
+      - name: Camera Labs
+        url: https://www.cameralabs.com
       - name: Photo Rumors
-        url: http://photorumors.com/
+        url: https://photorumors.com/
       - name: Nikon Rumors
-        url: http://nikonrumors.com/
+        url: https://nikonrumors.com/
         indent: 1
       - name: Alpha Rumors
         url: https://www.sonyalpharumors.com
@@ -362,9 +364,9 @@ bookmark_entries:
         url: https://fujirumors.com
         indent: 1        
       - name: dpreview
-        url: http://www.dpreview.com/
+        url: https://www.dpreview.com/
       - name: DPS
-        url: http://www.digital-photography-school.com/
+        url: https://www.digital-photography-school.com/
     - name: Road Warrior
       links:
       - name: Misery Map
