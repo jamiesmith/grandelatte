@@ -362,7 +362,10 @@ bookmark_entries:
         indent: 1        
       - name: Fuji Rumors 
         url: https://fujirumors.com
-        indent: 1        
+        indent: 1
+      - name: Canon Watch
+        url: https://www.canonwatch.com
+	indent: 1
       - name: dpreview
         url: https://www.dpreview.com/
       - name: DPS
