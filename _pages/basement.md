@@ -62,6 +62,10 @@ bookmark_entries:
       - name: BeatPick
         url: http://www.beatpick.com
         indent: 1
+      - name: MotionVFX
+        url: https://www.motionvfx.com/store,plugins-final-cut-pro-x,2,8.html?page=1
+      - name: FCPX Glitch
+        url: https://store.pixelfilmstudios.com/product/fcpx-glitch/
   - column: Column 2
     groups:
     - name: Misc Cars
