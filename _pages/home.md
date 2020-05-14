@@ -363,6 +363,9 @@ bookmark_entries:
       - name: Fuji Rumors 
         url: https://fujirumors.com
         indent: 1
+      - name: Canon Rumors
+        url: https://www.canonrumors.com
+        indent: 1
       - name: Canon Watch
         url: https://www.canonwatch.com
         indent: 1
