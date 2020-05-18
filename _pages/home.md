@@ -537,7 +537,7 @@ bookmark_entries:
       - name: Harley-Davidson
         url: http://harley-davidson.com
       - name: Harley CLT
-        url: http://harleydavidsonofcharlotte.com
+        url: https://www.independenceharley.com
         indent: 1
       - name: Charlotte HOG
         url: http://charlottehog.org/Code/Home.aspx
