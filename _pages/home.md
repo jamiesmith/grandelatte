@@ -211,6 +211,9 @@ bookmark_entries:
       links:
       - name: Sonos
         url: http://www.sonos.com
+      - name: Sonos Status
+        url: https://status.sonos.com
+        indent: 1
       - name: Grateful Dead
         url: http://www.dead.net/
       - name: GDIA
