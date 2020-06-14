@@ -66,7 +66,7 @@ bookmark_entries:
       - name: Gizmodo
         url: http://gizmodo.com
       - name: Digital Trends
-        url: http://www.digitaltrends.com
+        url: http://www.digitaltrends.com/.
       - name: Gear Patrol
         url: http://gearpatrol.com
       - name: Cool Material
