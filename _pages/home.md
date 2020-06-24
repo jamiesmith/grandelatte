@@ -537,14 +537,6 @@ bookmark_entries:
       - name: Used Porsche
         url: http://www.hendrickcars.com/all-inventory/index.htm?geoZip=28277&geoRadius=100&search=&compositeType=certified&make=Porsche&geoZip=28277&geoRadius=50&sortBy=internetPrice+asc&saveFacetState=true&lastFacetInteracted=
         indent: 2
-      - name: Harley-Davidson
-        url: http://harley-davidson.com
-      - name: Harley CLT
-        url: https://www.independenceharley.com
-        indent: 1
-      - name: Charlotte HOG
-        url: http://charlottehog.org/Code/Home.aspx
-        indent: 1
       - name: REVƎЯ
         url: https://a.rever.co
       - name: Honda Cars
