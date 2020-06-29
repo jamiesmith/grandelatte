@@ -244,14 +244,6 @@ bookmark_entries:
         url: http://www.musicdirect.com
       - name: Audio Advice
         url: https://www.audioadvice.com
-    - name: 2nd Amendment
-      links:
-      - name: Handgun Forum
-        url: http://www.handgunforum.net
-      - name: Point Blank
-        url: http://pointblankrange.com
-      - name: Slick Guns
-        url: https://gun.deals
     - name: Weather
       links:
       - name: Matthews T&D
@@ -531,7 +523,15 @@ bookmark_entries:
       - name: GHRO - Clear Out
         url: https://clearoutside.com/forecast/34.69/-80.52?view=midday
         indent: 1
-    - name: Cars & Bikes
+    - name: 2nd Amendment
+      links:
+      - name: Handgun Forum
+        url: http://www.handgunforum.net
+      - name: Point Blank
+        url: http://pointblankrange.com
+      - name: Slick Guns
+        url: https://gun.deals
+    - name: Cars
       links:
       - name: Motortrend
         url: https://www.motortrend.com
