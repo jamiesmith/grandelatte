@@ -154,6 +154,8 @@ bookmark_entries:
       links:
       - name: NC Woodworker
         url: https://www.ncwoodworker.net/
+      - name: Festool
+        url: https://www.festoolusa.com
       - name: Festool Owners
         url: http://festoolownersgroup.com/
       - name: Sawmill Creek
@@ -171,6 +173,14 @@ bookmark_entries:
         url: http://thewoodwhisperer.com/
       - name: Wood Talk
         url: https://www.woodtalkonline.com
+        indent: 1
+      - name: Shaper Tools
+        url: https://www.shapertools.com/en-us/
+      - name: Shaper Hub
+        url: https://hub.shapertools.com
+        indent: 1
+      - name: Shaper Forum
+        url: https://community.shapertools.com
         indent: 1
     - name: Movies
       links:
