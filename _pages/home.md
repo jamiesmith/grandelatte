@@ -482,12 +482,14 @@ bookmark_entries:
       - name: Forums
         url: https://www.bisque.com/forums/
         indent: 1
-      - name: DSO Browser
-        url: https://dso-browser.com
+      - name: Telescopius
+        url: https://telescopius.com
       - name: ZWO ASI
         url: https://astronomy-imaging-camera.com	
     - name: AstroWeather
       links:
+      - name: Telescopius Weather
+        url: https://telescopius.com/weather
       - name: MB Home
         url: https://www.meteoblue.com/en/weather/forecast/seeing/matthews_united-states-of-america_4478334
       - name: CSC-Indian Trail
