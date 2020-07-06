@@ -65,8 +65,6 @@ bookmark_entries:
         url: http://www.macworld.com/
       - name: Gizmodo
         url: http://gizmodo.com
-      - name: Digital Trends
-        url: http://www.digitaltrends.com/.
       - name: Gear Patrol
         url: http://gearpatrol.com
       - name: Cool Material
