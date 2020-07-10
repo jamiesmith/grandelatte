@@ -37,9 +37,6 @@ bookmark_entries:
         url: http://www.klipsch.com/
       - name: Best Buy
         url: http://www.bestbuy.com
-      - name: Weekly Ad
-        url: http://deals.bestbuy.com/?category=featured+deals
-        indent: 1
       - name: Crutchfield
         url: http://www.crutchfield.com
       - name: Denon
