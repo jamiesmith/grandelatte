@@ -129,20 +129,11 @@ bookmark_entries:
         url: https://www.concursolutions.com
       - name: Elastic Github
         url: https://github.com/elastic
-      - name: Content Issues
-        url: https://github.com/elastic/content/issues
-        indent: 1
-      - name: Examples
-        url: https://github.com/elastic/examples
-        indent: 1
       - name: demos
         url: http://github.com/elastic/demos
         indent: 1
       - name: PingBoard
         url: https://elastic.pingboard.com/
-      - name: My PingBoard
-        url: https://elastic.pingboard.com/users/874614
-        indent: 1
   - column: Column 2
     groups:
     - name: Woodworking
