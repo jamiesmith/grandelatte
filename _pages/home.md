@@ -161,6 +161,8 @@ bookmark_entries:
         indent: 1
       - name: Shaper Tools
         url: https://www.shapertools.com/en-us/
+      - name: Cutlist Optimizer
+        url: https://www.cutlistoptimizer.com	
       - name: Shaper Hub
         url: https://hub.shapertools.com
         indent: 1
