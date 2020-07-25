@@ -159,10 +159,10 @@ bookmark_entries:
       - name: Wood Talk
         url: https://www.woodtalkonline.com
         indent: 1
-      - name: Shaper Tools
-        url: https://www.shapertools.com/en-us/
       - name: Cutlist Optimizer
         url: https://www.cutlistoptimizer.com	
+      - name: Shaper Tools
+        url: https://www.shapertools.com/en-us/
       - name: Shaper Hub
         url: https://hub.shapertools.com
         indent: 1
