@@ -168,7 +168,7 @@ bookmark_entries:
         url: http://www.martinlogan.com
       - name: Marantz
         url: http://us.marantz.com/default.asp
-    - name: Misc
+    - name: Misc Unix
       links:
       - name: Well Known Ports
         url: http://www.iana.org/assignments/port-numbers
