@@ -391,6 +391,9 @@ bookmark_entries:
         indent: 1
       - name: New Leaf Guide
         url: http://www.thonky.com/animal-crossing-new-leaf/
+      - name: Links Awakening WT
+        url: http://www.thonky.com/animal-crossing-new-leaf/
+	https://www.polygon.com/zelda-links-awakening-switch-guide-walkthrough
       - name: GameFAQs
         url: http://www.gamefaqs.com/
       - Zelda: Link's Awakening
