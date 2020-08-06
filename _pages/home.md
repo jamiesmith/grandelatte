@@ -393,10 +393,6 @@ bookmark_entries:
         url: http://www.thonky.com/animal-crossing-new-leaf/
       - name: GameFAQs
         url: http://www.gamefaqs.com/
-      - name: Links Awakening WT
-        url: https://www.polygon.com/zelda-links-awakening-switch-guide-walkthrough
-      - name: Zelda: Link's Awakening
-        url: https://www.ign.com/wikis/the-legend-of-zelda-links-awakening-switch/Link's_Awakening_for_Switch_Walkthrough
     - name: Misc Stuff
       links:
       - name: Time Zones (grid)
