@@ -192,16 +192,14 @@ bookmark_entries:
         url: https://www.soundandvision.com
       - name: Absolute Sound
         url: http://www.theabsolutesound.com
-      - name: AudioStream
-        url: https://www.audiostream.com
       - name: HiFi Plus
         url: http://www.hifiplus.com
       - name: Analog Planet
         url: http://www.analogplanet.com
       - name: What Hi-Fi?
         url: http://www.whathifi.com
-      - name: Inner Fidelity
-        url: https://www.innerfidelity.com
+      - name: Stereophile
+        url: https://www.stereophile.com
       - name: Headphonia
         url: https://www.headfonia.com
     - name: Music
