@@ -186,6 +186,8 @@ bookmark_entries:
         url: http://www.redbox.com/movies
     - name: AudioHolic
       links:
+      - name: Stereophile
+        url: https://www.stereophile.com
       - name: Audiophile Style
         url: http://www.computeraudiophile.com
       - name: Sound & Vision
@@ -198,8 +200,6 @@ bookmark_entries:
         url: http://www.analogplanet.com
       - name: What Hi-Fi?
         url: http://www.whathifi.com
-      - name: Stereophile
-        url: https://www.stereophile.com
       - name: Headphonia
         url: https://www.headfonia.com
     - name: Music
