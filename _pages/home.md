@@ -134,6 +134,8 @@ bookmark_entries:
         indent: 1
       - name: PingBoard
         url: https://elastic.pingboard.com/
+      - name: Workplace Search
+        url: https://workplace.elastic.dev/ws/search
   - column: Column 2
     groups:
     - name: Woodworking
