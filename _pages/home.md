@@ -53,23 +53,23 @@ bookmark_entries:
       - name: Engadget
         url: http://www.engadget.com/
       - name: Apple Today
-        url: http://www.appleworld.today
+        url: https://www.appleworld.today
       - name: 9to5mac
         url: https://9to5mac.com
       - name: 9to5 Toys
         url: https://9to5toys.com
       - name: Macworld
-        url: http://www.macworld.com/
+        url: https://www.macworld.com/
       - name: Gizmodo
-        url: http://gizmodo.com
+        url: https://gizmodo.com
       - name: Gear Patrol
-        url: http://gearpatrol.com
+        url: https://gearpatrol.com
       - name: Cool Material
-        url: http://coolmaterial.com/
+        url: https://coolmaterial.com/
       - name: Geeky Gadgets
-        url: http://www.geeky-gadgets.com
+        url: https://www.geeky-gadgets.com
       - name: sdotd
-        url: http://www.musiciansfriend.com/stupid
+        url: https://www.musiciansfriend.com/stupid
     - name: Remotes
       links:
       - name: Nest
@@ -117,7 +117,7 @@ bookmark_entries:
         url: https://drive.google.com/drive/u/0/recent
         indent: 1
       - name: Calendar
-        url: http://calendar.google.com/a/elastic.co
+        url: https://calendar.google.com/a/elastic.co
         indent: 1
       - name: Okta
         url: https://elastic.okta.com/app/UserHome
@@ -130,7 +130,7 @@ bookmark_entries:
       - name: Elastic Github
         url: https://github.com/elastic
       - name: demos
-        url: http://github.com/elastic/demos
+        url: https://github.com/elastic/demos
         indent: 1
       - name: PingBoard
         url: https://elastic.pingboard.com/
