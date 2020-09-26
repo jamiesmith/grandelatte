@@ -387,7 +387,7 @@ bookmark_entries:
       - name: Xbox
         url: http://www.xbox.com
       - name: Games with Gold
-        url: http://www.xbox.com/en-US/live/games-with-gold
+        url: https://www.xbox.com/en-US/live/gold?xr=shellnav#gameswithgold
         indent: 1
       - name: New Leaf Guide
         url: http://www.thonky.com/animal-crossing-new-leaf/
