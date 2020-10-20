@@ -54,7 +54,7 @@ bookmark_entries:
         url: http://www.engadget.com/
       - name: Apple Today
         url: https://www.appleworld.today
-      - name: 9to5mac
+      - name: 9to5 Mac
         url: https://9to5mac.com
       - name: 9to5 Toys
         url: https://9to5toys.com
