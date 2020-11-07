@@ -284,7 +284,7 @@ bookmark_entries:
       - name: Amazing Ribs
         url: http://amazingribs.com
       - name: Meck ABC
-        url: https://www.meckabc.com/Products/Product-Search
+        url: https://www.meckabc.com/store_operations/mixed_beverage_sales.php
     - name: Misc Dashboards
       links:
       - name: BitBucket
