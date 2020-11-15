@@ -40,7 +40,7 @@ bookmark_entries:
       - name: Crutchfield
         url: http://www.crutchfield.com
       - name: Denon
-        url: http://usa.denon.com/us/pages/home.aspx
+        url: https://usa.denon.com/en-us
     - name: Gadgets!
       links:
       - name: Apple
