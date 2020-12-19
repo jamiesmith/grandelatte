@@ -287,8 +287,6 @@ bookmark_entries:
         url: https://www.meckabc.com/store_operations/mixed_beverage_sales.php
     - name: Misc Dashboards
       links:
-      - name: BitBucket
-        url: https://bitbucket.org
       - name: DreamHost
         url: https://panel.dreamhost.com
       - name: Heroku
