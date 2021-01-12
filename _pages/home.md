@@ -174,18 +174,20 @@ bookmark_entries:
     - name: Movies
       links:
       - name: IMDB
-        url: http://www.imdb.com
+        url: https://www.imdb.com
       - name: YouTube
         url: https://www.youtube.com
       - name: edit it
         url: https://www.youtube.com/playlist?list=WL&disable_polymer=true
         indent: 1
       - name: Netflix
-        url: http://www.netflix.com
+        url: https://www.netflix.com
       - name: Hulu
         url: https://www.hulu.com
       - name: RedBox
-        url: http://www.redbox.com/movies
+        url: https://www.redbox.com/movies
+      - name: JustWatch
+        url: https://www.justwatch.com/
     - name: AudioHolic
       links:
       - name: Stereophile
