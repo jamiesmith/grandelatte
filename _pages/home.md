@@ -72,10 +72,10 @@ bookmark_entries:
         url: https://www.musiciansfriend.com/stupid
     - name: Remotes
       links:
-      - name: Nest
-        url: https://home.nest.com/home
       - name: Grill
         url: https://fireboard.io
+      - name: Nest
+        url: https://home.nest.com/home
       - name: MyQ
         url: https://www.mychamberlain.com/Devices.aspx
       - name: Theater AVR
@@ -267,8 +267,6 @@ bookmark_entries:
         indent: 1
       - name: USGS Earthquakes
         url: http://goo.gl/xKRxeP
-      - name: Union COVID
-        url: https://www.arcgis.com/apps/opsdashboard/index.html#/a76f2e70f8fe4381819effd182cc4a8f
       - name: Arcgis Map
         url: https://www.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6
       - name: Closings & Delays
