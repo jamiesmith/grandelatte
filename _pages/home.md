@@ -163,13 +163,10 @@ bookmark_entries:
         indent: 1
       - name: Cutlist Optimizer
         url: https://www.cutlistoptimizer.com	
-      - name: Shaper Tools
-        url: https://www.shapertools.com/en-us/
-      - name: Shaper Hub
-        url: https://hub.shapertools.com
-        indent: 1
-      - name: Shaper Forum
-        url: https://community.shapertools.com
+      - name: OneFinity
+        url: https://www.onefinity.com/
+      - name: OneFinity Forum
+        url: https://forum.onefinitycnc.com
         indent: 1
     - name: Movies
       links:
