@@ -162,7 +162,7 @@ bookmark_entries:
         url: https://www.woodtalkonline.com
         indent: 1
       - name: Cutlist Optimizer
-        url: https://www.cutlistoptimizer.com	
+        url: https://www.cutlistoptimizer.com
       - name: OneFinity
         url: https://www.onefinitycnc.com
       - name: OneFinity Forum
@@ -471,7 +471,7 @@ bookmark_entries:
       - name: Telescopius
         url: https://telescopius.com
       - name: ZWO ASI
-        url: https://astronomy-imaging-camera.com	
+        url: https://astronomy-imaging-camera.com
     - name: AstroWeather
       links:
       - name: Telescopius Weather
