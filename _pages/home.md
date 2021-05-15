@@ -283,7 +283,7 @@ bookmark_entries:
       - name: Meck ABC
         url: https://www.meckabc.com/store_operations/mixed_beverage_sales.php
       - name: Warehouse
-        url: https://abc.nc.gov/StoresBoards/Stockshttps://www.meckabc.com/store_operations/mixed_beverage_sales.php
+        url: https://abc.nc.gov/StoresBoards/Stocks
         indent: 1
     - name: Misc Dashboards
       links:
