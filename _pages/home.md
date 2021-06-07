@@ -22,9 +22,6 @@ bookmark_entries:
         indent: 1
       - name: AV Science Forum
         url: http://www.avsforum.com/forum/index.php
-      - name: AVS-CLT
-        url: http://www.avsforum.com/forum/45-local-hdtv-info-reception/128876-charlotte-nc-twc-new-post.html
-        indent: 1
       - name: TiVo Forum
         url: http://www.tivocommunity.com/tivo-vb
       - name: Yamaha Electronics
