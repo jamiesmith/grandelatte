@@ -235,19 +235,11 @@ bookmark_entries:
       - name: 10 Day
         url: https://www.wunderground.com/forecast/us/nc/matthews/28104?cm_ven=localwx_10day
         indent: 1
-      - name: DarkSky
-        url: https://darksky.net/forecast/35.0654,-80.7252/us12/en
-      - name: TWC (CLT)
-        url: https://weather.com/weather/today/l/28104:4:US
-      - name: Hourly
-        url: https://weather.com/weather/hourbyhour/l/28104:4:US
-        indent: 1
-      - name: 10 Day
-        url: http://www.weather.com/weather/tenday/Matthews+NC+28104:4:US
-        indent: 1
-      - name: Radar
+      - name: Radar (chrome)
         url: https://weather.com/weather/radar/interactive/l/28104:4:US?animation=true&layer=radarConus&zoom=8
         indent: 1
+      - name: DarkSky
+        url: https://darksky.net/forecast/35.0654,-80.7252/us12/en
       - name: WU (OKI)
         url: https://www.wunderground.com/weather/us/nc/oak-island/28465?cm_ven=localwx_today
       - name: Hourly
@@ -262,6 +254,14 @@ bookmark_entries:
         url: https://www.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6
       - name: Closings & Delays
         url: http://wcnc.com/closings/
+    - name: Misc Stuff
+      links:
+      - name: Time Zones (grid)
+        url: http://www.timeanddate.com/worldclock/custom.html?cities=412,224,248,166,197,438,236,195,239,101,240
+      - name: More Times (rows)
+        url: https://www.worldtimebuddy.com/?pl=1&lid=4460243,5380748,2643743,1850147&h=4460243
+      - name: SpeedTest
+        url: http://www.speedtest.net/
   - column: Column 3
     groups:
     - name: Cooking
@@ -385,14 +385,6 @@ bookmark_entries:
         url: http://www.thonky.com/animal-crossing-new-leaf/
       - name: GameFAQs
         url: http://www.gamefaqs.com/
-    - name: Misc Stuff
-      links:
-      - name: Time Zones (grid)
-        url: http://www.timeanddate.com/worldclock/custom.html?cities=412,224,248,166,197,438,236,195,239,101,240
-      - name: More Times (rows)
-        url: https://www.worldtimebuddy.com/?pl=1&lid=4460243,5380748,2643743,1850147&h=4460243
-      - name: SpeedTest
-        url: http://www.speedtest.net/
   - column: Column 4
     groups:
     - name: Social Ties
