@@ -493,14 +493,6 @@ bookmark_entries:
       - name: CSC GHRO
         url: http://www.cleardarksky.com/c/TaxaSCkey.html
         indent: 1
-    - name: 2nd Amendment
-      links:
-      - name: Handgun Forum
-        url: http://www.handgunforum.net
-      - name: Point Blank
-        url: http://pointblankrange.com
-      - name: Slick Guns
-        url: https://gun.deals
     - name: Cars
       links:
       - name: Motortrend
