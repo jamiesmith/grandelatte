@@ -291,8 +291,6 @@ bookmark_entries:
       links:
       - name: Manage your Kindle
         url: https://www.amazon.com/mn/dcw/myx.html/ref=kinw_myk_redirect#/home/content/booksAll/dateDsc/
-      - name: Jack Reacher
-        url: http://www.squidoo.com/jack-reacher-books-in-order
       - name: Top 100 Books
         url: http://www.amazon.com/gp/bestsellers/digital-text/154606011/ref=tsm_1_fb_frb_20101127
     - name: BigData, Cloud, IoT
