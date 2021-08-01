@@ -144,8 +144,6 @@ bookmark_entries:
       - name: FOG
         url: http://festoolownersgroup.com/
         indent: 1
-      - name: Sawmill Creek
-        url: http://sawmillcreek.org/forumdisplay.php?f=3
       - name: NYW
         url: http://www.newyankee.com/
       - name: ...Tool List
