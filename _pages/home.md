@@ -387,8 +387,6 @@ bookmark_entries:
       links:
       - name: facebook
         url: https://www.facebook.com/?sk=h_chr
-      - name: Tumblr
-        url: http://jamiesmithnc.tumblr.com/
       - name: twitter
         url: http://www.twitter.com/
       - name: Tweet Deck
