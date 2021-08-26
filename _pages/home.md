@@ -285,9 +285,9 @@ bookmark_entries:
     - name: Kindle
       links:
       - name: Manage your Kindle
-        url: https://www.amazon.com/mn/dcw/myx.html/ref=kinw_myk_redirect#/home/content/booksAll/dateDsc/
+        url: https://www.amazon.com/mn/dcw/myx.html
       - name: Top 100 Books
-        url: http://www.amazon.com/gp/bestsellers/digital-text/154606011/ref=tsm_1_fb_frb_20101127
+        url: http://www.amazon.com/gp/bestsellers/digital-text/154606011
     - name: BigData, Cloud, IoT
       links:
       - name: Elastic
@@ -306,6 +306,8 @@ bookmark_entries:
         indent: 1
       - name: NodeJS
         url: http://nodejs.org
+      - name: Repo Search
+        url: https://grep.app
       - name: Docker
         url: https://www.docker.com
       - name: Docker Docs
