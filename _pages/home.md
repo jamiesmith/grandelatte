@@ -193,8 +193,10 @@ bookmark_entries:
         url: http://www.analogplanet.com
       - name: What Hi-Fi?
         url: http://www.whathifi.com
-      - name: Headphonia
+      - name: Headfonia
         url: https://www.headfonia.com
+      - name: Headphones
+        url: https://www.headphones.com
     - name: Music
       links:
       - name: Sonos
