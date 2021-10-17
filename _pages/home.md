@@ -290,6 +290,10 @@ bookmark_entries:
         url: https://www.amazon.com/mn/dcw/myx.html
       - name: Top 100 Books
         url: http://www.amazon.com/gp/bestsellers/digital-text/154606011
+    - name: Distilling
+      links:
+      - name: Forum
+        url: https://homedistiller.org/forum
     - name: BigData, Cloud, IoT
       links:
       - name: Elastic
