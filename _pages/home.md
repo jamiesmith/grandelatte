@@ -373,7 +373,7 @@ bookmark_entries:
       - name: IGN
         url: http://www.ign.com
       - name: Playstation
-        url: http://www.us.playstation.com/
+        url: http://www.playstation.com/
       - name: PSN Status
         url: https://support.us.playstation.com/
         indent: 1
