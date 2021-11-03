@@ -184,6 +184,8 @@ bookmark_entries:
         url: https://brewhaus.com
       - name: Still Dragon
         url: https://stilldragon.com
+      - name: Claw Hammer
+	https://www.clawhammersupply.com	
 ---
 
 {% include bookmark_entries %}

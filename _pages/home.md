@@ -298,14 +298,14 @@ bookmark_entries:
       links:
       - name: Elastic
         url: http://www.elastic.co
-      - name: Elastic Docs
+      - name: Docs
         url: https://www.elastic.co/guide/index.html
+        indent: 1
+      - name: Integrations
+        url: https://www.elastic.co/integrations
         indent: 1
       - name: Careers
         url: https://www.elastic.co/about/careers
-        indent: 1
-      - name: Kibana
-        url: http://www.elasticsearch.org/overview/kibana/
         indent: 1
       - name: Forum
         url: https://discuss.elastic.co
