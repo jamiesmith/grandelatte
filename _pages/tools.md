@@ -36,10 +36,10 @@ bookmark_entries:
         url: http://www.jessem.com/
       - name: Powermatic
         url: http://www.powermatic.com/
-      - name: DEWALT
-        url: http://www.dewalt.com/us/core/
       - name: SawStop
         url: http://www.sawstop.com
+      - name: DEWALT
+        url: http://www.dewalt.com/us/core/
   - column: Column 2
     groups:
     - name: Tool Sites
