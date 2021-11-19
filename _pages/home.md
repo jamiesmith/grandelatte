@@ -282,7 +282,7 @@ bookmark_entries:
         url: https://panel.dreamhost.com
       - name: Domains
         url: https://panel.dreamhost.com/?tree=domain.registration
-        indent: 100        
+        indent: 1        
       - name: Heroku
         url: http://www.heroku.com
       - name: RAID Calculator
