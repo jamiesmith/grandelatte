@@ -160,12 +160,6 @@ bookmark_entries:
         url: https://www.cutlistoptimizer.com
       - name: AvidCNC
         url: https://www.avidcnc.com
-      - name: Forums
-        url: https://www.cnczone.com/forums/avid-cnc/
-        indent: 1
-      - name: Facebook Group
-      	url: https://www.facebook.com/groups/834145353394488/
-      	indent: 1
       - name: OneFinity
         url: https://www.onefinitycnc.com
       - name: OneFinity Forum
