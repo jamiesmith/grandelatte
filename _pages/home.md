@@ -177,6 +177,9 @@ bookmark_entries:
         url: https://www.imdb.com
       - name: YouTube
         url: https://www.youtube.com
+      - name: Watch Later
+        url: https://www.youtube.com/playlist?list=WL
+        indent: 1
       - name: Netflix
         url: https://www.netflix.com
       - name: Hulu
