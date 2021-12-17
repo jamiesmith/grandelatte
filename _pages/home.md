@@ -304,10 +304,14 @@ bookmark_entries:
         url: https://www.amazon.com/mn/dcw/myx.html
       - name: Top 100 Books
         url: http://www.amazon.com/gp/bestsellers/digital-text/154606011
-    - name: Distilling
+    - name: Roasting & Distilling
       links:
       - name: Forum
         url: https://homedistiller.org/forum
+      - name: RoastPATH Beta
+        url: https://portal.roastpath.com/forums/tester
+      - name: RoastPATH Forum
+        url: https://portal.roastpath.com/Forums
     - name: BigData, Cloud, IoT
       links:
       - name: Elastic
