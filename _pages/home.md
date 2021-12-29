@@ -149,13 +149,8 @@ bookmark_entries:
       - name: ...Tool List
         url: http://www.normstools.com/index.shtml
         indent: 1
-      - name: This is Carpentry
-        url: http://www.thisiscarpentry.com/
       - name: Wood Whisperer
         url: http://thewoodwhisperer.com/
-      - name: Wood Talk
-        url: https://www.woodtalkonline.com
-        indent: 1
       - name: Cutlist Optimizer
         url: https://www.cutlistoptimizer.com
       - name: OneFinity
