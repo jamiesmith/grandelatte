@@ -153,11 +153,6 @@ bookmark_entries:
         url: http://thewoodwhisperer.com/
       - name: Cutlist Optimizer
         url: https://www.cutlistoptimizer.com
-      - name: OneFinity
-        url: https://www.onefinitycnc.com
-      - name: OneFinity Forum
-        url: https://forum.onefinitycnc.com
-        indent: 1
       - name: AvidCNC
         url: https://www.avidcnc.com
       - name: Forums
