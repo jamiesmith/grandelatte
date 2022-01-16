@@ -163,6 +163,8 @@ bookmark_entries:
         indent: 1
       - name: Mach4
         url: https://www.machsupport.com
+      - name: GCode Viewer
+        url: https://ncviewer.com
     - name: Movies
       links:
       - name: IMDB
