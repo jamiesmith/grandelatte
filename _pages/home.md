@@ -406,9 +406,6 @@ bookmark_entries:
         url: https://www.facebook.com/?sk=h_chr
       - name: twitter
         url: http://www.twitter.com/
-      - name: Tweet Deck
-        url: https://tweetdeck.twitter.com
-        indent: 1
       - name: About Me
         url: http://about.me/jamiesmith
       - name: linked in
