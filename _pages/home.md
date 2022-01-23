@@ -266,16 +266,14 @@ bookmark_entries:
         url: http://www.speedtest.net/
   - column: Column 3
     groups:
-    - name: Cooking
+    - name: Food & Beverage
       links:
-      - name: Chef Steps
-        url: http://www.chefsteps.com/
-      - name: Serious Eats
-        url: http://www.seriouseats.com/
-      - name: Dad Cooks Dinner
-        url: http://dadcooksdinner.com
-      - name: Amazing Ribs
-        url: http://amazingribs.com
+      - name: Distiller Forum
+        url: https://homedistiller.org/forum
+      - name: RoastPATH Beta
+        url: https://portal.roastpath.com/forums/testers	
+      - name: RoastPATH Forum
+        url: https://portal.roastpath.com/Forums
       - name: Meck ABC
         url: https://www.meckabc.com/store_operations/mixed_beverage_sales.php
       - name: Warehouse
@@ -298,14 +296,6 @@ bookmark_entries:
         url: https://www.amazon.com/mn/dcw/myx.html
       - name: Top 100 Books
         url: http://www.amazon.com/gp/bestsellers/digital-text/154606011
-    - name: Roasting & Distilling
-      links:
-      - name: Forum
-        url: https://homedistiller.org/forum
-      - name: RoastPATH Beta
-        url: https://portal.roastpath.com/forums/testers	
-      - name: RoastPATH Forum
-        url: https://portal.roastpath.com/Forums
     - name: BigData, Cloud, IoT
       links:
       - name: Elastic
