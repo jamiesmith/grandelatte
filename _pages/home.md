@@ -153,6 +153,8 @@ bookmark_entries:
         url: http://thewoodwhisperer.com/
       - name: Cutlist Optimizer
         url: https://www.cutlistoptimizer.com
+      - name: optiCutter
+        url: https://www.opticutter.com
       - name: AvidCNC
         url: https://www.avidcnc.com
       - name: Forums
