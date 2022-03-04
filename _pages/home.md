@@ -337,9 +337,6 @@ bookmark_entries:
         url: https://www.cameralabs.com
       - name: Photo Rumors
         url: https://photorumors.com/
-      - name: Nikon Rumors
-        url: https://nikonrumors.com/
-        indent: 1
       - name: Alpha Rumors
         url: https://www.sonyalpharumors.com
         indent: 1
@@ -357,6 +354,9 @@ bookmark_entries:
         indent: 1
       - name: Canon Watch
         url: https://www.canonwatch.com
+        indent: 1
+      - name: Nikon Rumors
+        url: https://nikonrumors.com/
         indent: 1
       - name: DPReview
         url: https://www.dpreview.com/
