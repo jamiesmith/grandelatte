@@ -346,14 +346,14 @@ bookmark_entries:
       - name: Leica Rumors 
         url: https://leicarumors.com
         indent: 1        
-      - name: Fuji Rumors 
-        url: https://fujirumors.com
-        indent: 1
       - name: Canon Rumors
         url: https://www.canonrumors.com
         indent: 1
       - name: Canon Watch
         url: https://www.canonwatch.com
+        indent: 1
+      - name: Fuji Rumors 
+        url: https://fujirumors.com
         indent: 1
       - name: Nikon Rumors
         url: https://nikonrumors.com/
