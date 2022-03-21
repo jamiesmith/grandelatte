@@ -118,6 +118,9 @@ bookmark_entries:
         indent: 1
       - name: Okta
         url: https://elastic.okta.com/app/UserHome
+      - name: Workday
+        url: https://wd5.myworkday.com/elastic/d/home.htmld
+        indent: 1
       - name: Slacker
         url: https://elastic.slack.com/
       - name: Wiki
@@ -273,7 +276,7 @@ bookmark_entries:
       - name: Distiller Forum
         url: https://homedistiller.org/forum
       - name: RoastPATH Beta
-        url: https://portal.roastpath.com/forums/testers	
+        url: https://portal.roastpath.com/forums/testers
       - name: RoastPATH Forum
         url: https://portal.roastpath.com/Forums
       - name: Meck ABC
