@@ -60,8 +60,6 @@ bookmark_entries:
         url: http://www.hartvilletool.com/
       - name: McFeelys
         url: http://www.mcfeelys.com/
-      - name: Bob Marino's
-        url: http://www.bobmarinosbesttools.com/        
 
 ---
 
