@@ -82,7 +82,7 @@ bookmark_entries:
       - name: Alexa
         url: https://alexa.amazon.com/
       - name: My Home Assistant
-        url: http://nuclet:8123
+        url: http://krypter:8123
       - name: Docs
         url: https://home-assistant.io/docs/
         indent: 1
@@ -99,10 +99,10 @@ bookmark_entries:
         url: https://community.home-assistant.io
         indent: 1
       - name: Dashboard
-        url: http://nuclet:5050/kitchen
+        url: http://krypter:5050/kitchen
         indent: 1
-      - name: MotoSafety
-        url: https://www.motosafety.com/customer-login/
+      - name: Remote Desktop
+        url: https://remotedesktop.google.com/access
     - name: Work Stuff
       links:
       - name: Mail
