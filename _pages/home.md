@@ -526,6 +526,9 @@ bookmark_entries:
       - name: New
         url: https://www.hendrickbmwcharlotte.com/new-inventory/index.htm
         indent: 1
+      - name: New N/L
+        url: https://www.hendrickbmwnorthlake.com/new-inventory/index.htm
+        indent: 1
 ---
 
 {% include bookmark_entries %}
