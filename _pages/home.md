@@ -524,7 +524,7 @@ bookmark_entries:
         url: http://www.hendrickcars.com/all-inventory/index.htm?geoZip=28277&geoRadius=100&search=&compositeType=certified&make=BMW&gvOption=Navigation+System&geoZip=28277&geoRadius=50&sortBy=internetPrice+asc&saveFacetState=true&lastFacetInteracted=
         indent: 1
       - name: New
-        url: https://www.hendrickbmw.com/new-inventory/index.htm?sortBy=internetPrice+asc&
+        url: https://www.hendrickbmwcharlotte.com/new-inventory/index.htm
         indent: 1
 ---
 
