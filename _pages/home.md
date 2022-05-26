@@ -118,9 +118,11 @@ bookmark_entries:
         indent: 1
       - name: Okta
         url: https://elastic.okta.com/app/UserHome
-      - name: Workday
+      - name: Workday (E)
         url: https://wd5.myworkday.com/elastic/d/home.htmld
         indent: 1
+      - name: Workday
+        url: https://www.myworkday.com/snyk/login.flex?redirect=n
       - name: Slacker
         url: https://elastic.slack.com/
       - name: Wiki
