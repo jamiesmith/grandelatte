@@ -305,7 +305,7 @@ bookmark_entries:
         url: http://www.amazon.com/gp/bestsellers/digital-text/154606011
     - name: BigData, Cloud, IoT
       links:
-      - name: Elastic
+      - name: Snyk
         url: http://www.snyk.io
       - name: Docs
         url: https://docs.snyk.io/
