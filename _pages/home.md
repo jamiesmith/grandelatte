@@ -306,18 +306,15 @@ bookmark_entries:
     - name: BigData, Cloud, IoT
       links:
       - name: Elastic
-        url: http://www.elastic.co
+        url: http://www.snyk.io
       - name: Docs
-        url: https://www.elastic.co/guide/index.html
+        url: https://docs.snyk.io/
         indent: 1
-      - name: Integrations
-        url: https://www.elastic.co/integrations
+      - name: Containers
+        url: https://snyk.io/product/container-vulnerability-management/
         indent: 1
       - name: Careers
-        url: https://www.elastic.co/about/careers
-        indent: 1
-      - name: Forum
-        url: https://discuss.elastic.co
+        url: https://www.snyk.io/careers
         indent: 1
       - name: NodeJS
         url: http://nodejs.org
