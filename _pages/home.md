@@ -121,7 +121,9 @@ bookmark_entries:
       - name: Workday
         url: https://www.myworkday.com/snyk/login.flex?redirect=n
       - name: Slacker
-        url: https://elastic.slack.com/
+        url: https://snyk.slack.com/
+      - name: Notion
+        url: https://www.notion.so/snyk
       - name: Wiki
         url: https://wiki.snyk.io
       - name: Expenses
