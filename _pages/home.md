@@ -119,7 +119,7 @@ bookmark_entries:
       - name: Okta
         url: https://snyk.okta.com/app/UserHome
       - name: Workday
-        url: https://www.myworkday.com/snyk/login.flex?redirect=n
+        url: https://snyk.okta.com/home/workday/0oa6vks5n3aIwUiGO4x7/30
       - name: Slacker
         url: https://snyk.slack.com/
       - name: Notion
