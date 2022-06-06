@@ -106,38 +106,28 @@ bookmark_entries:
     - name: Work Stuff
       links:
       - name: Mail
-        url: https://mail.google.com/a/elastic.co
+        url: https://mail.google.com/a/snyk.io
       - name: Google Drive
-        url: https://drive.google.com/a/elastic.co
+        url: https://drive.google.com/a/snyk.io
         indent: 1
       - name: G-Drive Recent
         url: https://drive.google.com/drive/u/0/recent
         indent: 1
       - name: Calendar
-        url: https://calendar.google.com/a/elastic.co
+        url: https://calendar.google.com/a/snyk.io
         indent: 1
       - name: Okta
-        url: https://elastic.okta.com/app/UserHome
-      - name: Workday (E)
-        url: https://wd5.myworkday.com/elastic/d/home.htmld
-        indent: 1
+        url: https://snyk.okta.com/app/UserHome
       - name: Workday
         url: https://www.myworkday.com/snyk/login.flex?redirect=n
       - name: Slacker
         url: https://elastic.slack.com/
       - name: Wiki
-        url: https://wiki.elastic.co
+        url: https://wiki.snyk.io
       - name: Expenses
         url: https://www.concursolutions.com
-      - name: Elastic Github
-        url: https://github.com/elastic
-      - name: demos
-        url: https://github.com/elastic/demos
-        indent: 1
-      - name: PingBoard
-        url: https://elastic.pingboard.com/
-      - name: Workplace Search
-        url: https://workplace.elastic.dev/ws/search
+      - name: Snyk Github
+        url: https://github.com/snyk
   - column: Column 2
     groups:
     - name: Woodworking
