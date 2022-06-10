@@ -61,6 +61,18 @@ bookmark_entries:
       - name: McFeelys
         url: http://www.mcfeelys.com/
 
+
+
+  - column: Column 3
+    groups:
+    - name: Misc
+      links:
+      - name: NYW
+        url: http://www.newyankee.com/
+      - name: ...Tool List
+        url: http://www.normstools.com/index.shtml
+        indent: 1
+
 ---
 
 {% include bookmark_entries %}

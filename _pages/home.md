@@ -141,11 +141,6 @@ bookmark_entries:
       - name: FOG
         url: http://festoolownersgroup.com/
         indent: 1
-      - name: NYW
-        url: http://www.newyankee.com/
-      - name: ...Tool List
-        url: http://www.normstools.com/index.shtml
-        indent: 1
       - name: Wood Whisperer
         url: http://thewoodwhisperer.com/
       - name: Cutlist Optimizer
