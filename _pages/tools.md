@@ -60,14 +60,6 @@ bookmark_entries:
         url: http://www.hartvilletool.com/
       - name: McFeelys
         url: http://www.mcfeelys.com/
-    - name: Cutlist Stuff
-      links:
-      - name: Cutlist Optimizer
-        url: https://www.cutlistoptimizer.com
-      - name: optiCutter
-        url: https://www.opticutter.com
-
-
 
   - column: Column 3
     groups:
