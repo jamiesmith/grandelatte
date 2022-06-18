@@ -514,6 +514,9 @@ bookmark_entries:
       - name: New N/L
         url: https://www.hendrickbmwnorthlake.com/new-inventory/index.htm
         indent: 1
+      - name: New Nearby
+        url: https://www.hendrickcars.com/all-inventory/index.htm?compositeType=new&geoRadius=250&geoZip=28277&geoZip=28277&gvOption=Navigation%20System&make=BMW&saveFacetState=true&sortBy=internetPrice%20asc
+        indent: 1
 ---
 
 {% include bookmark_entries %}
