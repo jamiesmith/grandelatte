@@ -296,7 +296,7 @@ bookmark_entries:
       - name: Docs
         url: https://docs.snyk.io/
         indent: 1
-      - name: Containers
+      - name: Container
         url: https://snyk.io/product/container-vulnerability-management/
         indent: 1
       - name: Careers
