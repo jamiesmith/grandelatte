@@ -130,9 +130,11 @@ bookmark_entries:
         url: https://www.concursolutions.com
       - name: Snyk Github
         url: https://github.com/snyk
+      - name: PurpleDobie GH
+        url: https://github.com/purpledobie
+        indent: 1
       - name: Snyk UI
         url: https://app.snyk.io/org/purple-dobie/
-        indent: 1
   - column: Column 2
     groups:
     - name: Woodworking
