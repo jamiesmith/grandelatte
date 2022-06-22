@@ -124,8 +124,6 @@ bookmark_entries:
         url: https://snyk.slack.com/
       - name: Notion
         url: https://www.notion.so/snyk
-      - name: Wiki
-        url: https://wiki.snyk.io
       - name: Expenses
         url: https://www.concursolutions.com
       - name: Snyk Github
