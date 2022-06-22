@@ -134,7 +134,7 @@ bookmark_entries:
         url: https://github.com/purpledobie
         indent: 1
       - name: Snyk UI
-        url: https://app.snyk.io/org/purple-dobie/
+        url: https://app.snyk.io/
   - column: Column 2
     groups:
     - name: Woodworking
