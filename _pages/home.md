@@ -518,7 +518,7 @@ bookmark_entries:
         url: https://www.hendrickcars.com/all-inventory/index.htm?compositeType=new&geoRadius=250&geoZip=28277&geoZip=28277&&make=BMW&saveFacetState=true&sortBy=internetPrice%20asc
         indent: 1
       - name: Convertibles
-        url: https://www.hendrickcars.com/all-inventory/index.htm?geoZip=28277&geoRadius=0&year=2018-2023&normalBodyStyle=Convertible&make=BMW&make=Audi&make=Mercedes-Benz&make=Porsche&sortBy=internetPrice%20asc
+        url: https://www.hendrickcars.com/all-inventory/index.htm?geoZip=28277&geoRadius=250&year=2018-2023&normalBodyStyle=Convertible&make=BMW&make=Audi&make=Mercedes-Benz&make=Porsche&sortBy=internetPrice%20asc
         indent: 1
 ---
 
