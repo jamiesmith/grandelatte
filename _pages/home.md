@@ -195,6 +195,8 @@ bookmark_entries:
         url: https://www.headfonia.com
       - name: Headphones
         url: https://www.headphones.com
+      - name: HeadAmp
+        url: https://www.headamp.com
     - name: Music
       links:
       - name: Sonos
