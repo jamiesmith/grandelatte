@@ -20,6 +20,9 @@ bookmark_entries:
       - name: My Harmony
         url: https://setup.myharmony.com
         indent: 1
+      - name: Yamaha Hex
+        url: https://www.yamaha.com/ypab/irhex_converter.asp
+        indent: 1
       - name: AV Science Forum
         url: http://www.avsforum.com/forum/index.php
       - name: TiVo Forum
