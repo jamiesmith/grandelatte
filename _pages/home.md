@@ -49,9 +49,11 @@ bookmark_entries:
         url: https://www.icloud.com/#find
         indent: 1
       - name: MacRumors
-        url: http://www.macrumors.com/
+        url: https://www.macrumors.com/
       - name: Engadget
-        url: http://www.engadget.com/
+        url: https://www.engadget.com/
+      - name: Electrek
+        url: https://electrek.co
       - name: Apple Today
         url: https://www.appleworld.today
       - name: 9to5 Mac
@@ -145,10 +147,10 @@ bookmark_entries:
       - name: Festool
         url: https://www.festoolusa.com
       - name: FOG
-        url: http://festoolownersgroup.com/
+        url: https://festoolownersgroup.com/
         indent: 1
       - name: Wood Whisperer
-        url: http://thewoodwhisperer.com/
+        url: https://thewoodwhisperer.com/
       - name: AvidCNC
         url: https://www.avidcnc.com
       - name: Forums
@@ -183,17 +185,17 @@ bookmark_entries:
       - name: Stereophile
         url: https://www.stereophile.com
       - name: Audiophile Style
-        url: http://www.computeraudiophile.com
+        url: https://www.computeraudiophile.com
       - name: Sound & Vision
         url: https://www.soundandvision.com
       - name: Absolute Sound
-        url: http://www.theabsolutesound.com
+        url: https://www.theabsolutesound.com
       - name: HiFi Plus
-        url: http://www.hifiplus.com
+        url: https://www.hifiplus.com
       - name: Analog Planet
-        url: http://www.analogplanet.com
+        url: https://www.analogplanet.com
       - name: What Hi-Fi?
-        url: http://www.whathifi.com
+        url: https://www.whathifi.com
       - name: Headfonia
         url: https://www.headfonia.com
       - name: Headphones
@@ -203,12 +205,12 @@ bookmark_entries:
     - name: Music
       links:
       - name: Sonos
-        url: http://www.sonos.com
+        url: https://www.sonos.com
       - name: Sonos Status
         url: https://status.sonos.com
         indent: 1
       - name: Grateful Dead
-        url: http://www.dead.net/
+        url: https://www.dead.net/
       - name: GDIA
         url: http://www.archive.org/search.php?query=collection%3AGratefulDead%20-%2Fmetadata%2Fstream_only%3A%281%29&sort=-avg_rating%3B-num_reviews
         indent: 1
@@ -219,11 +221,11 @@ bookmark_entries:
         url: https://archive.org/search.php?query=%28format%3A%2824Bit%20FLAC%29%20OR%20%28flac24%29%20OR%20%2824-bit%29%20OR%2024bit%29%20%20AND%20collection%3AGratefulDead
         indent: 1
       - name: SiriusXM
-        url: http://www.sirius.com/
+        url: https://www.sirius.com/
       - name: Acoustic Sounds
-        url: http://store.acousticsounds.com
+        url: https://store.acousticsounds.com
       - name: Music Direct
-        url: http://www.musicdirect.com
+        url: https://www.musicdirect.com
       - name: Audio Advice
         url: https://www.audioadvice.com
     - name: Weather
@@ -249,19 +251,19 @@ bookmark_entries:
         url: https://www.wunderground.com/forecast/us/nc/oak-island/28465?cm_ven=localwx_10day
         indent: 1
       - name: USGS Earthquakes
-        url: http://goo.gl/xKRxeP
+        url: https://goo.gl/xKRxeP
       - name: Arcgis Map
         url: https://www.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6
       - name: Closings & Delays
-        url: http://wcnc.com/closings/
+        url: https://wcnc.com/closings/
     - name: Misc Stuff
       links:
       - name: Time Zones (grid)
-        url: http://www.timeanddate.com/worldclock/custom.html?cities=412,224,248,166,197,438,236,195,239,101,240
+        url: https://www.timeanddate.com/worldclock/custom.html?cities=412,224,248,166,197,438,236,195,239,101,240
       - name: More Times (rows)
         url: https://www.worldtimebuddy.com/?pl=1&lid=4460243,5380748,2643743,1850147&h=4460243
       - name: SpeedTest
-        url: http://www.speedtest.net/
+        url: https://www.speedtest.net/
   - column: Column 3
     groups:
     - name: Food & Beverage
@@ -285,7 +287,7 @@ bookmark_entries:
         url: https://panel.dreamhost.com/?tree=domain.registration
         indent: 1        
       - name: Heroku
-        url: http://www.heroku.com
+        url: https://www.heroku.com
       - name: RAID Calculator
         url: https://www.synology.com/en-uk/support/RAID_calculator
     - name: Kindle
@@ -293,11 +295,11 @@ bookmark_entries:
       - name: Manage your Kindle
         url: https://www.amazon.com/mn/dcw/myx.html
       - name: Top 100 Books
-        url: http://www.amazon.com/gp/bestsellers/digital-text/154606011
+        url: https://www.amazon.com/gp/bestsellers/digital-text/154606011
     - name: BigData, Cloud, IoT
       links:
       - name: Snyk
-        url: http://www.snyk.io
+        url: https://www.snyk.io
       - name: Docs
         url: https://docs.snyk.io/
         indent: 1
@@ -308,7 +310,7 @@ bookmark_entries:
         url: https://www.snyk.io/careers
         indent: 1
       - name: NodeJS
-        url: http://nodejs.org
+        url: https://nodejs.org
       - name: Repo Search
         url: https://grep.app
       - name: Docker
@@ -325,7 +327,7 @@ bookmark_entries:
     - name: Photography
       links:
       - name: Nikon USA
-        url: http://nikonusa.com/
+        url: https://nikonusa.com/
       - name: Camera Labs
         url: https://www.cameralabs.com
       - name: Photo Rumors
@@ -358,31 +360,31 @@ bookmark_entries:
     - name: Road Warrior
       links:
       - name: Misery Map
-        url: http://flightaware.com/miserymap/
+        url: https://flightaware.com/miserymap/
       - name: US Air
-        url: http://usairways.com
+        url: https://usairways.com
       - name: Kayak
         url: https://www.kayak.com/trips
     - name: Game Sites
       links:
       - name: GameSpot
-        url: http://www.gamespot.com/
+        url: https://www.gamespot.com/
       - name: IGN
-        url: http://www.ign.com
+        url: https://www.ign.com
       - name: Playstation
-        url: http://www.playstation.com/
+        url: https://www.playstation.com/
       - name: PSN Status
         url: https://support.us.playstation.com/
         indent: 1
       - name: Xbox
-        url: http://www.xbox.com
+        url: https://www.xbox.com
       - name: Games with Gold
         url: https://www.xbox.com/en-US/live/gold?xr=shellnav#gameswithgold
         indent: 1
       - name: New Leaf Guide
-        url: http://www.thonky.com/animal-crossing-new-leaf/
+        url: https://www.thonky.com/animal-crossing-new-leaf/
       - name: GameFAQs
-        url: http://www.gamefaqs.com/
+        url: https://www.gamefaqs.com/
       - name: PS5 Restock
         url: https://www.tomsguide.com/news/ps5-restock-update
   - column: Column 4
@@ -395,54 +397,54 @@ bookmark_entries:
         url: https://www.facebook.com/akbs1969/
         indent: 1
       - name: twitter
-        url: http://www.twitter.com/
+        url: https://www.twitter.com/
       - name: About Me
-        url: http://about.me/jamiesmith
+        url: https://about.me/jamiesmith
       - name: linked in
-        url: http://www.linkedin.com/
+        url: https://www.linkedin.com/
     - name: Astronomy
       links:
       - name: My Astrobin
-        url: http://www.astrobin.com/users/jamiesmithnc/
+        url: https://www.astrobin.com/users/jamiesmithnc/
       - name: Celestron
-        url: http://www.celestron.com/
+        url: https://www.celestron.com/
       - name: Orion Telescopes
-        url: http://www.telescope.com/
+        url: https://www.telescope.com/
       - name: Astronomics
-        url: http://www.astronomics.com
+        url: https://www.astronomics.com
       - name: OPT Corp
         url: https://www.optcorp.com
       - name: Cloudy Nights
-        url: http://www.cloudynights.com/index.php
+        url: https://www.cloudynights.com/index.php
       - name: Favorites
-        url: http://www.cloudynights.com/index.php?app=core&module=search&do=followed
+        url: https://www.cloudynights.com/index.php?app=core&module=search&do=followed
         indent: 1
       - name: Forums
-        url: http://www.cloudynights.com/index
+        url: https://www.cloudynights.com/index
         indent: 1
       - name: CCD Forum
         url: https://www.cloudynights.com/forum/76-ccdcmos-astro-camera-imaging-processing/
         indent: 1
       - name: Beginner AP
-        url: http://www.cloudynights.com/forum/80-beginning-and-intermediate-imaging/
+        url: https://www.cloudynights.com/forum/80-beginning-and-intermediate-imaging/
         indent: 1
       - name: Astronomy Forum
-        url: http://www.astronomyforum.net/forum.php
+        url: https://www.astronomyforum.net/forum.php
       - name: CAAC
-        url: http://www.charlotteastronomers.org/
+        url: https://www.charlotteastronomers.org/
       - name: FB Page
         url: https://www.facebook.com/CharlotteAstronomers/
         indent: 1
       - name: APOD
-        url: http://apod.nasa.gov/apod/astropix.html
+        url: https://apod.nasa.gov/apod/astropix.html
       - name: PixInsight Forum
-        url: http://pixinsight.com/forum/
+        url: https://pixinsight.com/forum/
       - name: FOV Calc
-        url: http://astronomy.tools/calculators/field_of_view/
+        url: https://astronomy.tools/calculators/field_of_view/
       - name: Astro Imaging Ch
-        url: http://www.theastroimagingchannel.com/
+        url: https://www.theastroimagingchannel.com/
       - name: SB / Paramount
-        url: http://www.bisque.com
+        url: https://www.bisque.com
       - name: Camera Add-On
         url: https://www.bisque.com/wp-content/cs-content/help/theskyx%20pro%20info/welcome.htm#t=camera_add_on.htm
         indent: 1
@@ -463,10 +465,10 @@ bookmark_entries:
       - name: MB Home
         url: https://www.meteoblue.com/en/weather/forecast/seeing/matthews_united-states-of-america_4478334
       - name: CSC-Indian Trail
-        url: http://www.cleardarksky.com/c/IndnTrNCkey.html
+        url: https://www.cleardarksky.com/c/IndnTrNCkey.html
         indent: 1
       - name: Stargazing
-        url: http://www.accuweather.com/us/nc/matthews/28104/outdoor-astronomy.asp
+        url: https://www.accuweather.com/us/nc/matthews/28104/outdoor-astronomy.asp
         indent: 1
       - name: MB GHRO
         url: https://www.meteoblue.com/en/weather/forecast/seeing/taxahaw_united-states-of-america_4598334
@@ -483,37 +485,37 @@ bookmark_entries:
         url: https://clearoutside.com/forecast/34.69/-80.52?view=midday
         indent: 1
       - name: CAAC Weather
-        url: http://charlotteastronomers.org/weather/
+        url: https://charlotteastronomers.org/weather/
         indent: 1
       - name: GHRO - 10 day
         url: https://www.wunderground.com/forecast/us/sc/taxahaw?cm_ven=localwx_10day
         indent: 1
       - name: CSC GHRO
-        url: http://www.cleardarksky.com/c/TaxaSCkey.html
+        url: https://www.cleardarksky.com/c/TaxaSCkey.html
         indent: 1
     - name: Cars
       links:
       - name: Motortrend
         url: https://www.motortrend.com
       - name: Mini Forums
-        url: http://www.northamericanmotoring.com
+        url: https://www.northamericanmotoring.com
       - name: Porsche
-        url: http://www.porsche.com/usa/
+        url: https://www.porsche.com/usa/
       - name: Macan Manual
-        url: http://www.porscheownersmanuals.com/2017-macan-manual/table-of-contents
+        url: https://www.porscheownersmanuals.com/2017-macan-manual/table-of-contents
         indent: 1
       - name: Hendrick Porsche
-        url: http://www.hendrickporsche.com/index.htm
+        url: https://www.hendrickporsche.com/index.htm
         indent: 1
       - name: Used Porsche
-        url: http://www.hendrickcars.com/all-inventory/index.htm?geoZip=28277&geoRadius=100&search=&compositeType=certified&make=Porsche&geoZip=28277&geoRadius=50&sortBy=internetPrice+asc&saveFacetState=true&lastFacetInteracted=
+        url: https://www.hendrickcars.com/all-inventory/index.htm?geoZip=28277&geoRadius=100&search=&compositeType=certified&make=Porsche&geoZip=28277&geoRadius=50&sortBy=internetPrice+asc&saveFacetState=true&lastFacetInteracted=
         indent: 2
       - name: Honda Cars
-        url: http://automobiles.honda.com
+        url: https://automobiles.honda.com
       - name: BMW
         url: https://www.bmwusa.com
       - name: BMW CPO
-        url: http://www.hendrickcars.com/all-inventory/index.htm?geoZip=28277&geoRadius=100&search=&compositeType=certified&make=BMW&geoZip=28277&geoRadius=50&sortBy=internetPrice+asc&saveFacetState=true&lastFacetInteracted=
+        url: https://www.hendrickcars.com/all-inventory/index.htm?geoZip=28277&geoRadius=100&search=&compositeType=certified&make=BMW&geoZip=28277&geoRadius=50&sortBy=internetPrice+asc&saveFacetState=true&lastFacetInteracted=
         indent: 1
       - name: New
         url: https://www.hendrickbmwcharlotte.com/new-inventory/index.htm
