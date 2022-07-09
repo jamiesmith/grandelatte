@@ -52,8 +52,6 @@ bookmark_entries:
         url: https://www.macrumors.com/
       - name: Engadget
         url: https://www.engadget.com/
-      - name: Electrek
-        url: https://electrek.co
       - name: Apple Today
         url: https://www.appleworld.today
       - name: 9to5 Mac
@@ -495,6 +493,8 @@ bookmark_entries:
         indent: 1
     - name: Cars
       links:
+      - name: Electrek
+        url: https://electrek.co
       - name: Motortrend
         url: https://www.motortrend.com
       - name: Mini Forums
