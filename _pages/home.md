@@ -429,7 +429,7 @@ bookmark_entries:
       - name: Astronomy Forum
         url: https://www.astronomyforum.net/forum.php
       - name: CAAC
-        url: https://www.charlotteastronomers.org/
+        url: http://www.charlotteastronomers.org/
       - name: FB Page
         url: https://www.facebook.com/CharlotteAstronomers/
         indent: 1
