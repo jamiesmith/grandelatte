@@ -200,8 +200,12 @@ bookmark_entries:
         url: https://www.headphones.com
       - name: HeadAmp
         url: https://www.headamp.com
+      - name: HeadFonics
+        url: https://www.headfonics.com
     - name: Music
       links:
+      - name: Roon
+        url: https://roonlabs.com
       - name: Sonos
         url: https://www.sonos.com
       - name: Sonos Status
