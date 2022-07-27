@@ -196,12 +196,12 @@ bookmark_entries:
         url: https://www.whathifi.com
       - name: Headfonia
         url: https://www.headfonia.com
+      - name: HeadFonics
+        url: https://www.headfonics.com
       - name: Headphones
         url: https://www.headphones.com
       - name: HeadAmp
         url: https://www.headamp.com
-      - name: HeadFonics
-        url: https://www.headfonics.com
     - name: Music
       links:
       - name: Roon
