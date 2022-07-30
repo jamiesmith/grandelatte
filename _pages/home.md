@@ -206,6 +206,9 @@ bookmark_entries:
       links:
       - name: Roon
         url: https://roonlabs.com
+      - name: Forum
+        url: https://community.roonlabs.com
+        indent: 1
       - name: Sonos
         url: https://www.sonos.com
       - name: Sonos Status
