@@ -83,26 +83,6 @@ bookmark_entries:
       - name: Lexus All Opts
         url: http://www.hendrickcars.com/all-inventory/index.htm?geoZip=28277&geoRadius=250&search=&compositeType=&year=2018&year=2017&year=2016&year=2015&year=2014&make=Lexus&model=GS+200t&model=GS+350&model=GS+F&model=IS+200t&model=IS+250&model=IS+250C&model=IS+300&model=IS+350&model=NX+200t&model=RC+300&model=RC+350&model=RC+F&odometer=1-60000&gvOption=Navigation+System&geoZip=28277&geoRadius=250&sortBy=internetPrice+asc
         indent: 1
-    - name: Misc Java
-      links:
-      - name: apache
-        url: http://www.apache.org/
-      - name: Struts
-        url: http://struts.apache.org/
-        indent: 1
-      - name: Maven
-        url: http://maven.apache.org/
-        indent: 1
-      - name: Cassandra
-        url: http://cassandra.apache.org/
-        indent: 1
-      - name: JBoss
-        url: http://www.jboss.org/
-      - name: Hibernate
-        url: http://www.hibernate.org/
-        indent: 1
-      - name: JUnit
-        url: http://junit.org
     - name: Utilities
       links:
       - name: Java Regex
@@ -113,6 +93,16 @@ bookmark_entries:
         url: http://jsfiddle.net
       - name: Mockaroo
         url: http://www.mockaroo.com
+    - name: Audio Gear
+      links:
+      - name: Decware
+        url: https://www.decware.com
+      - name: McIntosh
+        url: http://mcintoshlabs.com/
+      - name: Martin Logan
+        url: http://www.martinlogan.com
+      - name: Marantz
+        url: http://us.marantz.com/default.asp
   - column: Column 3
     groups:
     - name: Lego Sites
@@ -160,14 +150,26 @@ bookmark_entries:
         url: http://talk.maemo.org/
   - column: Column 4
     groups:
-    - name: Old Home Theater
+    - name: Misc Java
       links:
-      - name: McIntosh
-        url: http://mcintoshlabs.com/
-      - name: Martin Logan
-        url: http://www.martinlogan.com
-      - name: Marantz
-        url: http://us.marantz.com/default.asp
+      - name: apache
+        url: http://www.apache.org/
+      - name: Struts
+        url: http://struts.apache.org/
+        indent: 1
+      - name: Maven
+        url: http://maven.apache.org/
+        indent: 1
+      - name: Cassandra
+        url: http://cassandra.apache.org/
+        indent: 1
+      - name: JBoss
+        url: http://www.jboss.org/
+      - name: Hibernate
+        url: http://www.hibernate.org/
+        indent: 1
+      - name: JUnit
+        url: http://junit.org
     - name: Misc Unix
       links:
       - name: Well Known Ports
