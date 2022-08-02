@@ -60,6 +60,27 @@ bookmark_entries:
         url: http://www.hartvilletool.com/
       - name: McFeelys
         url: http://www.mcfeelys.com/
+    - name: Fabrication resources
+      links:
+      - name: FSL Material Tests
+        url: https://fslaser.com/material-test/
+      - name: Boxes
+        url: https://www.festi.info/boxes.py/
+      - name: More Boxes
+        url: https://www.makercase.com/#/
+        indent: 1
+      - name: Cups
+        url: https://www.saveacup.com
+      - name: Laser Materials
+        url: https://www.gravotech.us/products/materials-consumables/engraving-materials
+      - name: Marking Spray
+        url: https://enduramark.com/collections/glass-marking/products/laser-marking-spray-can-charcoal-for-glass-ceramic
+      - name: Steel services
+        url: https://www.2twentytwosteel.com
+      - name: Epoxy forms
+        url: https://conceptthirteen.ca/collections/no-seal-reusable-form/products/no-seal-reusable-form-10-x-18-x-3
+      - name: Chair pattern
+        url: https://make.better.furniture
 
   - column: Column 3
     groups:
