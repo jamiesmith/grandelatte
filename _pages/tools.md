@@ -81,6 +81,8 @@ bookmark_entries:
         url: https://conceptthirteen.ca/collections/no-seal-reusable-form/products/no-seal-reusable-form-10-x-18-x-3
       - name: Chair pattern
         url: https://make.better.furniture
+      - name: Stainless Depot
+        url: https://thestainlessdepotcompany.com/
 
   - column: Column 3
     groups:
