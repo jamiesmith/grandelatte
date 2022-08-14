@@ -504,8 +504,6 @@ bookmark_entries:
         url: https://electrek.co
       - name: Motortrend
         url: https://www.motortrend.com
-      - name: Mini Forums
-        url: https://www.northamericanmotoring.com
       - name: Porsche
         url: https://www.porsche.com/usa/
       - name: Macan Manual
