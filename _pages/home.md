@@ -390,8 +390,6 @@ bookmark_entries:
         url: https://www.thonky.com/animal-crossing-new-leaf/
       - name: GameFAQs
         url: https://www.gamefaqs.com/
-      - name: PS5 Restock
-        url: https://www.tomsguide.com/news/ps5-restock-update
   - column: Column 4
     groups:
     - name: Social Ties
