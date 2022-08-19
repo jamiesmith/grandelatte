@@ -473,13 +473,15 @@ bookmark_entries:
       - name: Stargazing
         url: https://www.accuweather.com/us/nc/matthews/28104/outdoor-astronomy.asp
         indent: 1
+      - name: CAAC Weather
+        url: https://charlotteastronomers.org/weather/
       - name: MB GHRO
         url: https://www.meteoblue.com/en/weather/forecast/seeing/taxahaw_united-states-of-america_4598334
       - name: AstroSpheric
         url: https://www.astrospheric.com/?Latitude=34.695736&Longitude=-80.536855
         indent: 1
-      - name: GHRO - Hourly
-        url: https://www.wunderground.com/hourly/us/sc/taxahaw/date/2018-09-23?cm_ven=localwx_hour
+      - name: CSC GHRO
+        url: https://www.cleardarksky.com/c/TaxaSCkey.html
         indent: 1
       - name: GHRO - SG
         url: https://www.accuweather.com/en/us/taxahaw-sc/29067/astronomy-weather/2131162
@@ -487,14 +489,11 @@ bookmark_entries:
       - name: GHRO - Clear Out
         url: https://clearoutside.com/forecast/34.69/-80.52?view=midday
         indent: 1
-      - name: CAAC Weather
-        url: https://charlotteastronomers.org/weather/
+      - name: GHRO - Hourly
+        url: https://www.wunderground.com/hourly/us/sc/taxahaw/date/2018-09-23?cm_ven=localwx_hour
         indent: 1
       - name: GHRO - 10 day
         url: https://www.wunderground.com/forecast/us/sc/taxahaw?cm_ven=localwx_10day
-        indent: 1
-      - name: CSC GHRO
-        url: https://www.cleardarksky.com/c/TaxaSCkey.html
         indent: 1
     - name: Cars
       links:
