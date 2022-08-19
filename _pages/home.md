@@ -477,6 +477,7 @@ bookmark_entries:
         url: https://charlotteastronomers.org/weather/
       - name: MB GHRO
         url: https://www.meteoblue.com/en/weather/forecast/seeing/taxahaw_united-states-of-america_4598334
+        indent: 1
       - name: AstroSpheric
         url: https://www.astrospheric.com/?Latitude=34.695736&Longitude=-80.536855
         indent: 1
