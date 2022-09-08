@@ -308,6 +308,9 @@ bookmark_entries:
       - name: Docs
         url: https://docs.snyk.io/
         indent: 1
+      - name: Blogs
+        url: https://docs.snyk.io/blog/
+        indent: 1
       - name: Container
         url: https://snyk.io/product/container-vulnerability-management/
         indent: 1
