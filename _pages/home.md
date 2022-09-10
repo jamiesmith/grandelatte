@@ -41,6 +41,8 @@ bookmark_entries:
         url: http://www.crutchfield.com
       - name: Denon
         url: https://usa.denon.com/en-us
+      - name: Audio Advice
+        url: https://www.audioadvice.com
     - name: Gadgets!
       links:
       - name: Apple
@@ -231,8 +233,6 @@ bookmark_entries:
         url: https://store.acousticsounds.com
       - name: Music Direct
         url: https://www.musicdirect.com
-      - name: Audio Advice
-        url: https://www.audioadvice.com
     - name: Weather
       links:
       - name: Matthews T&D
