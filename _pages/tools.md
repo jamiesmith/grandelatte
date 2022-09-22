@@ -83,6 +83,8 @@ bookmark_entries:
         url: https://make.better.furniture
       - name: Stainless Depot
         url: https://thestainlessdepotcompany.com/
+      - name: 3axis
+        url: https://3axis.co
 
   - column: Column 3
     groups:
