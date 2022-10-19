@@ -106,6 +106,8 @@ bookmark_entries:
       - name: Dashboard
         url: http://krypter:5050/kitchen
         indent: 1
+      - name: Irrigation
+        url: https://app.rach.io/login
       - name: Remote Desktop
         url: https://remotedesktop.google.com/access
     - name: Work Stuff
