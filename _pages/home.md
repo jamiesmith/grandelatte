@@ -423,21 +423,10 @@ bookmark_entries:
       - name: OPT Corp
         url: https://www.optcorp.com
       - name: Cloudy Nights
-        url: https://www.cloudynights.com/index.php
+        url: https://www.cloudynights.com/index
       - name: Favorites
         url: https://www.cloudynights.com/index.php?app=core&module=search&do=followed
         indent: 1
-      - name: Forums
-        url: https://www.cloudynights.com/index
-        indent: 1
-      - name: CCD Forum
-        url: https://www.cloudynights.com/forum/76-ccdcmos-astro-camera-imaging-processing/
-        indent: 1
-      - name: Beginner AP
-        url: https://www.cloudynights.com/forum/80-beginning-and-intermediate-imaging/
-        indent: 1
-      - name: Astronomy Forum
-        url: https://www.astronomyforum.net/forum.php
       - name: CAAC
         url: http://www.charlotteastronomers.org/
       - name: FB Page
