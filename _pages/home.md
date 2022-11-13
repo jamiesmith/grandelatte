@@ -47,9 +47,6 @@ bookmark_entries:
       links:
       - name: Apple
         url: http://www.apple.com/
-      - name: Find My...
-        url: https://www.icloud.com/#find
-        indent: 1
       - name: MacRumors
         url: https://www.macrumors.com/
       - name: Engadget
