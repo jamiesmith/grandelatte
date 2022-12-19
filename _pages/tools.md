@@ -96,6 +96,17 @@ bookmark_entries:
         url: http://www.normstools.com/index.shtml
         indent: 1
 
+    - name: 3d Printing
+      links:
+      - name: Printables
+        url: https://www.printables.com
+      - name: Thangs
+        url: https://www.thangs.com
+      - name: Cults3d
+        url: https://www.cults3d.com
+      - name: Thingiverse
+        url: https://www.thingiverse.com
+
 ---
 
 {% include bookmark_entries %}
