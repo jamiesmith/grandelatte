@@ -108,7 +108,8 @@ bookmark_entries:
         url: https://www.cults3d.com
       - name: Thingiverse
         url: https://www.thingiverse.com
-
+      - name: Gridfinity
+        url: https://gridfinity.xyz
 ---
 
 {% include bookmark_entries %}
