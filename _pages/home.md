@@ -43,10 +43,10 @@ bookmark_entries:
         url: https://usa.denon.com/en-us
       - name: Audio Advice
         url: https://www.audioadvice.com
-    - name: Gadgets!
-      links:
       - name: Apple
         url: http://www.apple.com/
+    - name: Gadgets!
+      links:
       - name: MacRumors
         url: https://www.macrumors.com/
       - name: Engadget
