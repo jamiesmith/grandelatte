@@ -100,6 +100,8 @@ bookmark_entries:
     groups:
     - name: 3d Printing
       links:
+      - name: BambuLab forums
+        url: https://forum.bambulab.com
       - name: Printables
         url: https://www.printables.com
       - name: Thangs
