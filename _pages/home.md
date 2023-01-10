@@ -25,8 +25,6 @@ bookmark_entries:
         indent: 1
       - name: AV Science Forum
         url: http://www.avsforum.com/forum/index.php
-      - name: TiVo Forum
-        url: http://www.tivocommunity.com/tivo-vb
       - name: Yamaha Electronics
         url: http://www.yamaha.com/yec/
       - name: MonoPrice
