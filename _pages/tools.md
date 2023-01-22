@@ -112,6 +112,8 @@ bookmark_entries:
         url: https://www.thingiverse.com
       - name: Gridfinity
         url: https://gridfinity.xyz
+      - name: Tinkercad
+        url: https://www.tinkercad.com/dashboard
 ---
 
 {% include bookmark_entries %}
