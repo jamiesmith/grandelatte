@@ -104,7 +104,7 @@ bookmark_entries:
         url: https://bambulab.com
       - name: BambuLab forums
         url: https://forum.bambulab.com
-	indent: 1
+        indent: 1
       - name: Printables
         url: https://www.printables.com
       - name: Thangs
