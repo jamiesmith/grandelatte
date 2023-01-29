@@ -270,8 +270,6 @@ bookmark_entries:
     groups:
     - name: Food & Beverage
       links:
-      - name: Distiller Forum
-        url: https://homedistiller.org/forum
       - name: RoastPATH Beta
         url: https://portal.roastpath.com/forums/testers
       - name: RoastPATH Forum
