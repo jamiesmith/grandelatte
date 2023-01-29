@@ -296,7 +296,7 @@ bookmark_entries:
         url: https://www.amazon.com/mn/dcw/myx.html
       - name: Top 100 Books
         url: https://www.amazon.com/gp/bestsellers/digital-text/154606011
-    - name: BigData, Cloud, IoT
+    - name: DevOps
       links:
       - name: Snyk
         url: https://www.snyk.io
