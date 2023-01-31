@@ -158,6 +158,8 @@ bookmark_entries:
         indent: 1
       - name: Mach4
         url: https://www.machsupport.com
+      - name: Fusion360 API Docs
+        url: https://help.autodesk.com/view/fusion360/ENU/?guid=GUID-7B5A90C8-E94C-48DA-B16B-430729B734DC
       - name: GCode Viewer
         url: https://ncviewer.com
     - name: Movies
