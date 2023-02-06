@@ -153,9 +153,6 @@ bookmark_entries:
       - name: Forums
         url: https://www.cnczone.com/forums/avid-cnc/
         indent: 1
-      - name: Facebook Group
-        url: https://www.facebook.com/groups/834145353394488/
-        indent: 1
       - name: Mach4
         url: https://www.machsupport.com
       - name: Fusion360 API Docs
