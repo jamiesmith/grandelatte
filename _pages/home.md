@@ -38,7 +38,7 @@ bookmark_entries:
       - name: Crutchfield
         url: http://www.crutchfield.com
       - name: Denon
-        url: https://usa.denon.com/en-us
+        url: https://www.denon.com/en-us/
       - name: Audio Advice
         url: https://www.audioadvice.com
       - name: Apple
