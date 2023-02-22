@@ -39,7 +39,7 @@ bookmark_entries:
       - name: SawStop
         url: http://www.sawstop.com
       - name: DEWALT
-        url: http://www.dewalt.com/us/core/
+        url: http://www.dewalt.com/
   - column: Column 2
     groups:
     - name: Tool Sites
