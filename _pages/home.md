@@ -126,8 +126,8 @@ bookmark_entries:
         url: https://snyk.slack.com/
       - name: Notion
         url: https://www.notion.so/snyk
-      - name: Expenses
-        url: https://www.concursolutions.com
+      - name: Intranet
+        url: https://snyk.interactgo.com
       - name: Snyk Github
         url: https://github.com/snyk
       - name: PurpleDobie GH
