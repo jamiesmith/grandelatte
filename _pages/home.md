@@ -519,6 +519,10 @@ bookmark_entries:
       - name: Convertibles
         url: https://www.hendrickcars.com/all-inventory/index.htm?geoZip=28277&geoRadius=250&year=2018-2023&normalBodyStyle=Convertible&make=BMW&make=Audi&make=Mercedes-Benz&make=Porsche&sortBy=internetPrice%20asc
         indent: 1
+      - name: Obsessed Garage
+        url: https://www.obsessedgarage.com
+      - name: Griot's Garage
+        url: https://www.griotsgarage.com
 ---
 
 {% include bookmark_entries %}
