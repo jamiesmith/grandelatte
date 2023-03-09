@@ -309,6 +309,9 @@ bookmark_entries:
       - name: Container
         url: https://snyk.io/product/container-vulnerability-management/
         indent: 1
+      - name: SSCS
+        url: https://snyk.io/solutions/software-supply-chain-security/
+        indent: 1
       - name: Careers
         url: https://www.snyk.io/careers
         indent: 1
