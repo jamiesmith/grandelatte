@@ -140,7 +140,7 @@ bookmark_entries:
     - name: Woodworking
       links:
       - name: NC Woodworker
-        url: https://www.ncwoodworker.net/
+        url: https://ncwoodworker.net/forums/index.php
       - name: Festool
         url: https://www.festoolusa.com
       - name: FOG
