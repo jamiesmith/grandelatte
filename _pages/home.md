@@ -49,8 +49,6 @@ bookmark_entries:
         url: https://www.macrumors.com/
       - name: Engadget
         url: https://www.engadget.com/
-      - name: Apple Today
-        url: https://www.appleworld.today
       - name: 9to5 Mac
         url: https://9to5mac.com
       - name: 9to5 Toys
