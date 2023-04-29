@@ -241,8 +241,6 @@ bookmark_entries:
       - name: 10 Day
         url: https://www.wunderground.com/forecast/us/nc/matthews/28104?cm_ven=localwx_10day
         indent: 1
-      - name: DarkSky
-        url: https://darksky.net/forecast/35.0654,-80.7252/us12/en
       - name: WU (Wilmington)
         url: https://www.wunderground.com/weather/us/nc/wilmington/28465?cm_ven=localwx_today
       - name: Hourly
