@@ -55,6 +55,8 @@ bookmark_entries:
         url: https://9to5toys.com
       - name: Macworld
         url: https://www.macworld.com/
+      - name: Cool Things
+        url: https://www.coolthings.com
       - name: Gizmodo
         url: https://gizmodo.com
       - name: Gear Patrol
