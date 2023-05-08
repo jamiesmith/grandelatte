@@ -191,7 +191,7 @@ bookmark_entries:
       - name: Analog Planet
         url: https://www.analogplanet.com
       - name: What Hi-Fi?
-        url: https://www.whathifi.com
+        url: https://www.whathifi.com/us
       - name: Headfonia
         url: https://www.headfonia.com
       - name: HeadFonics
