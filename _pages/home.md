@@ -330,10 +330,6 @@ bookmark_entries:
         indent: 1
     - name: Photography
       links:
-      - name: Nikon USA
-        url: https://nikonusa.com/
-      - name: Camera Labs
-        url: https://www.cameralabs.com
       - name: Photo Rumors
         url: https://photorumors.com/
       - name: Alpha Rumors
