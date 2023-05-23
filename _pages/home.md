@@ -390,7 +390,7 @@ bookmark_entries:
     - name: Social Ties
       links:
       - name: facebook
-        url: https://www.facebook.com/?sk=h_chr
+        url: https://www.facebook.com/
       - name: Amy
         url: https://www.facebook.com/akbs1969/
         indent: 1
