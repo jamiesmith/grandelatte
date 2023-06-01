@@ -385,6 +385,8 @@ bookmark_entries:
         url: https://www.thonky.com/animal-crossing-new-leaf/
       - name: GameFAQs
         url: https://www.gamefaqs.com/
+      - name: TotK Guide
+        url: https://www.ign.com/wikis/the-legend-of-zelda-tears-of-the-kingdom/	
   - column: Column 4
     groups:
     - name: Social Ties
