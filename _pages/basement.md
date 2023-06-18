@@ -150,26 +150,6 @@ bookmark_entries:
         url: http://talk.maemo.org/
   - column: Column 4
     groups:
-    - name: Misc Java
-      links:
-      - name: apache
-        url: http://www.apache.org/
-      - name: Struts
-        url: http://struts.apache.org/
-        indent: 1
-      - name: Maven
-        url: http://maven.apache.org/
-        indent: 1
-      - name: Cassandra
-        url: http://cassandra.apache.org/
-        indent: 1
-      - name: JBoss
-        url: http://www.jboss.org/
-      - name: Hibernate
-        url: http://www.hibernate.org/
-        indent: 1
-      - name: JUnit
-        url: http://junit.org
     - name: Misc Unix
       links:
       - name: Well Known Ports
