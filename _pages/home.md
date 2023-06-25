@@ -57,6 +57,8 @@ bookmark_entries:
         url: https://www.macworld.com/
       - name: Cool Things
         url: https://www.coolthings.com
+      - name: AWT
+        url: https://appleworld.today/
       - name: Gizmodo
         url: https://gizmodo.com
       - name: Gear Patrol
