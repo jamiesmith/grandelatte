@@ -388,7 +388,9 @@ bookmark_entries:
       - name: GameFAQs
         url: https://www.gamefaqs.com/
       - name: TotK Guide
-        url: https://www.ign.com/wikis/the-legend-of-zelda-tears-of-the-kingdom/	
+        url: https://www.ign.com/wikis/the-legend-of-zelda-tears-of-the-kingdom/
+      - name: TotK Map
+        url: https://www.zeldadungeon.net/tears-of-the-kingdom-interactive-map/?l=Surface&z=4&x=348&y=-302&m=Hinox_G32
   - column: Column 4
     groups:
     - name: Social Ties
