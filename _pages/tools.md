@@ -109,6 +109,9 @@ bookmark_entries:
         url: https://www.printables.com
       - name: Thangs
         url: https://www.thangs.com
+      - name: GF@thangs
+        url: https://gridfinity.xyz
+        indent: 1
       - name: Cults3d
         url: https://www.cults3d.com
       - name: Thingiverse
