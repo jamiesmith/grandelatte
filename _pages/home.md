@@ -161,6 +161,8 @@ bookmark_entries:
         url: https://help.autodesk.com/view/fusion360/ENU/?guid=GUID-7B5A90C8-E94C-48DA-B16B-430729B734DC
       - name: GCode Viewer
         url: https://ncviewer.com
+      - name: Home Depot ad
+        url: https://www.homedepot.com/c/localad
     - name: Movies
       links:
       - name: IMDB
