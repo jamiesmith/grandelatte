@@ -1,6 +1,7 @@
 ---
 layout: splash
 permalink: /tools
+title: Tools
 header:
   overlay_color_off: "#5e616c"
   <!-- overlay_image: /assets/images/homepage/horizontal-mw-teaser.jpg -->
