@@ -421,8 +421,8 @@ bookmark_entries:
         url: https://www.telescope.com/
       - name: Astronomics
         url: https://www.astronomics.com
-      - name: OPT Corp
-        url: https://www.optcorp.com
+      - name: Agena Astro
+        url: https://agenaastro.com/
       - name: Cloudy Nights
         url: https://www.cloudynights.com/index
       - name: Favorites
