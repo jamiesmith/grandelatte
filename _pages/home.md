@@ -183,6 +183,8 @@ bookmark_entries:
         url: https://www.redbox.com/movies
       - name: JustWatch
         url: https://www.justwatch.com/
+      - name: Reel Good
+        url: https://reelgood.com
     - name: AudioHolic
       links:
       - name: Stereophile
