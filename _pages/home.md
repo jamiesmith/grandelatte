@@ -293,8 +293,6 @@ bookmark_entries:
       - name: Domains
         url: https://panel.dreamhost.com/?tree=domain.registration
         indent: 1        
-      - name: Heroku
-        url: https://www.heroku.com
       - name: RAID Calculator
         url: https://www.synology.com/en-uk/support/RAID_calculator
     - name: Kindle
