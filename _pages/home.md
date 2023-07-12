@@ -181,10 +181,10 @@ bookmark_entries:
         url: https://www.hulu.com
       - name: RedBox
         url: https://www.redbox.com/movies
-      - name: JustWatch
-        url: https://www.justwatch.com/
       - name: Reel Good
         url: https://reelgood.com
+      - name: JustWatch
+        url: https://www.justwatch.com/
     - name: AudioHolic
       links:
       - name: Stereophile
@@ -362,8 +362,6 @@ bookmark_entries:
         indent: 1
       - name: DPReview
         url: https://www.dpreview.com/
-      - name: DPS
-        url: https://www.digital-photography-school.com/
     - name: Road Warrior
       links:
       - name: Misery Map
