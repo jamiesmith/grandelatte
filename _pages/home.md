@@ -510,21 +510,6 @@ bookmark_entries:
         url: https://automobiles.honda.com
       - name: BMW
         url: https://www.bmwusa.com
-      - name: BMW CPO
-        url: https://www.hendrickcars.com/all-inventory/index.htm?geoZip=28277&geoRadius=100&search=&compositeType=certified&make=BMW&geoZip=28277&geoRadius=50&sortBy=internetPrice+asc&saveFacetState=true&lastFacetInteracted=
-        indent: 1
-      - name: New
-        url: https://www.hendrickbmwcharlotte.com/new-inventory/index.htm
-        indent: 1
-      - name: New N/L
-        url: https://www.hendrickbmwnorthlake.com/new-inventory/index.htm
-        indent: 1
-      - name: New Nearby
-        url: https://www.hendrickcars.com/all-inventory/index.htm?compositeType=new&geoRadius=250&geoZip=28277&geoZip=28277&&make=BMW&saveFacetState=true&sortBy=internetPrice%20asc
-        indent: 1
-      - name: Convertibles
-        url: https://www.hendrickcars.com/all-inventory/index.htm?geoZip=28277&geoRadius=250&year=2018-2023&normalBodyStyle=Convertible&make=BMW&make=Audi&make=Mercedes-Benz&make=Porsche&sortBy=internetPrice%20asc
-        indent: 1
       - name: Obsessed Garage
         url: https://www.obsessedgarage.com
       - name: Members
