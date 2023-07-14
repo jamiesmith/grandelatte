@@ -233,7 +233,7 @@ bookmark_entries:
         url: https://archive.org/search.php?query=%28format%3A%2824Bit%20FLAC%29%20OR%20%28flac24%29%20OR%20%2824-bit%29%20OR%2024bit%29%20%20AND%20collection%3AGratefulDead
         indent: 1
       - name: SiriusXM
-        url: https://www.sirius.com/
+        url: https://www.siriusxm.com/
       - name: Acoustic Sounds
         url: https://store.acousticsounds.com
       - name: Music Direct
