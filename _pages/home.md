@@ -366,8 +366,6 @@ bookmark_entries:
       links:
       - name: Misery Map
         url: https://flightaware.com/miserymap/
-      - name: US Air
-        url: https://usairways.com
       - name: Kayak
         url: https://www.kayak.com/trips
     - name: Game Sites
