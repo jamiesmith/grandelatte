@@ -86,8 +86,11 @@ bookmark_entries:
         url: https://thestainlessdepotcompany.com/
       - name: 3axis
         url: https://3axis.co
-      - name: Titan Academy
+      - name: Titans of CNC
+        url: https://www.titansofcnc.com
+      - name: Academy
         url: https://academy.titansofcnc.com
+        indent: 1
 
   - column: Column 3
     groups:
