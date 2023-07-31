@@ -335,6 +335,8 @@ bookmark_entries:
       - name: Official Images
         url: https://github.com/docker-library/official-images
         indent: 1
+      - name: Side of SLSA
+        url: https://slsa.dev/spec/v1.0/onepage
     - name: Photography
       links:
       - name: Photo Rumors
