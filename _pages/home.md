@@ -497,9 +497,6 @@ bookmark_entries:
         url: https://www.motortrend.com
       - name: Porsche
         url: https://www.porsche.com/usa/
-      - name: Macan Manual
-        url: https://www.porscheownersmanuals.com/2017-macan-manual/table-of-contents
-        indent: 1
       - name: Hendrick Porsche
         url: https://www.hendrickporsche.com/index.htm
         indent: 1
