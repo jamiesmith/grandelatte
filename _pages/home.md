@@ -405,8 +405,6 @@ bookmark_entries:
         indent: 1
       - name: twitter
         url: https://www.twitter.com/
-      - name: About Me
-        url: https://about.me/jamiesmith
       - name: linked in
         url: https://www.linkedin.com/
     - name: Astronomy
