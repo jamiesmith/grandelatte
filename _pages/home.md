@@ -179,8 +179,6 @@ bookmark_entries:
         url: https://www.netflix.com
       - name: Hulu
         url: https://www.hulu.com
-      - name: RedBox
-        url: https://www.redbox.com/movies
       - name: Reel Good
         url: https://reelgood.com
       - name: JustWatch
