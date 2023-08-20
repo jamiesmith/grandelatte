@@ -423,7 +423,7 @@ bookmark_entries:
         url: https://www.cloudynights.com/index.php?app=core&module=search&do=followed
         indent: 1
       - name: CAAC
-        url: http://www.charlotteastronomers.org/
+        url: http://charlotteastronomers.org/
       - name: FB Page
         url: https://www.facebook.com/CharlotteAstronomers/
         indent: 1
