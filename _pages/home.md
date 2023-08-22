@@ -446,6 +446,8 @@ bookmark_entries:
       - name: Forums
         url: https://www.bisque.com/forums/
         indent: 1
+      - name: NINA
+        url: https://nighttime-imaging.eu
       - name: Telescopius
         url: https://telescopius.com
       - name: ZWO ASI
