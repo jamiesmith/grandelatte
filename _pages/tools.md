@@ -101,6 +101,10 @@ bookmark_entries:
       - name: ...Tool List
         url: http://www.normstools.com/index.shtml
         indent: 1
+    - name: Friggin Lasers
+      links:
+      - name: Fiber settings
+        url: https://www.omglaser.com/laser-settings/
 
   - column: Column 4
     groups:
