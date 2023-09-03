@@ -128,6 +128,13 @@ bookmark_entries:
         url: https://www.thingiverse.com
       - name: Gridfinity
         url: https://gridfinity.xyz
+    - name: Laser Engraving
+      links:
+      - name: Imag-r
+        url: https://www.imag-r.com
+      - name: Laser Pics
+        url: https://www.laser-pics.com
+
 ---
 
 {% include bookmark_entries %}
