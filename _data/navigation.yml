@@ -28,8 +28,8 @@ sections:
     url: /tools
 
 ribbon:
-  - title: "AstroSaloon Blog"
-    url: https://www.astrosaloon.com
+  - title: "Astrophotography Blog"
+    url: https://www.mostlymono.com
     target: "_blank"
   - title: "My Astrobin"
     url: http://www.astrobin.com/users/jamiesmithnc/
