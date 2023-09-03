@@ -14,7 +14,7 @@ locale                   : "en-US"
 title                    : "GrandeLatte - Jamie's Bookmarker"
 title_separator          : "-"
 name                     : &name "Jamie Smith" # &name is a YAML anchor which can be *referenced later
-description              : &description "Join us as we photograph the stars, drink booze, and listen to music."
+description              : &description "Join us as we photograph the night sky."
 url                      : https://www.grandelatte.com 
 cup_logo                 : /assets/images/homepage/logo.png
 baseurl                  : 
