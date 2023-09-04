@@ -28,7 +28,7 @@ sections:
     url: /tools
 
 ribbon:
-  - title: "Astrophotography Blog"
+  - title: "Mostly Mono astro"
     url: https://www.mostlymono.com
     target: "_blank"
   - title: "My Astrobin"
