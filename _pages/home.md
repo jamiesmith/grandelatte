@@ -309,6 +309,9 @@ bookmark_entries:
       - name: Blogs
         url: https://www.snyk.io/blog/
         indent: 1
+      - name: OSS/SCA
+        url: https://snyk.io/product/open-source-security-management/
+        indent: 1
       - name: Container
         url: https://snyk.io/product/container-vulnerability-management/
         indent: 1
