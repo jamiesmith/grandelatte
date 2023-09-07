@@ -104,7 +104,7 @@ analytics:
 author:
   name             : *name # *name is a YAML reference pointing to the &anchor earlier
   avatar           : "/assets/images/homepage/choctini.jpg"
-  bio              : "Software Architect/Explaineer/Bar Geek"
+  bio              : "Maker, explaineer, mixologist"
   location         : "Charlotte, NC"
   email            :
   uri              : "https://www.grandelatte.com"
