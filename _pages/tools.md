@@ -105,6 +105,8 @@ bookmark_entries:
       links:
       - name: Fiber settings
         url: https://www.omglaser.com/laser-settings/
+      - name: XTool Settings
+        url: https://www.xtool.com/pages/material-settings
 
   - column: Column 4
     groups:
