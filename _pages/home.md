@@ -84,6 +84,8 @@ bookmark_entries:
         url: http://office-avr.jamieandamy.com/index.html?topmenu=0&zone=1&settings=0
       - name: Alexa
         url: https://alexa.amazon.com/
+      - name: IFTTT
+        url: https://ifttt.com/explore
       - name: My Home Assistant
         url: http://krypter:8123
       - name: Docs
