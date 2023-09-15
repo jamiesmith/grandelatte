@@ -28,8 +28,8 @@ sections:
     url: /tools
 
 ribbon:
-  - title: "Mostly Mono astro"
-    url: https://www.mostlymono.com
+  - title: "The Astro Shed"
+    url: https://www.theastroshed.com
     target: "_blank"
   - title: "My Astrobin"
     url: http://www.astrobin.com/users/jamiesmithnc/
