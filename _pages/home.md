@@ -455,6 +455,8 @@ bookmark_entries:
         url: https://nighttime-imaging.eu
       - name: Telescopius
         url: https://telescopius.com
+      - name: Dark Dragons
+        url: https://www.darkdragonsastro.com
       - name: ZWO ASI
         url: https://astronomy-imaging-camera.com
     - name: AstroWeather
