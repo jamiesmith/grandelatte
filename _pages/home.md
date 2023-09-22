@@ -434,8 +434,11 @@ bookmark_entries:
         indent: 1
       - name: APOD
         url: https://apod.nasa.gov/apod/astropix.html
+      - name: PixInsight 
+        url: https://pixinsight.com/
       - name: PixInsight Forum
         url: https://pixinsight.com/forum/
+        indent: 1
       - name: FOV Calc
         url: https://astronomy.tools/calculators/field_of_view/
       - name: Astro Imaging Ch
