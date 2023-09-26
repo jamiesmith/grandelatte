@@ -130,7 +130,7 @@ bookmark_entries:
         url: https://www.thingiverse.com
       - name: Gridfinity
         url: https://gridfinity.xyz
-      - name: MakeerWorld
+      - name: MakerWorld
         url: https://makerworld.com/
     - name: Laser Engraving
       links:
