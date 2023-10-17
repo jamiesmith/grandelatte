@@ -336,7 +336,7 @@ bookmark_entries:
         url: https://hub.docker.com
         indent: 1
       - name: Official Images
-        url: https://github.com/docker-library/official-images
+        url: https://hub.docker.com/u/library
         indent: 1
       - name: Side of SLSA
         url: https://slsa.dev/spec/v1.0/onepage
