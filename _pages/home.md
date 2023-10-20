@@ -286,7 +286,7 @@ bookmark_entries:
       - name: Warehouse
         url: https://abc.nc.gov/StoresBoards/Stocks
         indent: 1
-    - name: Misc Dashboards
+    - name: Homelab
       links:
       - name: DreamHost
         url: https://panel.dreamhost.com
@@ -295,6 +295,8 @@ bookmark_entries:
         indent: 1        
       - name: RAID Calculator
         url: https://www.synology.com/en-uk/support/RAID_calculator
+      - name: 45hl Forum
+        url: https://forum.45homelab.com
     - name: Kindle
       links:
       - name: Manage your Kindle
