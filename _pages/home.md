@@ -460,7 +460,7 @@ bookmark_entries:
         url: https://nighttime-imaging.eu
       - name: Discord
         indent: 1
-	url: https://discord.com/channels/436650817295089664/
+        url: https://discord.com/channels/436650817295089664/
       - name: Telescopius
         url: https://telescopius.com
       - name: Dark Dragons
