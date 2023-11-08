@@ -28,7 +28,7 @@ sections:
     url: /tools
 
 ribbon:
-  - title: "The Astro Shed"
+  - title: "theAstroShed"
     url: https://www.theastroshed.com
     target: "_blank"
   - title: "My Astrobin"
