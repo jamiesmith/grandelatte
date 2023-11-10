@@ -109,7 +109,7 @@ bookmark_entries:
       - name: Irrigation
         url: https://app.rach.io/login
       - name: Remote Desktop
-        url: https://remotedesktop.google.com/access
+        url: https://remotedesktop.google.com/u/1/access
     - name: Work Stuff
       links:
       - name: Mail
