@@ -117,6 +117,9 @@ bookmark_entries:
       - name: BambuLab forums
         url: https://forum.bambulab.com
         indent: 1
+      - name: BambuLab Cloud
+        url: https://status.bambulab.com
+        indent: 1
       - name: Printables
         url: https://www.printables.com
       - name: Thangs
