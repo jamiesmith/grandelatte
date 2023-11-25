@@ -441,6 +441,9 @@ bookmark_entries:
       - name: PixInsight Forum
         url: https://pixinsight.com/forum/
         indent: 1
+      - name: PI Benchmark
+        url: https://pixinsight.com/benchmark/
+        indent: 1
       - name: FOV Calc
         url: https://astronomy.tools/calculators/field_of_view/
       - name: Astro Imaging Ch
