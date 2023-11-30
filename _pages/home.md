@@ -123,6 +123,9 @@ bookmark_entries:
       - name: Calendar
         url: https://calendar.google.com/a/snyk.io
         indent: 1
+      - name: Bard
+        url: https://bard.google.com/chat
+        indent: 1
       - name: Okta
         url: https://snyk.okta.com/app/UserHome
       - name: Workday
