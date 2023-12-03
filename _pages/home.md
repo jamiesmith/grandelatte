@@ -411,8 +411,8 @@ bookmark_entries:
       - name: Amy
         url: https://www.facebook.com/akbs1969/
         indent: 1
-      - name: twitter
-        url: https://www.twitter.com/
+      - name: BlueSky
+        url: https://bsky.app/
       - name: linked in
         url: https://www.linkedin.com/
     - name: Astronomy
