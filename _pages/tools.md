@@ -107,6 +107,10 @@ bookmark_entries:
         url: https://www.omglaser.com/laser-settings/
       - name: XTool Settings
         url: https://www.xtool.com/pages/material-settings
+    - name: Networking adjacent
+      links:
+      - name: PX Labels
+        url: https://labelworks.epson.com/for-work/supplies/labelworks-px-labels-tapes-labeling-supplies-for-epson-printers.html?printer=282
 
   - column: Column 4
     groups:
