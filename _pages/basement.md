@@ -104,6 +104,23 @@ bookmark_entries:
         url: http://www.martinlogan.com
       - name: Marantz
         url: http://us.marantz.com/default.asp
+    - name: Remote Stuff
+      links:
+      - name: Remote Central
+        url: http://www.remotecentral.com/
+      - name: Icon Harmony
+        url: http://www.iconharmony.com/
+        indent: 1
+      - name: My Harmony
+        url: https://setup.myharmony.com
+        indent: 1
+      - name: Yamaha Hex
+        url: https://www.yamaha.com/ypab/irhex_converter.asp
+        indent: 1
+      - name: Theater AVR
+        url: http://theater-avr.jamieandamy.com/index.html?topmenu=0&zone=1&settings=0
+      - name: Office AVR
+        url: http://office-avr.jamieandamy.com/index.html?topmenu=0&zone=1&settings=0
   - column: Column 3
     groups:
     - name: Lego Sites

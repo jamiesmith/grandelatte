@@ -13,17 +13,6 @@ bookmark_entries:
     groups:
     - name: Home Theater
       links:
-      - name: Remote Central
-        url: http://www.remotecentral.com/
-      - name: Icon Harmony
-        url: http://www.iconharmony.com/
-        indent: 1
-      - name: My Harmony
-        url: https://setup.myharmony.com
-        indent: 1
-      - name: Yamaha Hex
-        url: https://www.yamaha.com/ypab/irhex_converter.asp
-        indent: 1
       - name: AV Science Forum
         url: http://www.avsforum.com/forum/index.php
       - name: Yamaha Electronics
@@ -78,10 +67,6 @@ bookmark_entries:
         url: https://home.nest.com/home
       - name: MyQ
         url: https://www.mychamberlain.com/Devices.aspx
-      - name: Theater AVR
-        url: http://theater-avr.jamieandamy.com/index.html?topmenu=0&zone=1&settings=0
-      - name: Office AVR
-        url: http://office-avr.jamieandamy.com/index.html?topmenu=0&zone=1&settings=0
       - name: Alexa
         url: https://alexa.amazon.com/
       - name: IFTTT
@@ -267,14 +252,6 @@ bookmark_entries:
         url: https://www.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6
       - name: Closings & Delays
         url: https://wcnc.com/closings/
-    - name: Misc Stuff
-      links:
-      - name: Time Zones (grid)
-        url: https://www.timeanddate.com/worldclock/custom.html?cities=412,224,248,166,197,438,236,195,239,101,240
-      - name: More Times (rows)
-        url: https://www.worldtimebuddy.com/?pl=1&lid=4460243,5380748,2643743,1850147&h=4460243
-      - name: SpeedTest
-        url: https://www.speedtest.net/
   - column: Column 3
     groups:
     - name: Food & Beverage
@@ -533,6 +510,15 @@ bookmark_entries:
         indent: 1
       - name: Griot's Garage
         url: https://www.griotsgarage.com
+    - name: Misc Stuff
+      links:
+      - name: Time Zones (grid)
+        url: https://www.timeanddate.com/worldclock/custom.html?cities=412,224,248,166,197,438,236,195,239,101,240
+      - name: More Times (rows)
+        url: https://www.worldtimebuddy.com/?pl=1&lid=4460243,5380748,2643743,1850147&h=4460243
+      - name: SpeedTest
+        url: https://www.speedtest.net/
+
 ---
 
 {% include bookmark_entries %}
