@@ -121,7 +121,7 @@ bookmark_entries:
       - name: BambuLab forums
         url: https://forum.bambulab.com
         indent: 1
-      - name: BambuLab Cloud
+      - name: Cloud Status
         url: https://status.bambulab.com
         indent: 1
       - name: Printables
