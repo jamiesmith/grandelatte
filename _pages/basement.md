@@ -104,7 +104,7 @@ bookmark_entries:
         url: http://www.martinlogan.com
       - name: Marantz
         url: http://us.marantz.com/default.asp
-    - name: Remote Stuff
+    - name: Remote Control
       links:
       - name: Remote Central
         url: http://www.remotecentral.com/
