@@ -277,6 +277,8 @@ bookmark_entries:
         url: https://www.synology.com/en-uk/support/RAID_calculator
       - name: 45hl Forum
         url: https://forum.45homelab.com
+      - name: Ansible Docs
+        url: https://docs.ansible.com/ansible/latest/index.html	
     - name: Kindle
       links:
       - name: Manage your Kindle
