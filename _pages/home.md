@@ -279,6 +279,9 @@ bookmark_entries:
         url: https://forum.45homelab.com
       - name: Ansible Docs
         url: https://docs.ansible.com/ansible/latest/index.html	
+      - name: Ansible Builtin
+        url: https://docs.ansible.com/ansible/latest/collections/ansible/builtin/index.html
+        indent: 1        
     - name: Kindle
       links:
       - name: Manage your Kindle
