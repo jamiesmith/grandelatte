@@ -282,6 +282,8 @@ bookmark_entries:
       - name: Ansible Builtin
         url: https://docs.ansible.com/ansible/latest/collections/ansible/builtin/index.html
         indent: 1        
+      - name: TechnoTim
+        url: https://technotim.live
     - name: Kindle
       links:
       - name: Manage your Kindle
