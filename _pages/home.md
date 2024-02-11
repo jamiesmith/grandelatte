@@ -278,7 +278,7 @@ bookmark_entries:
       - name: 45hl Forum
         url: https://forum.45homelab.com
       - name: Ansible Docs
-        url: https://docs.ansible.com/ansible/latest/index.html	
+        url: https://docs.ansible.com/ansible/latest/index.html
       - name: Ansible Builtin
         url: https://docs.ansible.com/ansible/latest/collections/ansible/builtin/index.html
         indent: 1        
@@ -513,7 +513,7 @@ bookmark_entries:
       - name: Obsessed Garage
         url: https://www.obsessedgarage.com
       - name: Members
-        url: https://www.obsessedgarage.com/pages/membership-home	
+        url: https://www.obsessedgarage.com/pages/membership-home
         indent: 1
       - name: Griot's Garage
         url: https://www.griotsgarage.com
