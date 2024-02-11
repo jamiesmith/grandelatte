@@ -4,6 +4,7 @@ gem "github-pages", group: :jekyll_plugins
 
 gem "wdm", "~> 0.1.0" if Gem.win_platform?
 gem "jekyll-remote-theme"
+gem "jekyll", "=3.9.3"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
