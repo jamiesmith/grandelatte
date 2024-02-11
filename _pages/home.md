@@ -267,7 +267,7 @@ bookmark_entries:
     - name: Homelab
       links:
       - name: CloudFlare
-        url: https://www.cloudflare.com
+        url: https://dash.cloudflare.com/
       - name: DreamHost
         url: https://panel.dreamhost.com
       - name: Domains
