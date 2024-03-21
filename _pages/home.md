@@ -49,7 +49,7 @@ bookmark_entries:
       - name: Gizmodo
         url: https://gizmodo.com
       - name: Gear Patrol
-        url: https://gearpatrol.com
+        url: https://www.gearpatrol.com
       - name: Cool Material
         url: https://coolmaterial.com/
       - name: Geeky Gadgets
