@@ -116,6 +116,14 @@ bookmark_entries:
         url: https://snyk.slack.com/
       - name: Snyk UI
         url: https://app.snyk.io/
+    - name: Misc Stuff
+      links:
+      - name: Time Zones (grid)
+        url: https://www.timeanddate.com/worldclock/custom.html?cities=412,224,248,166,197,438,236,195,239,101,240
+      - name: More Times (rows)
+        url: https://www.worldtimebuddy.com/?pl=1&lid=4460243,5380748,2643743,1850147&h=4460243
+      - name: SpeedTest
+        url: https://www.speedtest.net/
   - column: Column 2
     groups:
     - name: Woodworking
@@ -507,14 +515,6 @@ bookmark_entries:
         indent: 1
       - name: Griot's Garage
         url: https://www.griotsgarage.com
-    - name: Misc Stuff
-      links:
-      - name: Time Zones (grid)
-        url: https://www.timeanddate.com/worldclock/custom.html?cities=412,224,248,166,197,438,236,195,239,101,240
-      - name: More Times (rows)
-        url: https://www.worldtimebuddy.com/?pl=1&lid=4460243,5380748,2643743,1850147&h=4460243
-      - name: SpeedTest
-        url: https://www.speedtest.net/
 
 ---
 
