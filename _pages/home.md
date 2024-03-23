@@ -124,6 +124,12 @@ bookmark_entries:
         url: https://www.worldtimebuddy.com/?pl=1&lid=4460243,5380748,2643743,1850147&h=4460243
       - name: SpeedTest
         url: https://www.speedtest.net/
+    - name: Road Warrior
+      links:
+      - name: Misery Map
+        url: https://flightaware.com/miserymap/
+      - name: Kayak
+        url: https://www.kayak.com/trips
   - column: Column 2
     groups:
     - name: Woodworking
@@ -354,12 +360,6 @@ bookmark_entries:
         indent: 1
       - name: DPReview
         url: https://www.dpreview.com/
-    - name: Road Warrior
-      links:
-      - name: Misery Map
-        url: https://flightaware.com/miserymap/
-      - name: Kayak
-        url: https://www.kayak.com/trips
     - name: Game Sites
       links:
       - name: GameSpot
