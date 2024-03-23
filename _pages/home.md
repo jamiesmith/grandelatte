@@ -114,15 +114,6 @@ bookmark_entries:
         url: https://www.myworkday.com/snyk/d/home.htmld
       - name: Slacker
         url: https://snyk.slack.com/
-      - name: Notion
-        url: https://www.notion.so/snyk
-      - name: Intranet
-        url: https://snyk.interactgo.com
-      - name: Snyk Github
-        url: https://github.com/snyk
-      - name: PurpleDobie GH
-        url: https://github.com/purpledobie
-        indent: 1
       - name: Snyk UI
         url: https://app.snyk.io/
   - column: Column 2
