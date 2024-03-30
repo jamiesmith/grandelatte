@@ -63,8 +63,6 @@ bookmark_entries:
         url: http://www.mcfeelys.com/
     - name: Fabrication resources
       links:
-      - name: FSL Material Tests
-        url: https://fslaser.com/material-test/
       - name: Boxes
         url: https://www.festi.info/boxes.py/
       - name: More Boxes
