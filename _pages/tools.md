@@ -70,6 +70,8 @@ bookmark_entries:
         indent: 1
       - name: Cups
         url: https://www.saveacup.com
+      - name: Weaver Leather
+        url: https://www.weaverleathersupply.com/collections/veg-tan-natural
       - name: Laser Materials
         url: https://www.gravotech.us/products/materials-consumables/engraving-materials
       - name: Marking Spray

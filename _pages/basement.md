@@ -71,19 +71,6 @@ bookmark_entries:
         url: https://www.bigtimer.net
   - column: Column 2
     groups:
-    - name: Misc Cars
-      links:
-      - name: Lexus
-        url: http://www.lexus.com/
-      - name: Hendrick Lexus
-        url: http://www.hendricklexuscharlotte.com
-        indent: 1
-      - name: Lexus CPO
-        url: http://www.hendrickcars.com/all-inventory/index.htm?compositeType=certified&make=Lexus&geoZip=28277&geoRadius=50&sortBy=internetPrice+asc&
-        indent: 1
-      - name: Lexus All Opts
-        url: http://www.hendrickcars.com/all-inventory/index.htm?geoZip=28277&geoRadius=250&search=&compositeType=&year=2018&year=2017&year=2016&year=2015&year=2014&make=Lexus&model=GS+200t&model=GS+350&model=GS+F&model=IS+200t&model=IS+250&model=IS+250C&model=IS+300&model=IS+350&model=NX+200t&model=RC+300&model=RC+350&model=RC+F&odometer=1-60000&gvOption=Navigation+System&geoZip=28277&geoRadius=250&sortBy=internetPrice+asc
-        indent: 1
     - name: Utilities
       links:
       - name: Java Regex
@@ -94,6 +81,8 @@ bookmark_entries:
         url: http://jsfiddle.net
       - name: Mockaroo
         url: http://www.mockaroo.com
+      - name: CSS-Tricks
+        url: http://css-tricks.com/
     - name: Audio Gear
       links:
       - name: Decware
@@ -141,27 +130,6 @@ bookmark_entries:
         url: http://thewoodwhisperer.com/
       - name: The Dovetail Joint
         url: http://www.jerrywork.com/
-    - name: WebDev
-      links:
-      - name: XSD Help
-        url: http://www.w3schools.com/schema/schema_example.asp
-      - name: Rails Forum
-        url: http://railsforum.com/
-      - name: Ruby
-        url: http://www.ruby-lang.org/en/
-      - name: Ruby on Rails
-        url: http://rubyonrails.org/
-      - name: api
-        url: http://api.rubyonrails.org/
-        indent: 1
-      - name: RailsCasts.com
-        url: http://railscasts.com/
-      - name: CSS-Tricks
-        url: http://css-tricks.com/
-    - name: Old Games
-      links:
-      - name: Nintendogs Map
-        url: http://www5d.biglobe.ne.jp/%7Emint-f/dogs/map.html
     - name: Mobile
       links:
       - name: talk maemo
@@ -186,6 +154,19 @@ bookmark_entries:
         url: https://stilldragon.com
       - name: Claw Hammer
         url: https://www.clawhammersupply.com
+    - name: Misc Cars
+      links:
+      - name: Lexus
+        url: http://www.lexus.com/
+      - name: Hendrick Lexus
+        url: http://www.hendricklexuscharlotte.com
+        indent: 1
+      - name: Lexus CPO
+        url: http://www.hendrickcars.com/all-inventory/index.htm?compositeType=certified&make=Lexus&geoZip=28277&geoRadius=50&sortBy=internetPrice+asc&
+        indent: 1
+      - name: Lexus All Opts
+        url: http://www.hendrickcars.com/all-inventory/index.htm?geoZip=28277&geoRadius=250&search=&compositeType=&year=2018&year=2017&year=2016&year=2015&year=2014&make=Lexus&model=GS+200t&model=GS+350&model=GS+F&model=IS+200t&model=IS+250&model=IS+250C&model=IS+300&model=IS+350&model=NX+200t&model=RC+300&model=RC+350&model=RC+F&odometer=1-60000&gvOption=Navigation+System&geoZip=28277&geoRadius=250&sortBy=internetPrice+asc
+        indent: 1
 ---
 
 {% include bookmark_entries %}
