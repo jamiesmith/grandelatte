@@ -454,7 +454,9 @@ bookmark_entries:
       - name: Dark Dragons
         url: https://www.darkdragonsastro.com
       - name: ZWO ASI
-        url: https://astronomy-imaging-camera.com
+        url: https://zwoastro.com
+      - name: Eclipse 2026
+        url: https://nso.edu/for-public/eclipse-map-2026/
     - name: AstroWeather
       links:
       - name: Telescopius Weather
