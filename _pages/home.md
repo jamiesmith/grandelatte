@@ -426,6 +426,9 @@ bookmark_entries:
       - name: PixInsight Forum
         url: https://pixinsight.com/forum/
         indent: 1
+      - name: Scripting Forum
+        url: https://pixinsight.com/forum/index.php?forums/pcl-and-pjsr-development.21/	
+        indent: 2
       - name: PI Benchmark
         url: https://pixinsight.com/benchmark/
         indent: 1
