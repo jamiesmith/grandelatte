@@ -61,6 +61,20 @@ bookmark_entries:
         url: http://www.hartvilletool.com/
       - name: McFeelys
         url: http://www.mcfeelys.com/
+    - name: Misc
+      links:
+      - name: NYW
+        url: http://www.newyankee.com/
+      - name: ...Tool List
+        url: http://www.normstools.com/index.shtml
+        indent: 1
+    - name: Networking adjacent
+      links:
+      - name: PX Labels
+        url: https://labelworks.epson.com/for-work/supplies/labelworks-px-labels-tapes-labeling-supplies-for-epson-printers.html?printer=282
+
+  - column: Column 3
+    groups:
     - name: Fabrication resources
       links:
       - name: Boxes
@@ -74,6 +88,12 @@ bookmark_entries:
         url: https://www.weaverleathersupply.com/collections/veg-tan-natural
       - name: Laser Materials
         url: https://www.gravotech.us/products/materials-consumables/engraving-materials
+      - name: LaserBricks
+        url: https://www.lasersketch.com/
+      - name: Boards4engraving
+        url: https://boards4engraving.com/
+      - name: Ocooch Woods
+        url: https://ocoochhardwoods.com/scroll-saw-lumber/
       - name: Marking Spray
         url: https://enduramark.com/collections/glass-marking/products/laser-marking-spray-can-charcoal-for-glass-ceramic
       - name: Steel services
@@ -91,26 +111,6 @@ bookmark_entries:
       - name: Academy
         url: https://academy.titansofcnc.com
         indent: 1
-
-  - column: Column 3
-    groups:
-    - name: Misc
-      links:
-      - name: NYW
-        url: http://www.newyankee.com/
-      - name: ...Tool List
-        url: http://www.normstools.com/index.shtml
-        indent: 1
-    - name: Friggin Lasers
-      links:
-      - name: Fiber settings
-        url: https://www.omglaser.com/laser-settings/
-      - name: XTool Settings
-        url: https://www.xtool.com/pages/material-settings
-    - name: Networking adjacent
-      links:
-      - name: PX Labels
-        url: https://labelworks.epson.com/for-work/supplies/labelworks-px-labels-tapes-labeling-supplies-for-epson-printers.html?printer=282
 
   - column: Column 4
     groups:
@@ -139,8 +139,12 @@ bookmark_entries:
         url: https://gridfinity.xyz
       - name: MakerWorld
         url: https://makerworld.com/
-    - name: Laser Engraving
+    - name: Friggin' Lasers
       links:
+      - name: Fiber settings
+        url: https://www.omglaser.com/laser-settings/
+      - name: XTool Settings
+        url: https://www.xtool.com/pages/material-settings
       - name: Imag-r
         url: https://www.imag-r.com
       - name: Laser Pics
