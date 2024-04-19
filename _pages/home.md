@@ -483,16 +483,16 @@ bookmark_entries:
       - name: CSC GHRO
         url: https://www.cleardarksky.com/c/TaxaSCkey.html
         indent: 1
-      - name: GHRO - SG
+      - name: StarGazing
         url: https://www.accuweather.com/en/us/taxahaw-sc/29067/astronomy-weather/2131162
         indent: 1
-      - name: GHRO - Clear Out
+      - name: Clear Out
         url: https://clearoutside.com/forecast/34.69/-80.52?view=midday
         indent: 1
-      - name: GHRO - Hourly
+      - name: AW - Hourly
         url: https://www.wunderground.com/hourly/us/sc/taxahaw/date/2018-09-23?cm_ven=localwx_hour
         indent: 1
-      - name: GHRO - 10 day
+      - name: AW - 10 day
         url: https://www.wunderground.com/forecast/us/sc/taxahaw?cm_ven=localwx_10day
         indent: 1
     - name: Cars
