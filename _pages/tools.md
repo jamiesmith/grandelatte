@@ -82,23 +82,9 @@ bookmark_entries:
       - name: More Boxes
         url: https://www.makercase.com/#/
         indent: 1
-      - name: Cups
-        url: https://www.saveacup.com
-      - name: Weaver Leather
-        url: https://www.weaverleathersupply.com/collections/veg-tan-natural
-      - name: Laser Materials
-        url: https://www.gravotech.us/products/materials-consumables/engraving-materials
-      - name: LaserBricks
-        url: https://www.lasersketch.com/
-      - name: Boards4engraving
-        url: https://boards4engraving.com/
-      - name: Smokey Hill
-        url: https://smokeyhilldesigns.com
-      - name: Ocooch Woods
-        url: https://ocoochhardwoods.com/scroll-saw-lumber/
       - name: Marking Spray
         url: https://enduramark.com/collections/glass-marking/products/laser-marking-spray-can-charcoal-for-glass-ceramic
-      - name: Steel services
+      - name: Steel Services
         url: https://www.2twentytwosteel.com
       - name: Epoxy forms
         url: https://conceptthirteen.ca/collections/no-seal-reusable-form/products/no-seal-reusable-form-10-x-18-x-3
@@ -113,6 +99,23 @@ bookmark_entries:
       - name: Academy
         url: https://academy.titansofcnc.com
         indent: 1
+    - name: Fabrication Supplies
+      links:
+      - name: Cups
+        url: https://www.saveacup.com
+      - name: Weaver Leather
+        url: https://www.weaverleathersupply.com/collections/veg-tan-natural
+      - name: Laser Materials
+        url: https://www.gravotech.us/products/materials-consumables/engraving-materials
+      - name: LaserBricks
+        url: https://www.lasersketch.com/
+      - name: Boards4engraving
+        url: https://boards4engraving.com/
+      - name: Smokey Hill
+        url: https://smokeyhilldesigns.com
+      - name: Ocooch Woods
+        url: https://ocoochhardwoods.com/scroll-saw-lumber/
+
 
   - column: Column 4
     groups:
