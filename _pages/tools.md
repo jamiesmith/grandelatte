@@ -92,6 +92,8 @@ bookmark_entries:
         url: https://www.lasersketch.com/
       - name: Boards4engraving
         url: https://boards4engraving.com/
+      - name: Smokey Hill
+        url: https://smokeyhilldesigns.com
       - name: Ocooch Woods
         url: https://ocoochhardwoods.com/scroll-saw-lumber/
       - name: Marking Spray

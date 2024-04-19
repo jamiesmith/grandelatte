@@ -11,10 +11,6 @@ excerpt: 'Just a collection of bookmarks, port in progress!<br/>'
 bookmark_entries:
   - column: Column 1
     groups:
-    - name: Laser Stuff
-      links:
-      - name: Big Timer
-        url: https://www.bigtimer.net
     - name: Audio Gear
       links:
       - name: Decware
