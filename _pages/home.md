@@ -474,13 +474,13 @@ bookmark_entries:
         indent: 1
       - name: CAAC Weather
         url: https://charlotteastronomers.org/weather/
-      - name: MB GHRO
+      - name: MeteoBlue
         url: https://www.meteoblue.com/en/weather/forecast/seeing/taxahaw_united-states-of-america_4598334
         indent: 1
       - name: AstroSpheric
         url: https://www.astrospheric.com/?Latitude=34.695736&Longitude=-80.536855
         indent: 1
-      - name: CSC GHRO
+      - name: Clear Sky
         url: https://www.cleardarksky.com/c/TaxaSCkey.html
         indent: 1
       - name: StarGazing
