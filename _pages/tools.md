@@ -150,6 +150,8 @@ bookmark_entries:
         url: https://www.omglaser.com/laser-settings/
       - name: XTool Settings
         url: https://www.xtool.com/pages/material-settings
+      - name: Bolt Settings
+        url: https://www.thunderlaser.com/laser-cutter-settings-for-different-materials/
       - name: Imag-r
         url: https://www.imag-r.com
       - name: Laser Pics
