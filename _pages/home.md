@@ -442,7 +442,7 @@ bookmark_entries:
         url: https://ap-ug.groups.io/g/main
         indent: 1
       - name: GTO Forums
-        url: https://ap-gto.groups.io/g/main/topics
+        url: https://ap-gto.groups.io/g/main
         indent: 1
       - name: SB / Paramount
         url: https://www.bisque.com
