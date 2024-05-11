@@ -436,6 +436,14 @@ bookmark_entries:
         url: https://astronomy.tools/calculators/field_of_view/
       - name: Astro Imaging Ch
         url: https://www.theastroimagingchannel.com/
+      - name: Astro Physics
+        url: https://www.astro-physics.com
+      - name: Forums
+        url: https://ap-ug.groups.io/g/main
+        indent: 1
+      - name: GTO Forums
+        url: https://ap-gto.groups.io/g/main/topics
+        indent: 1
       - name: SB / Paramount
         url: https://www.bisque.com
       - name: Camera Add-On
