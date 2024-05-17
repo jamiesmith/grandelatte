@@ -133,6 +133,8 @@ bookmark_entries:
         url: https://www.printables.com
       - name: Thangs
         url: https://www.thangs.com
+      - name: Bento 3D
+        url: https://bento3d.design
       - name: GF@thangs
         url: https://gridfinity.xyz
         indent: 1
