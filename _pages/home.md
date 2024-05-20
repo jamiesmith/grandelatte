@@ -108,6 +108,9 @@ bookmark_entries:
       - name: Gemini
         url: https://gemini.google.com/app
         indent: 1
+      - name: ContentGPT
+        url: https://contentgpt.snyk-corp.io
+        indent: 1
       - name: Okta
         url: https://snyk.okta.com/app/UserHome
       - name: Workday
