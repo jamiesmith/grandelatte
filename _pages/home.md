@@ -430,7 +430,7 @@ bookmark_entries:
         url: https://pixinsight.com/forum/
         indent: 1
       - name: Scripting Forum
-        url: https://pixinsight.com/forum/index.php?forums/pcl-and-pjsr-development.21/	
+        url: https://pixinsight.com/forum/index.php?forums/pcl-and-pjsr-development.21/
         indent: 2
       - name: PI Benchmark
         url: https://pixinsight.com/benchmark/
@@ -441,6 +441,9 @@ bookmark_entries:
         url: https://www.theastroimagingchannel.com/
       - name: Astro Physics
         url: https://www.astro-physics.com
+        indent: 1
+      - name: Mach2GTO
+        url: https://www.astro-physics.com/mach2        
       - name: Forums
         url: https://ap-ug.groups.io/g/main
         indent: 1
