@@ -503,10 +503,10 @@ bookmark_entries:
       - name: Clear Out
         url: https://clearoutside.com/forecast/34.69/-80.52?view=midday
         indent: 1
-      - name: AW - Hourly
+      - name: WU - Hourly
         url: https://www.wunderground.com/hourly/us/sc/taxahaw/date/2018-09-23?cm_ven=localwx_hour
         indent: 1
-      - name: AW - 10 day
+      - name: WU - 10 day
         url: https://www.wunderground.com/forecast/us/sc/taxahaw?cm_ven=localwx_10day
         indent: 1
     - name: Cars
