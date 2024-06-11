@@ -66,8 +66,6 @@ bookmark_entries:
         url: https://www.mychamberlain.com/Devices.aspx
       - name: Alexa
         url: https://alexa.amazon.com/
-      - name: IFTTT
-        url: https://ifttt.com/explore
       - name: My Home Assistant
         url: http://krypter:8123
       - name: Docs
