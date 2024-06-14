@@ -464,6 +464,9 @@ bookmark_entries:
       - name: Discord
         indent: 1
         url: https://discord.com/channels/436650817295089664/
+      - name: TargetScheduler
+        indent: 1
+        url: https://tcpalmer.github.io/nina-scheduler/
       - name: Telescopius
         url: https://telescopius.com
       - name: Dark Dragons
