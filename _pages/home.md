@@ -467,6 +467,9 @@ bookmark_entries:
       - name: TargetScheduler
         indent: 1
         url: https://tcpalmer.github.io/nina-scheduler/
+      - name: PowerUps
+        indent: 1
+        url: https://marcblank.github.io/
       - name: Telescopius
         url: https://telescopius.com
       - name: Dark Dragons
