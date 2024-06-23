@@ -25,6 +25,18 @@ bookmark_entries:
       links:
       - name: talk maemo
         url: http://talk.maemo.org/
+    - name: Home Theater
+      links:
+      - name: AV Science Forum
+        url: http://www.avsforum.com/forum/index.php
+      - name: Yamaha Electronics
+        url: http://www.yamaha.com/yec/
+      - name: MonoPrice
+        url: http://www.monoprice.com/home/index.asp
+      - name: Sony Electronics
+        url: http://www.sony.com/
+      - name: Klipsch
+        url: http://www.klipsch.com/
   - column: Column 2
     groups:
     - name: Utilities

@@ -12,16 +12,6 @@ bookmark_entries:
     groups:
     - name: Home Theater
       links:
-      - name: AV Science Forum
-        url: http://www.avsforum.com/forum/index.php
-      - name: Yamaha Electronics
-        url: http://www.yamaha.com/yec/
-      - name: MonoPrice
-        url: http://www.monoprice.com/home/index.asp
-      - name: Sony Electronics
-        url: http://www.sony.com/
-      - name: Klipsch
-        url: http://www.klipsch.com/
       - name: Best Buy
         url: http://www.bestbuy.com
       - name: Crutchfield
@@ -131,6 +121,31 @@ bookmark_entries:
         url: https://flightaware.com/miserymap/
       - name: Kayak
         url: https://www.kayak.com/trips
+    - name: Cars
+      links:
+      - name: Electrek
+        url: https://electrek.co
+      - name: Motortrend
+        url: https://www.motortrend.com
+      - name: Porsche
+        url: https://www.porsche.com/usa/
+      - name: Hendrick Porsche
+        url: https://www.hendrickporsche.com/index.htm
+        indent: 1
+      - name: Used Porsche
+        url: https://www.hendrickcars.com/all-inventory/index.htm?geoZip=28277&geoRadius=100&search=&compositeType=certified&make=Porsche&geoZip=28277&geoRadius=50&sortBy=internetPrice+asc&saveFacetState=true&lastFacetInteracted=
+        indent: 2
+      - name: Honda Cars
+        url: https://automobiles.honda.com
+      - name: BMW
+        url: https://www.bmwusa.com
+      - name: Obsessed Garage
+        url: https://www.obsessedgarage.com
+      - name: Members
+        url: https://www.obsessedgarage.com/pages/membership-home
+        indent: 1
+      - name: Griot's Garage
+        url: https://www.griotsgarage.com
   - column: Column 2
     groups:
     - name: Woodworking
@@ -518,31 +533,6 @@ bookmark_entries:
       - name: WU - 10 day
         url: https://www.wunderground.com/forecast/us/sc/taxahaw?cm_ven=localwx_10day
         indent: 1
-    - name: Cars
-      links:
-      - name: Electrek
-        url: https://electrek.co
-      - name: Motortrend
-        url: https://www.motortrend.com
-      - name: Porsche
-        url: https://www.porsche.com/usa/
-      - name: Hendrick Porsche
-        url: https://www.hendrickporsche.com/index.htm
-        indent: 1
-      - name: Used Porsche
-        url: https://www.hendrickcars.com/all-inventory/index.htm?geoZip=28277&geoRadius=100&search=&compositeType=certified&make=Porsche&geoZip=28277&geoRadius=50&sortBy=internetPrice+asc&saveFacetState=true&lastFacetInteracted=
-        indent: 2
-      - name: Honda Cars
-        url: https://automobiles.honda.com
-      - name: BMW
-        url: https://www.bmwusa.com
-      - name: Obsessed Garage
-        url: https://www.obsessedgarage.com
-      - name: Members
-        url: https://www.obsessedgarage.com/pages/membership-home
-        indent: 1
-      - name: Griot's Garage
-        url: https://www.griotsgarage.com
 
 ---
 
