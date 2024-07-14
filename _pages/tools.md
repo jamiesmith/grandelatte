@@ -44,7 +44,7 @@ bookmark_entries:
     - name: Pool Stuff
       links:
         - name: Pool Calculator
-          url: https://www.troublefreepool.com/calc.html	
+          url: https://www.troublefreepool.com/calc.html
   - column: Column 2
     groups:
     - name: Tool Sites
