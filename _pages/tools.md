@@ -41,6 +41,10 @@ bookmark_entries:
         url: http://www.sawstop.com
       - name: DEWALT
         url: http://www.dewalt.com/
+    - name: Pool Stuff
+      links:
+        - name: Pool Calculator
+          url: https://www.troublefreepool.com/calc.html	
   - column: Column 2
     groups:
     - name: Tool Sites
