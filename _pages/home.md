@@ -471,6 +471,9 @@ bookmark_entries:
       - name: PowerUps
         indent: 1
         url: https://marcblank.github.io/
+      - name: AstroPhysicsTools
+        url: https://daleghent.com/astro-physics-tools
+        indent: 1
       - name: Telescopius
         url: https://telescopius.com
       - name: Dark Dragons
