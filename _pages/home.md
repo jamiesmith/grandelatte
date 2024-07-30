@@ -440,14 +440,17 @@ bookmark_entries:
         url: https://www.theastroimagingchannel.com/
       - name: Astro Physics
         url: https://www.astro-physics.com
-        indent: 1
       - name: Mach2GTO
         url: https://www.astro-physics.com/mach2        
+        indent: 1
       - name: Forums
         url: https://ap-ug.groups.io/g/main
         indent: 1
       - name: GTO Forums
         url: https://ap-gto.groups.io/g/main
+        indent: 1
+      - name: APCC Help
+        url: https://www.apastrosoftware.com/help/apcc-pro/index.html?introduction.htm
         indent: 1
       - name: SB / Paramount
         url: https://www.bisque.com
