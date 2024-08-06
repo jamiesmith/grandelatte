@@ -235,20 +235,20 @@ bookmark_entries:
       - name: Matthews T&D
         url: https://www.timeanddate.com/weather/@z-us-28104/hourly
       - name: WU (Home)
-        url: https://www.wunderground.com/q/zmw:28104.2.99999
+        url: https://www.wunderground.com/weather/us/nc/matthews
       - name: Hourly
-        url: https://www.wunderground.com/hourly/us/nc/matthews/28104?cm_ven=localwx_hour
+        url: https://www.wunderground.com/hourly/us/nc/matthews
         indent: 1
       - name: 10 Day
-        url: https://www.wunderground.com/forecast/us/nc/matthews/28104?cm_ven=localwx_10day
+        url: https://www.wunderground.com/forecast/us/nc/matthews
         indent: 1
       - name: WU (Wilmington)
-        url: https://www.wunderground.com/weather/us/nc/wilmington/28465?cm_ven=localwx_today
+        url: https://www.wunderground.com/weather/us/nc/wilmington
       - name: Hourly
-        url: https://www.wunderground.com/hourly/us/nc/wilmington/28465?cm_ven=localwx_hour
+        url: https://www.wunderground.com/hourly/us/nc/wilmington
         indent: 1
       - name: 10 Day
-        url: https://www.wunderground.com/forecast/us/nc/wilmington/28465?cm_ven=localwx_10day
+        url: https://www.wunderground.com/forecast/us/nc/wilmington
         indent: 1
       - name: USGS Earthquakes
         url: https://goo.gl/xKRxeP
