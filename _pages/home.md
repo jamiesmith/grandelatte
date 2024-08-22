@@ -288,6 +288,8 @@ bookmark_entries:
       - name: Ansible Builtin
         url: https://docs.ansible.com/ansible/latest/collections/ansible/builtin/index.html
         indent: 1        
+      - name: Proxmox Helpers
+        url: https://tteck.github.io/Proxmox/
       - name: TechnoTim
         url: https://technotim.live
     - name: Kindle
