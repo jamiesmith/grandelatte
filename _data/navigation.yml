@@ -26,8 +26,6 @@ sections:
     url: /basement
   - title: "Tools"
     url: /tools
-  - title: "Tools2"
-    url: /tools2
 
 ribbon:
   - title: "theAstroShed"
