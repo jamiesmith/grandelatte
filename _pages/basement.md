@@ -86,6 +86,10 @@ bookmark_entries:
         url: http://thewoodwhisperer.com/
       - name: The Dovetail Joint
         url: http://www.jerrywork.com/
+    - name: AI
+      links:
+      - name: CivitAI
+        url:  https://civitai.com
   - column: Column 4
     groups:
     - name: Misc Unix
