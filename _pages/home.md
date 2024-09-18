@@ -281,8 +281,11 @@ bookmark_entries:
         indent: 1        
       - name: RAID Calculator
         url: https://www.synology.com/en-uk/support/RAID_calculator
-      - name: 45hl Forum
+      - name: 45homelab
+        url: https://45homelab.com
+      - name: Forum
         url: https://forum.45homelab.com
+        indent: 1        
       - name: Ansible Docs
         url: https://docs.ansible.com/ansible/latest/index.html
       - name: Ansible Builtin
