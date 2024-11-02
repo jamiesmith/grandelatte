@@ -84,8 +84,6 @@ bookmark_entries:
         url: http://www.woodbin.com/calcs/sagulator.htm
       - name: Wood Whisperer
         url: http://thewoodwhisperer.com/
-      - name: The Dovetail Joint
-        url: http://www.jerrywork.com/
     - name: AI
       links:
       - name: CivitAI

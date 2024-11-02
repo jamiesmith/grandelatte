@@ -410,8 +410,6 @@ bookmark_entries:
         url: https://www.astrobin.com/users/jamiesmithnc/
       - name: Celestron
         url: https://www.celestron.com/
-      - name: Orion Telescopes
-        url: https://www.telescope.com/
       - name: Astronomics
         url: https://www.astronomics.com
       - name: Agena Astro
