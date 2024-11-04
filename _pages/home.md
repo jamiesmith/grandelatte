@@ -508,10 +508,10 @@ bookmark_entries:
       - name: Stargazing
         url: https://www.accuweather.com/us/nc/matthews/28104/outdoor-astronomy.asp
         indent: 1
+      - name: MB Shed
+        url: https://www.meteoblue.com/en/weather/forecast/seeing/taxahaw_united-states-of-america_4598334
       - name: CAAC Weather
         url: https://charlotteastronomers.org/weather/
-      - name: MeteoBlue
-        url: https://www.meteoblue.com/en/weather/forecast/seeing/taxahaw_united-states-of-america_4598334
         indent: 1
       - name: AstroSpheric
         url: https://www.astrospheric.com/?Latitude=34.695736&Longitude=-80.536855
