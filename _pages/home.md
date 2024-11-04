@@ -447,8 +447,6 @@ bookmark_entries:
         indent: 1
       - name: FOV Calc
         url: https://astronomy.tools/calculators/field_of_view/
-      - name: Astro Imaging Ch
-        url: https://www.theastroimagingchannel.com/
       - name: Astro Physics
         url: https://www.astro-physics.com
       - name: Mach2GTO
