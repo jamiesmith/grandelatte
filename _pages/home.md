@@ -500,6 +500,8 @@ bookmark_entries:
       links:
       - name: Telescopius Weather
         url: https://telescopius.com/weather
+      - name: AllSky
+        url: http://allsky.ip-dynamic.org:8080/AllSky/
       - name: MB Home
         url: https://www.meteoblue.com/en/weather/forecast/seeing/matthews_united-states-of-america_4478334
       - name: CSC-Indian Trail
