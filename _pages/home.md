@@ -285,11 +285,6 @@ bookmark_entries:
       links:
       - name: CloudFlare
         url: https://dash.cloudflare.com/
-      - name: DreamHost
-        url: https://panel.dreamhost.com
-      - name: Domains
-        url: https://panel.dreamhost.com/?tree=domain.registration
-        indent: 1        
       - name: RAID Calculator
         url: https://www.synology.com/en-uk/support/RAID_calculator
       - name: 45homelab
