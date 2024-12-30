@@ -412,6 +412,8 @@ bookmark_entries:
         url: https://www.linkedin.com/
     - name: Astronomy
       links:
+      - name: Telescopius
+        url: https://telescopius.com
       - name: My Astrobin
         url: https://www.astrobin.com/users/jamiesmithnc/
       - name: Celestron
@@ -487,8 +489,6 @@ bookmark_entries:
       - name: AstroPhysicsTools
         url: https://daleghent.com/astro-physics-tools
         indent: 1
-      - name: Telescopius
-        url: https://telescopius.com
       - name: Dark Dragons
         url: https://www.darkdragonsastro.com
       - name: ZWO ASI
