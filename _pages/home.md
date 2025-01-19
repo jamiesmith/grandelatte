@@ -172,6 +172,8 @@ bookmark_entries:
       links:
       - name: IMDB
         url: https://www.imdb.com
+      - name: RottenTomatoes
+        url: https://www.rottentomatoes.com
       - name: YouTube
         url: https://www.youtube.com
       - name: Watch Later
