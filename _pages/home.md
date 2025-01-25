@@ -172,8 +172,6 @@ bookmark_entries:
       links:
       - name: IMDB
         url: https://www.imdb.com
-      - name: RottenTomatoes
-        url: https://www.rottentomatoes.com
       - name: YouTube
         url: https://www.youtube.com
       - name: Watch Later
@@ -188,6 +186,8 @@ bookmark_entries:
         url: https://www.hulu.com
       - name: Reel Good
         url: https://reelgood.com
+      - name: RottenTomatoes
+        url: https://www.rottentomatoes.com
       - name: JustWatch
         url: https://www.justwatch.com/
     - name: AudioHolic
