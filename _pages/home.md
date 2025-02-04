@@ -499,6 +499,8 @@ bookmark_entries:
         url: https://nso.edu/for-public/eclipse-map-2026/
       - name: GyroCam
         url: https://rkinnett.github.io/gyrocam/
+      - name: DeepSky
+        url: https://www.deepskycorner.ch/objects.en.php/current
     - name: AstroWeather
       links:
       - name: Telescopius Weather
