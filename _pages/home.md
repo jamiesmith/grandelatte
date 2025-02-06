@@ -426,9 +426,6 @@ bookmark_entries:
         url: https://agenaastro.com/
       - name: Cloudy Nights
         url: https://www.cloudynights.com/index
-      - name: Favorites
-        url: https://www.cloudynights.com/index.php?app=core&module=search&do=followed
-        indent: 1
       - name: CAAC
         url: http://charlotteastronomers.org/
       - name: FB Page
