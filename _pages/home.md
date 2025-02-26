@@ -73,9 +73,6 @@ bookmark_entries:
       - name: HA Forums
         url: https://community.home-assistant.io
         indent: 1
-      - name: Dashboard
-        url: http://krypter:5050/kitchen
-        indent: 1
       - name: Irrigation
         url: https://app.rach.io/login
       - name: Remote Desktop
