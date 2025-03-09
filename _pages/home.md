@@ -10,7 +10,7 @@ header:
 bookmark_entries:
   - column: Column 1
     groups:
-    - name: Home Theater
+    - name: Essentials
       links:
       - name: Best Buy
         url: http://www.bestbuy.com
