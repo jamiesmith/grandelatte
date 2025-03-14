@@ -415,6 +415,11 @@ bookmark_entries:
         url: https://telescopius.com
       - name: My Astrobin
         url: https://www.astrobin.com/users/jamiesmithnc/
+      - name: LightBucket
+        url: https://app.lightbucket.co/
+      - name: My LB
+        url: https://app.lightbucket.co/astronomers/theastroshed
+	indent: 1
       - name: Celestron
         url: https://www.celestron.com/
       - name: Astronomics
