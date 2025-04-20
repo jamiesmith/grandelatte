@@ -174,6 +174,9 @@ bookmark_entries:
         url: https://www.imdb.com
       - name: YouTube
         url: https://www.youtube.com
+      - name: Settings
+        url: https://www.youtube.com/account_playback
+        indent: 1
       - name: Watch Later
         url: https://www.youtube.com/playlist?list=WL
         indent: 1
