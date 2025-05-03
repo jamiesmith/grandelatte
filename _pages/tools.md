@@ -79,6 +79,12 @@ bookmark_entries:
 
   - column: Column 3
     groups:
+    - name: Shaper Origin
+      links:
+      - name: Studio
+        url: https://studio.shapertools.com
+      - name: Hub
+        url: https://hub.shapertools.com
     - name: Fabrication resources
       links:
       - name: Boxes
