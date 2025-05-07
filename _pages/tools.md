@@ -85,6 +85,8 @@ bookmark_entries:
         url: https://studio.shapertools.com
       - name: Hub
         url: https://hub.shapertools.com
+      - name: Community
+        url: https://community.shapertools.com
     - name: Fabrication resources
       links:
       - name: Boxes
