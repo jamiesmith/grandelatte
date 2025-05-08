@@ -113,6 +113,8 @@ bookmark_entries:
       - name: Academy
         url: https://academy.titansofcnc.com
         indent: 1
+      - name: OpenBuilds Supplies
+        url: https://us.openbuilds.com
     - name: Fabrication Supplies
       links:
       - name: Cups
