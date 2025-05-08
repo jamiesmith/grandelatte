@@ -87,6 +87,8 @@ bookmark_entries:
         url: https://hub.shapertools.com
       - name: Community
         url: https://community.shapertools.com
+      - name: Domino Gen
+        url: https://browncowww.pythonanywhere.com
     - name: Fabrication resources
       links:
       - name: Boxes
