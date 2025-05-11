@@ -81,10 +81,10 @@ bookmark_entries:
     groups:
     - name: Shaper Origin
       links:
-      - name: Studio
-        url: https://studio.shapertools.com
       - name: Hub
         url: https://hub.shapertools.com
+      - name: Studio
+        url: https://studio.shapertools.com
       - name: Community
         url: https://community.shapertools.com
       - name: Domino Gen
