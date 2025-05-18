@@ -81,6 +81,8 @@ bookmark_entries:
     groups:
     - name: Shaper Origin
       links:
+      - name: ShaperTools
+        url: https://www.shapertools.com/
       - name: Hub
         url: https://hub.shapertools.com
       - name: Studio
