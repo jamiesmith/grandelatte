@@ -20,7 +20,7 @@ bookmark_entries:
       - name: Martin Logan
         url: http://www.martinlogan.com
       - name: Marantz
-        url: http://us.marantz.com/default.asp
+        url: http://us.marantz.com/
     - name: Mobile
       links:
       - name: talk maemo
