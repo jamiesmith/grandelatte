@@ -27,8 +27,6 @@ bookmark_entries:
         url: http://talk.maemo.org/
     - name: Home Theater
       links:
-      - name: AV Science Forum
-        url: http://www.avsforum.com/forum/index.php
       - name: Yamaha Electronics
         url: http://www.yamaha.com/yec/
       - name: MonoPrice

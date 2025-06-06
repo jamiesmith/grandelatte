@@ -12,6 +12,8 @@ bookmark_entries:
     groups:
     - name: Essentials
       links:
+      - name: AV Science Forum
+        url: http://www.avsforum.com/forum/index.php
       - name: Best Buy
         url: http://www.bestbuy.com
       - name: Crutchfield
