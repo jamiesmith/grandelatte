@@ -81,31 +81,20 @@ bookmark_entries:
         url: https://remotedesktop.google.com/u/1/access
     - name: Work Stuff
       links:
-      - name: Mail
-        url: https://mail.google.com/a/snyk.io
-      - name: Google Drive
-        url: https://drive.google.com/a/snyk.io
-        indent: 1
-      - name: G-Drive Recent
-        url: https://drive.google.com/drive/u/0/recent
-        indent: 1
-      - name: Calendar
-        url: https://calendar.google.com/a/snyk.io
-        indent: 1
+      # JRS-TMP - name: Mail
+      # JRS-TMP   url: https://mail.google.com/a/snyk.io
+      # JRS-TMP - name: Google Drive
+      # JRS-TMP   url: https://drive.google.com/a/snyk.io
+      # JRS-TMP   indent: 1
+      # JRS-TMP - name: G-Drive Recent
+      # JRS-TMP   url: https://drive.google.com/drive/u/0/recent
+      # JRS-TMP   indent: 1
+      # JRS-TMP - name: Calendar
+      # JRS-TMP   url: https://calendar.google.com/a/snyk.io
+      # JRS-TMP   indent: 1
       - name: Gemini
         url: https://gemini.google.com/app
         indent: 1
-      - name: ContentGPT
-        url: https://contentgpt.snyk-corp.io
-        indent: 1
-      - name: Okta
-        url: https://snyk.okta.com/app/UserHome
-      - name: Workday
-        url: https://www.myworkday.com/snyk/d/home.htmld
-      - name: Slacker
-        url: https://snyk.slack.com/
-      - name: Snyk UI
-        url: https://app.snyk.io/
     - name: Misc Stuff
       links:
       - name: Time Zones (grid)
@@ -316,26 +305,8 @@ bookmark_entries:
         url: https://www.amazon.com/gp/bestsellers/digital-text/154606011
     - name: DevOps
       links:
-      - name: Snyk
-        url: https://www.snyk.io
-      - name: Docs
-        url: https://docs.snyk.io/
-        indent: 1
-      - name: Blogs
+      - name: Snyk Blogs
         url: https://www.snyk.io/blog/
-        indent: 1
-      - name: OSS/SCA
-        url: https://snyk.io/product/open-source-security-management/
-        indent: 1
-      - name: Container
-        url: https://snyk.io/product/container-vulnerability-management/
-        indent: 1
-      - name: SSCS
-        url: https://snyk.io/solutions/software-supply-chain-security/
-        indent: 1
-      - name: Careers
-        url: https://www.snyk.io/careers
-        indent: 1
       - name: NodeJS
         url: https://nodejs.org
       - name: Repo Search
