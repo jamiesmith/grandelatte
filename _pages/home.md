@@ -46,6 +46,8 @@ bookmark_entries:
         url: https://coolmaterial.com/
       - name: Geeky Gadgets
         url: https://www.geeky-gadgets.com
+      - name: DigitalTrends
+        url: https://www.digitaltrends.com
       - name: sdotd
         url: https://www.musiciansfriend.com/stupid
     - name: Remotes
