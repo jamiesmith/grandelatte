@@ -40,14 +40,14 @@ bookmark_entries:
         url: https://appleworld.today/
       - name: Gizmodo
         url: https://gizmodo.com
+      - name: DigitalTrends
+        url: https://www.digitaltrends.com
       - name: Gear Patrol
         url: https://www.gearpatrol.com
       - name: Cool Material
         url: https://coolmaterial.com/
       - name: Geeky Gadgets
         url: https://www.geeky-gadgets.com
-      - name: DigitalTrends
-        url: https://www.digitaltrends.com
       - name: sdotd
         url: https://www.musiciansfriend.com/stupid
     - name: Remotes
