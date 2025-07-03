@@ -40,8 +40,6 @@ bookmark_entries:
         url: https://appleworld.today/
       - name: Gizmodo
         url: https://gizmodo.com
-      - name: DigitalTrends
-        url: https://www.digitaltrends.com
       - name: Gear Patrol
         url: https://www.gearpatrol.com
       - name: Cool Material
