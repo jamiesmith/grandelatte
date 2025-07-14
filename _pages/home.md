@@ -299,6 +299,10 @@ bookmark_entries:
         url: https://tteck.github.io/Proxmox/
       - name: TechnoTim
         url: https://technotim.live
+    - name: SkyNet
+      links:
+      - name: ChatGPT
+        url: https://chatgpt.com
     - name: Kindle
       links:
       - name: Manage your Kindle
