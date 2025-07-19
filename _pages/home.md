@@ -303,6 +303,8 @@ bookmark_entries:
       links:
       - name: ChatGPT
         url: https://chatgpt.com
+      - name: Claude
+        url: https://claude.ai
     - name: Kindle
       links:
       - name: Manage your Kindle
