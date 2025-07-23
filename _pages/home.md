@@ -303,6 +303,9 @@ bookmark_entries:
       links:
       - name: ChatGPT
         url: https://chatgpt.com
+      - name: OpenAI API
+        url: https://openai.com/api/
+        indent: 1
       - name: Claude
         url: https://claude.ai
     - name: Kindle
