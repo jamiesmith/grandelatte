@@ -311,6 +311,8 @@ bookmark_entries:
         indent: 1
       - name: Claude
         url: https://claude.ai
+      - name: Google AI
+        url: http://aistudio.google.com
     - name: Kindle
       links:
       - name: Manage your Kindle
