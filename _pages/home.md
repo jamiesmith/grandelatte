@@ -306,6 +306,9 @@ bookmark_entries:
       - name: OpenAI API
         url: https://openai.com/api/
         indent: 1
+      - name: Tokenizer
+        url: https://platform.openai.com/tokenizer
+        indent: 1
       - name: Claude
         url: https://claude.ai
     - name: Kindle
