@@ -402,7 +402,7 @@ bookmark_entries:
         indent: 1
       - name: BlueSky
         url: https://bsky.app/
-      - name: linked in
+      - name: LinkedIN
         url: https://www.linkedin.com/
     - name: Astronomy
       links:
