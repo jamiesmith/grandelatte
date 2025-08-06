@@ -104,7 +104,7 @@ analytics:
 author:
   name             : *name # *name is a YAML reference pointing to the &anchor earlier
   avatar           : "/assets/images/homepage/choctini.jpg"
-  bio              : "Maker, explaineer, mixologist"
+  bio              : "Maker, explaineer, astrophotographer, mixologist"
   location         : "Charlotte, NC"
   email            :
   uri              : "https://www.grandelatte.com"
@@ -122,6 +122,7 @@ author:
   instagram        : "jamiesmithnc"
   lastfm           :
   linkedin         : "jamiesmithnc"
+  portfolio        : "https://www.jamiesmithnc.com"
   pinterest        :
   soundcloud       :
   stackoverflow    : # https://stackoverflow.com/users/123456/username
