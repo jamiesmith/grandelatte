@@ -380,8 +380,8 @@ bookmark_entries:
         indent: 1
       - name: Xbox
         url: https://www.xbox.com
-      - name: Games with Gold
-        url: https://www.xbox.com/en-US/live/gold?xr=shellnav#gameswithgold
+      - name: GamePass Games
+        url: https://www.xbox.com/en-US/xbox-game-pass/games
         indent: 1
       - name: New Leaf Guide
         url: https://www.thonky.com/animal-crossing-new-leaf/
