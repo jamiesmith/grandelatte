@@ -383,8 +383,8 @@ bookmark_entries:
       - name: GamePass Games
         url: https://www.xbox.com/en-US/xbox-game-pass/games
         indent: 1
-      - name: New Leaf Guide
-        url: https://www.thonky.com/animal-crossing-new-leaf/
+      - name: Fallout 4 Map
+        url: https://fallout4map.com
       - name: GameFAQs
         url: https://www.gamefaqs.com/
       - name: TotK Guide
