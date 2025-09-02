@@ -96,7 +96,6 @@ bookmark_entries:
       # JRS-TMP   indent: 1
       - name: Gemini
         url: https://gemini.google.com/app
-        indent: 1
     - name: Misc Stuff
       links:
       - name: Time Zones (grid)
