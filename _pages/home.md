@@ -83,17 +83,17 @@ bookmark_entries:
         url: https://remotedesktop.google.com/u/1/access
     - name: Work Stuff
       links:
-      # JRS-TMP - name: Mail
-      # JRS-TMP   url: https://mail.google.com/a/snyk.io
-      # JRS-TMP - name: Google Drive
-      # JRS-TMP   url: https://drive.google.com/a/snyk.io
-      # JRS-TMP   indent: 1
-      # JRS-TMP - name: G-Drive Recent
-      # JRS-TMP   url: https://drive.google.com/drive/u/0/recent
-      # JRS-TMP   indent: 1
-      # JRS-TMP - name: Calendar
-      # JRS-TMP   url: https://calendar.google.com/a/snyk.io
-      # JRS-TMP   indent: 1
+      - name: Mail
+        url: https://mail.google.com/a/cytactic.com
+      - name: Google Drive
+        url: https://drive.google.com/a/cytactic.com
+        indent: 1
+      - name: G-Drive Recent
+        url: https://drive.google.com/drive/recent?authuser=jamie%40cytactic.com 
+        indent: 1
+      - name: Calendar
+        url: https://calendar.google.com/a/cytactic.com
+        indent: 1
       - name: Gemini
         url: https://gemini.google.com/app
     - name: Misc Stuff
