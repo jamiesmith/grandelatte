@@ -83,6 +83,8 @@ bookmark_entries:
         url: https://remotedesktop.google.com/u/1/access
     - name: Work Stuff
       links:
+      - name: Cytactic
+        url: https://www.cytactic.com
       - name: Mail
         url: https://mail.google.com/a/cytactic.com
       - name: Google Drive
@@ -94,6 +96,8 @@ bookmark_entries:
       - name: Calendar
         url: https://calendar.google.com/a/cytactic.com
         indent: 1
+      - name: App
+        url: https://app.cytactic.com/
       - name: Gemini
         url: https://gemini.google.com/app
     - name: Misc Stuff
