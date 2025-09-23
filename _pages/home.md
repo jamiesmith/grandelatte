@@ -34,6 +34,7 @@ bookmark_entries:
         url: https://9to5mac.com
       - name: 9to5 Toys
         url: https://9to5toys.com
+        indent: 1
       - name: Macworld
         url: https://www.macworld.com/
       - name: AppleWorld
