@@ -85,10 +85,13 @@ bookmark_entries:
         url: https://www.shapertools.com/
       - name: Hub
         url: https://hub.shapertools.com
+        indent: 1
       - name: Studio
         url: https://studio.shapertools.com
+        indent: 1
       - name: Community
         url: https://community.shapertools.com
+        indent: 1
       - name: Domino Gen
         url: https://browncowww.pythonanywhere.com
     - name: Fabrication resources
