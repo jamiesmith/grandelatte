@@ -103,10 +103,10 @@ bookmark_entries:
         url: https://gemini.google.com/app
     - name: Misc Stuff
       links:
+      - name: Time Zones (rows)
+        url: https://www.worldtimebuddy.com/?pl=1&lid=4460243,5380748,2643743,1850147,293397&h=4460243&hf=1
       - name: Time Zones (grid)
         url: https://www.timeanddate.com/worldclock/custom.html?cities=412,224,248,166,197,438,236,195,239,101,240
-      - name: More Times (rows)
-        url: https://www.worldtimebuddy.com/?pl=1&lid=4460243,5380748,2643743,1850147&h=4460243
       - name: SpeedTest
         url: https://www.speedtest.net/
     - name: Cars
