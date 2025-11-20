@@ -508,7 +508,7 @@ bookmark_entries:
       - name: AllSky
         url: http://allsky.ip-dynamic.org:8080/AllSky/
       - name: SkyAlert
-        url: https://uc47f0a82129961d57c7839af515.previews.dropboxusercontent.com/p/thumb/ACz9y28qdZVDG7Hc0VDOh7GEdNE93sew7gjsxmFRwoCo6rOJrt0H5eyKuYJEgTsQuoTCP-BG4uvfFkLzhVyCTc-eTopF1fthqjR741gUJCNi9pKD78rtPPm-I13s03AVYd9FXgKP2_twlTI5i0cHvYsTcR8_cuhfRMGyZrcn5Ylz5YvM0h7iTVO_8j0TI_0OvkJRIv960W6IQp8Jnn8eQBZ9RnREl1ZJv7-zLL63O8Ai4SKURp3n121duN4-LEIBcxCik1XAKkWxppkJ9mls-0aFthvPiuWa2HCPbISP0UU-2UDSrgVsmUUVmfxLrYKOh6jeRBCBNaaaacExWq2q7eT-vXChDHCHrSyZ-iBez09Qi4lMhFvesjDz1PqZ6MP1kpI/p.png?is_prewarmed=true
+        url: http://skyalert.theastroshed.com
       - name: MB Home
         url: https://www.meteoblue.com/en/weather/forecast/seeing/matthews_united-states-of-america_4478334
       - name: CSC-Indian Trail
