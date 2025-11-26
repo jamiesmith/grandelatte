@@ -327,8 +327,6 @@ bookmark_entries:
         url: https://www.amazon.com/gp/bestsellers/digital-text/154606011
     - name: DevOps
       links:
-      - name: Snyk Blogs
-        url: https://www.snyk.io/blog/
       - name: NodeJS
         url: https://nodejs.org
       - name: Repo Search
@@ -344,8 +342,6 @@ bookmark_entries:
       - name: Official Images
         url: https://hub.docker.com/u/library
         indent: 1
-      - name: Side of SLSA
-        url: https://slsa.dev/spec/v1.0/onepage
     - name: Photography
       links:
       - name: Photo Rumors
