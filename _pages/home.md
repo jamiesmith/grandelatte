@@ -273,18 +273,6 @@ bookmark_entries:
         url: https://wcnc.com/closings/
   - column: Column 3
     groups:
-    - name: Food & Beverage
-      links:
-      - name: RoastPATH Beta
-        url: https://portal.roastpath.com/forums/testers
-      - name: Forum
-        url: https://portal.roastpath.com/Forums
-        indent: 1
-      - name: Meck ABC
-        url: https://www.meckabc.com/store_operations/mixed_beverage_sales.php
-      - name: Warehouse
-        url: https://abc.nc.gov/StoresBoards/Stocks
-        indent: 1
     - name: Homelab
       links:
       - name: CloudFlare
@@ -369,6 +357,12 @@ bookmark_entries:
         indent: 1
       - name: DPReview
         url: https://www.dpreview.com/
+    - name: Road Warrior
+      links:
+      - name: Misery Map
+        url: https://flightaware.com/miserymap/
+      - name: Kayak
+        url: https://www.kayak.com/trips
     - name: Game Sites
       links:
       - name: GameSpot
@@ -536,12 +530,6 @@ bookmark_entries:
       - name: WU - 10 day
         url: https://www.wunderground.com/forecast/us/sc/taxahaw?cm_ven=localwx_10day
         indent: 1
-    - name: Road Warrior
-      links:
-      - name: Misery Map
-        url: https://flightaware.com/miserymap/
-      - name: Kayak
-        url: https://www.kayak.com/trips
 
 ---
 
