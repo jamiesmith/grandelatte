@@ -22,6 +22,8 @@ bookmark_entries:
         url: https://www.denon.com/en-us/
       - name: Audio Advice
         url: https://www.audioadvice.com
+      - name: HT ad
+        url: https://www.harristeeter.com/specials/weeklyad
       - name: Apple
         url: http://www.apple.com/
     - name: Gadgets!
@@ -147,6 +149,12 @@ bookmark_entries:
       - name: FOG
         url: https://festoolownersgroup.com/
         indent: 1
+      - name: Woodcraft
+        url: https://www.woodcraft.com
+        indent: 1
+      - name: Rockler
+        url: https://www.rockler.com
+        indent: 1
       - name: Wood Whisperer
         url: https://thewoodwhisperer.com/
       - name: AvidCNC
@@ -160,8 +168,6 @@ bookmark_entries:
         url: https://help.autodesk.com/view/fusion360/ENU/?guid=GUID-7B5A90C8-E94C-48DA-B16B-430729B734DC
       - name: GCode Viewer
         url: https://ncviewer.com
-      - name: HT ad
-        url: https://www.harristeeter.com/specials/weeklyad
       - name: Lowe's ad
         url: https://www.lowes.com/weekly-ad
       - name: Home Depot ad
