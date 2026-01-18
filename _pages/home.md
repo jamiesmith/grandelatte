@@ -160,7 +160,7 @@ bookmark_entries:
       - name: AvidCNC
         url: https://www.avidcnc.com
       - name: Forums
-        url: https://www.cnczone.com/forums/avid-cnc/
+        url: https://forum.avidcnc.com
         indent: 1
       - name: Mach4
         url: https://www.machsupport.com
