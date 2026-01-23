@@ -204,8 +204,6 @@ bookmark_entries:
         url: https://www.stereophile.com
       - name: Audiophile Style
         url: https://www.computeraudiophile.com
-      - name: Sound & Vision
-        url: https://www.soundandvision.com
       - name: Absolute Sound
         url: https://www.theabsolutesound.com
       - name: HiFi Plus
@@ -216,6 +214,8 @@ bookmark_entries:
         url: https://www.whathifi.com/us
       - name: Headfonia
         url: https://www.headfonia.com
+      - name: Sound & Vision
+        url: https://www.soundandvision.com
       - name: HeadFonics
         url: https://www.headfonics.com
       - name: Headphones
