@@ -11,6 +11,21 @@ excerpt: 'Just a collection of bookmarks, port in progress!<br/>'
 bookmark_entries:
   - column: Column 1
     groups:
+    - name: Shaper Origin
+      links:
+      - name: ShaperTools
+        url: https://www.shapertools.com/
+      - name: Hub
+        url: https://hub.shapertools.com
+        indent: 1
+      - name: Studio
+        url: https://studio.shapertools.com
+        indent: 1
+      - name: Community
+        url: https://community.shapertools.com
+        indent: 1
+      - name: Domino Gen
+        url: https://browncowww.pythonanywhere.com
     - name: Tool Manufacturers
       links:
       - name: Felder USA
@@ -79,21 +94,6 @@ bookmark_entries:
 
   - column: Column 3
     groups:
-    - name: Shaper Origin
-      links:
-      - name: ShaperTools
-        url: https://www.shapertools.com/
-      - name: Hub
-        url: https://hub.shapertools.com
-        indent: 1
-      - name: Studio
-        url: https://studio.shapertools.com
-        indent: 1
-      - name: Community
-        url: https://community.shapertools.com
-        indent: 1
-      - name: Domino Gen
-        url: https://browncowww.pythonanywhere.com
     - name: Fabrication resources
       links:
       - name: Boxes
