@@ -214,10 +214,10 @@ bookmark_entries:
         url: https://www.whathifi.com/us
       - name: Headfonia
         url: https://www.headfonia.com
-      - name: Sound & Vision
-        url: https://www.soundandvision.com
       - name: HeadFonics
         url: https://www.headfonics.com
+      - name: Sound & Vision
+        url: https://www.soundandvision.com
       - name: Headphones
         url: https://www.headphones.com
       - name: HeadAmp
