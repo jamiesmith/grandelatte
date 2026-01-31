@@ -24,6 +24,8 @@ bookmark_entries:
       - name: Community
         url: https://community.shapertools.com
         indent: 1
+      - name: Dovetails!
+        url: https://dovetails.bieber.dev
       - name: Domino Gen
         url: https://browncowww.pythonanywhere.com
     - name: Tool Manufacturers
