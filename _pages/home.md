@@ -58,7 +58,7 @@ bookmark_entries:
       - name: Grill
         url: https://fireboard.io
       - name: Ecobee
-        url: https://www.ecobee.com/consumerportal
+        url: https://www.ecobee.com/
       - name: Nest
         url: https://home.nest.com/home
       - name: MyQ
