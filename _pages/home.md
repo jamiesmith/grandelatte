@@ -399,6 +399,9 @@ bookmark_entries:
       links:
       - name: facebook
         url: https://www.facebook.com/
+      - name: Feeds
+        url: https://www.facebook.com/?filter=all&sk=h_chr
+        indent: 1
       - name: Amy
         url: https://www.facebook.com/akbs1969/
         indent: 1
