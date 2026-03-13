@@ -522,7 +522,7 @@ bookmark_entries:
         url: https://www.astrospheric.com/?Latitude=34.695736&Longitude=-80.536855
         indent: 1
       - name: Clear Sky
-        url: https://www.cleardarksky.com/c/TaxaSCkey.html
+        url: https://www.cleardarksky.com/c/GHROSCkey.html
         indent: 1
       - name: StarGazing
         url: https://www.accuweather.com/en/us/taxahaw-sc/29067/astronomy-weather/2131162
