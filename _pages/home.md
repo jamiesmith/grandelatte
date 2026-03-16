@@ -494,8 +494,6 @@ bookmark_entries:
         url: https://www.darkdragonsastro.com
       - name: ZWO ASI
         url: https://zwoastro.com
-      - name: Eclipse 2026
-        url: https://nso.edu/for-public/eclipse-map-2026/
       - name: GyroCam
         url: https://rkinnett.github.io/gyrocam/
       - name: DeepSky
