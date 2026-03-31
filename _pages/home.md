@@ -90,6 +90,9 @@ bookmark_entries:
       links:
       - name: Cytactic
         url: https://www.cytactic.com
+      - name: Blogs
+        url: https://www.cytactic.com/blog
+        indent: 1
       - name: Mail
         url: https://mail.google.com/a/cytactic.com
       - name: Google Drive
