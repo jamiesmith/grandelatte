@@ -378,6 +378,9 @@ bookmark_entries:
         url: https://www.zeldadungeon.net/tears-of-the-kingdom-interactive-map/?l=Surface&z=4&x=348&y=-302&m=Hinox_G32
       - name: Elden Ring Map
         url: https://mapgenie.io/elden-ring/maps/the-lands-between
+      - name: Sequence
+        url: https://eldenring.wiki.fextralife.com/file/Elden-Ring/game_progress_route_map_elden_ring_wiki_guide_3840px.jpg
+        indent: 1
   - column: Column 4
     groups:
     - name: Social Ties
