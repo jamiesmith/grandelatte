@@ -379,7 +379,7 @@ bookmark_entries:
       - name: Elden Ring Map
         url: https://mapgenie.io/elden-ring/maps/the-lands-between
       - name: Sequence
-        url: https://eldenring.wiki.fextralife.com/file/Elden-Ring/game_progress_route_map_elden_ring_wiki_guide_3840px.jpg
+        url: https://eldenring.wiki.fextralife.com/file/Elden-Ring/game_progress_route_map_elden_ring_wiki_guide_3840px.jpg?foo=bar
         indent: 1
   - column: Column 4
     groups:
