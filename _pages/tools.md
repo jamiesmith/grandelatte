@@ -28,6 +28,8 @@ bookmark_entries:
         url: https://dovetails.bieber.dev
       - name: Domino Gen
         url: https://browncowww.pythonanywhere.com
+      - name: Kiri Slicer
+        url: https://grid.space/kiri/
     - name: Tool Manufacturers
       links:
       - name: Felder USA
