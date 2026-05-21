@@ -24,6 +24,9 @@ bookmark_entries:
         url: https://www.audioadvice.com
       - name: HT ad
         url: https://www.harristeeter.com/specials/weeklyad
+      - name: Coupons
+        url: https://www.harristeeter.com/savings/cl/coupons/
+        indent: 1
       - name: Apple
         url: http://www.apple.com/
     - name: Gadgets!
