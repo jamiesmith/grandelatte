@@ -1,0 +1,636 @@
+---
+layout: none
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Billiards Scorekeeper</title>
+  <style>
+    :root {
+      --bg:       #141420;
+      --surface:  #1e1e30;
+      --surface2: #272740;
+      --border:   #3a3a5c;
+      --accent:   #2e8a57;
+      --accent-h: #3aad6e;
+      --text:     #ddddf0;
+      --muted:    #8888aa;
+      --a:        #5a8fd4;
+      --a-dark:   #2d5a8e;
+      --b:        #d4935a;
+      --b-dark:   #8e5a2d;
+      --danger:   #c04f4f;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 17px;
+      min-height: 100vh;
+    }
+
+    #app {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 1rem 1rem 3rem;
+    }
+
+    h1 { font-size: 1.9rem; text-align: center; margin-bottom: 1rem; }
+    h2 { font-size: 1.2rem; margin-bottom: 0.75rem; }
+    h3 { font-size: 1rem; color: var(--muted); margin-bottom: 0.6rem; font-weight: 600; }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1rem 1.1rem;
+      margin-bottom: 1rem;
+    }
+
+    /* ── Buttons ─────────────────────────────────────────────────────────── */
+    button {
+      cursor: pointer;
+      border: none;
+      border-radius: 9px;
+      font-family: inherit;
+      font-size: 1rem;
+      color: var(--text);
+      padding: 0.55rem 1rem;
+      min-height: 48px;
+      transition: filter 0.12s, transform 0.08s;
+    }
+    button:active  { transform: scale(0.96); }
+    button:disabled { opacity: 0.35; cursor: not-allowed; transform: none; }
+    button:not(:disabled):hover { filter: brightness(1.15); }
+
+    .btn-primary  { background: var(--accent); }
+    .btn-ghost    { background: var(--surface2); border: 1px solid var(--border); }
+    .btn-danger   { background: var(--danger); }
+    .btn-a        { background: var(--a-dark); }
+    .btn-b        { background: var(--b-dark); }
+    .btn-sm       { font-size: 0.85rem; min-height: 36px; padding: 0.3rem 0.7rem; }
+    .btn-lg       { font-size: 1.25rem; min-height: 64px; padding: 1rem 1.2rem; width: 100%; }
+    .btn-round    { border-radius: 50%; width: 48px; min-height: 48px; padding: 0; font-size: 1.4rem; }
+
+    .btn-game {
+      background: var(--surface2);
+      border: 2px solid var(--border);
+      font-size: 1.2rem;
+      font-weight: 700;
+      min-height: 160px;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+    }
+    .btn-game.active {
+      border-color: var(--accent);
+      background: rgba(46,138,87,0.18);
+      color: var(--accent-h);
+    }
+
+    /* ── Inputs ──────────────────────────────────────────────────────────── */
+    input[type="text"] {
+      width: 100%;
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      color: var(--text);
+      font-family: inherit;
+      font-size: 1rem;
+      padding: 0.55rem 0.8rem;
+      min-height: 46px;
+      margin-bottom: 0.75rem;
+    }
+    input[type="text"]:focus { outline: none; border-color: var(--accent); }
+    input[type="text"]::placeholder { color: var(--muted); }
+
+    /* ── Layout ──────────────────────────────────────────────────────────── */
+    .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 0.9rem; }
+    .grid2-flat { display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem; }
+
+    /* ── Player slots ────────────────────────────────────────────────────── */
+    .player-slot {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--surface2);
+      border-radius: 9px;
+      padding: 0.55rem 0.75rem;
+      min-height: 48px;
+      margin-bottom: 0.5rem;
+    }
+    .player-slot .name { flex: 1; font-weight: 600; }
+    .player-slot.empty { color: var(--muted); font-style: italic; background: transparent; border: 1px dashed var(--border); }
+    .badge {
+      font-size: 0.7rem;
+      background: var(--accent);
+      border-radius: 5px;
+      padding: 0.15rem 0.45rem;
+      color: #fff;
+      white-space: nowrap;
+    }
+
+    /* ── Player pills ────────────────────────────────────────────────────── */
+    .pills { display: flex; flex-wrap: wrap; gap: 0.45rem; margin-top: 0.4rem; }
+    .pill {
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 0.35rem 0.85rem;
+      font-size: 0.9rem;
+      min-height: 40px;
+      cursor: pointer;
+    }
+    .pill:hover { border-color: var(--accent); }
+
+    /* ── Score cards ─────────────────────────────────────────────────────── */
+    .score-card {
+      border-radius: 14px;
+      padding: 1.25rem 1rem;
+      text-align: center;
+      border: 2px solid;
+    }
+    .score-card .sc-name  { font-size: 1.7rem; font-weight: 700; margin-bottom: 0.25rem; }
+    .score-card .sc-wins  { font-size: 6rem; font-weight: 800; line-height: 1; margin-bottom: 0.4rem; }
+    .sc-players { display: flex; gap: 0.5rem; margin-bottom: 0.5rem; }
+    .player-box {
+      flex: 1;
+      border-radius: 10px;
+      padding: 0.6rem 0.5rem;
+      text-align: center;
+    }
+    .player-box.shooting {
+      background: rgba(255,255,255,0.1);
+      border: 2px solid rgba(255,255,255,0.4);
+    }
+    .player-box.bench {
+      background: transparent;
+      border: 2px dashed rgba(255,255,255,0.15);
+      opacity: 0.6;
+    }
+    .player-box .pb-label { font-size: 0.75rem; color: var(--muted); margin-bottom: 0.2rem; }
+    .player-box .pb-name  { font-size: 1.6rem; font-weight: 800; line-height: 1.1; }
+    .sc-swap {
+      width: 100%; margin-top: 0.4rem;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.12);
+      font-size: 0.9rem; min-height: 40px;
+    }
+
+    /* ── 8-ball extras ───────────────────────────────────────────────────── */
+    .ss-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+    .ss-team { display: flex; flex-direction: column; gap: 0.4rem; }
+    .ss-btn {
+      background: var(--surface2);
+      border: 2px solid var(--border);
+      font-size: 0.95rem;
+      font-weight: 600;
+      min-height: 52px;
+      border-radius: 9px;
+    }
+    .ss-btn.active { border-color: var(--accent); background: rgba(46,138,87,0.2); }
+
+    /* ── Straight pool extras ────────────────────────────────────────────── */
+    .sp-grid     { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .sp-controls { display: flex; align-items: center; justify-content: center; gap: 0.75rem; margin-top: 0.4rem; }
+    .sp-score    { font-size: 2.2rem; font-weight: 800; min-width: 2.5ch; text-align: center; }
+
+    /* ── Bottom action row ───────────────────────────────────────────────── */
+    .bottom-row { display: flex; flex-wrap: wrap; gap: 0.7rem; }
+    .bottom-row button { flex: 1; min-width: 120px; }
+
+
+    /* ── Game header ─────────────────────────────────────────────────────── */
+    .game-header { text-align: center; margin-bottom: 1rem; }
+    .game-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 0.25rem 0.75rem 0.25rem 0.5rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-bottom: 0.5rem;
+    }
+
+    /* ── Summary ─────────────────────────────────────────────────────────── */
+    .summary-card { border-radius: 14px; padding: 1.5rem; text-align: center; border: 2px solid; }
+    .big-score    { font-size: 3.5rem; font-weight: 800; line-height: 1; margin: 0.4rem 0; }
+    .big-msg      { font-size: 1.4rem; text-align: center; margin: 0.75rem 0; }
+    .action-stack { display: flex; flex-direction: column; gap: 0.7rem; }
+
+    /* ── Utilities ───────────────────────────────────────────────────────── */
+    .label   { font-size: 0.78rem; color: var(--muted); margin-bottom: 0.25rem; }
+    .muted   { color: var(--muted); }
+    .center  { text-align: center; }
+    .mt-sm   { margin-top: 0.6rem; }
+    .mt-1    { margin-top: 1rem; }
+    .mb-sm   { margin-bottom: 0.6rem; }
+    .divider { border: none; border-top: 1px solid var(--border); margin: 0.85rem 0; }
+    .row     { display: flex; gap: 0.5rem; align-items: center; }
+    .flex1   { flex: 1; }
+
+    @media (max-width: 520px) {
+      .grid2     { grid-template-columns: 1fr; }
+      .grid2-flat { grid-template-columns: 1fr 1fr; }
+      h1 { font-size: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+<div id="app"></div>
+<script>
+// ── CONFIG ──────────────────────────────────────────────────────────────────
+// Player roster comes from _data/billiards.yml
+const BASE_PLAYERS = {{ site.data.billiards.players | jsonify }};
+
+// ── GAME TYPE REGISTRY ──────────────────────────────────────────────────────
+// To add a new game, add an entry here with id, name, initExtras, renderExtras.
+// ── BALL RENDERERS ──────────────────────────────────────────────────────────
+const BALL_PX = { lg: 72, sel: 110, score: 90, badge: 56, md: 36, sm: 26 };
+
+function ballImg(file, size) {
+  const px = BALL_PX[size] || 36;
+  return `<img src="/assets/images/billiards/${file}" width="${px}" height="${px}"
+               style="display:inline-block;flex-shrink:0;vertical-align:middle">`;
+}
+
+const GAME_TYPES = {
+  'eight-ball': {
+    id: 'eight-ball',
+    name: '8-Ball',
+    ballHtml: (size='lg') => ballImg('billiard-ball-8.png', size),
+    initExtras: () => ({ solidsTeam: null }),
+    teamBadge(teamIdx, ex) {
+      if (ex.solidsTeam === null) return '';
+      const file = ex.solidsTeam === teamIdx ? 'billiard-ball-4.png' : 'billiard-ball-13.png';
+      return ballImg(file, 'score');
+    },
+    renderExtras(ex, teams) {
+      const { solidsTeam } = ex;
+      const cls = (teamIdx, type) =>
+        solidsTeam !== null && (type === 'solids' ? solidsTeam === teamIdx : solidsTeam !== teamIdx) ? 'active' : '';
+      return `<div class="card">
+        <h3>Solids &amp; Stripes</h3>
+        <div class="ss-grid">
+          ${[0,1].map(i => `
+            <div class="ss-team">
+              <div class="label">${x(teams[i].name)}</div>
+              <button class="ss-btn ${cls(i,'solids')}" onclick="D('setSolids',${i})">
+                ${ballImg('billiard-ball-4.png','sm')} Solids
+              </button>
+              <button class="ss-btn ${cls(i,'stripes')}" onclick="D('setStripes',${i})">
+                ${ballImg('billiard-ball-13.png','sm')} Stripes
+              </button>
+            </div>`).join('')}
+        </div>
+      </div>`;
+    },
+  },
+
+  'nine-ball': {
+    id: 'nine-ball', name: '9-Ball',
+    ballHtml: (size='lg') => ballImg('billiard-ball-9.png', size),
+    initExtras: () => ({}),
+    renderExtras: () => '',
+  },
+
+  'ten-ball': {
+    id: 'ten-ball', name: '10-Ball',
+    ballHtml: (size='lg') => ballImg('billiard-ball-10.png', size),
+    initExtras: () => ({}),
+    renderExtras: () => '',
+  },
+
+  'straight-pool': {
+    id: 'straight-pool', name: 'Straight Pool',
+    ballHtml: (size='lg') => ballImg('billiard-straight-pool.png', size),
+    initExtras: () => ({ scores: [0, 0] }),
+    renderExtras(ex, teams) {
+      return `<div class="card">
+        <h3>Running Score</h3>
+        <div class="sp-grid">
+          ${[0,1].map(i => `
+            <div>
+              <div class="label">${x(teams[i].name)}</div>
+              <div class="sp-controls">
+                <button class="btn-ghost btn-round" onclick="D('adjScore',${i},-1)">−</button>
+                <span class="sp-score">${ex.scores[i]}</span>
+                <button class="btn-ghost btn-round" onclick="D('adjScore',${i},1)">+</button>
+              </div>
+            </div>`).join('')}
+        </div>
+      </div>`;
+    },
+  },
+};
+
+// ── STATE ───────────────────────────────────────────────────────────────────
+let S = freshState();
+
+function freshState() {
+  return {
+    view: 'setup',
+    gameType: 'eight-ball',
+    teams: [
+      { name: 'Team A', players: [], shooterIdx: 0, wins: 0 },
+      { name: 'Team B', players: [], shooterIdx: 0, wins: 0 },
+    ],
+    extras: {},
+    gamesPlayed: 0,
+    lastWinner: null,
+    adHoc: [],
+  };
+}
+
+// ── HELPERS ─────────────────────────────────────────────────────────────────
+function allPlayers() { return [...BASE_PLAYERS, ...S.adHoc]; }
+function takenSet()   { return new Set([...S.teams[0].players, ...S.teams[1].players]); }
+
+// HTML-escape for display
+function x(s) {
+  return String(s)
+    .replace(/&/g,'&amp;').replace(/</g,'&lt;')
+    .replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+// HTML-escape for attribute values (also escapes single quotes)
+function xa(s) { return x(s).replace(/'/g,'&#39;'); }
+
+// ── DISPATCH ────────────────────────────────────────────────────────────────
+function D(action, a, b) {
+  const T = S.teams;
+  switch (action) {
+    case 'gameType': S.gameType = a; break;
+
+    case 'teamName': T[a].name = b; return; // skip render — input already shows correct value
+
+    case 'addPlayer':
+      if (T[a].players.length < 2 && !takenSet().has(b))
+        T[a].players.push(b);
+      break;
+
+    case 'removePlayer':
+      T[a].players.splice(b, 1);
+      if (T[a].shooterIdx >= T[a].players.length) T[a].shooterIdx = 0;
+      break;
+
+    case 'swapOrder': T[a].players.reverse(); break;
+
+    case 'addAdHoc':
+      if (a && !allPlayers().includes(a)) S.adHoc.push(a);
+      break;
+
+    case 'start':
+      S.extras = GAME_TYPES[S.gameType].initExtras();
+      S.gamesPlayed = 0;
+      T.forEach(t => { t.wins = 0; t.shooterIdx = 0; });
+      S.view = 'game';
+      break;
+
+    case 'win': {
+      const other = a ^ 1;
+      T[a].wins++;
+      S.gamesPlayed++;
+      [a, other].forEach(i => {
+        if (T[i].players.length > 1)
+          T[i].shooterIdx = T[i].shooterIdx ^ 1;
+      });
+      S.lastWinner = a;
+      break;
+    }
+
+    case 'playAgain':
+      S.lastWinner = null;
+      S.extras = GAME_TYPES[S.gameType].initExtras();
+      break;
+
+    case 'swapShooter':
+      if (T[a].players.length > 1) T[a].shooterIdx ^= 1;
+      break;
+
+    case 'setSolids':  S.extras.solidsTeam = a; break;
+    case 'setStripes': S.extras.solidsTeam = a ^ 1; break;
+
+    case 'adjScore': {
+      const scores = [...S.extras.scores];
+      scores[a] = Math.max(0, scores[a] + b);
+      S.extras.scores = scores;
+      break;
+    }
+
+    case 'endSession': S.view = 'summary'; break;
+
+    case 'newGame':
+      S.extras = GAME_TYPES[S.gameType].initExtras();
+      S.view = 'game';
+      break;
+
+    case 'newSession': {
+      const adHoc = S.adHoc;
+      S = freshState();
+      S.adHoc = adHoc;
+      break;
+    }
+  }
+  render();
+}
+
+// ── SETUP VIEW ──────────────────────────────────────────────────────────────
+function viewSetup() {
+  const taken = takenSet();
+
+  const teamCards = S.teams.map((team, ti) => {
+    const color = ti === 0 ? 'var(--a)' : 'var(--b)';
+    const available = allPlayers().filter(p => !taken.has(p));
+    const canAdd = team.players.length < 2;
+
+    const slots = [0, 1].map(si => {
+      const p = team.players[si];
+      if (p) return `
+        <div class="player-slot">
+          <span class="name">${x(p)}</span>
+          ${si === team.shooterIdx ? '<span class="badge">shoots first</span>' : ''}
+          <button class="btn-ghost btn-sm"
+            onclick="D('removePlayer',${ti},${si})">✕</button>
+        </div>`;
+      return `<div class="player-slot empty">— open slot —</div>`;
+    }).join('');
+
+    return `
+      <div class="card" style="border-color:${color}">
+        <h2>Team ${ti === 0 ? 'A' : 'B'}</h2>
+        <input type="text" placeholder="Team name" value="${xa(team.name)}"
+          oninput="D('teamName',${ti},this.value)">
+        ${slots}
+        ${team.players.length === 2
+          ? `<button class="btn-ghost btn-sm mt-sm" onclick="D('swapOrder',${ti})">↕ Swap shooting order</button>`
+          : ''}
+        ${canAdd && available.length > 0 ? `
+          <div class="divider"></div>
+          <div class="label">Add to this team</div>
+          <div class="pills">
+            ${available.map(p => `
+              <button class="pill"
+                data-ti="${ti}" data-p="${xa(p)}"
+                onclick="D('addPlayer',+this.dataset.ti,this.dataset.p)">
+                + ${x(p)}
+              </button>`).join('')}
+          </div>` : ''}
+      </div>`;
+  }).join('');
+
+  const canStart = S.teams.every(t => t.players.length >= 1);
+
+  return `
+    <h1>🎱 Billiards</h1>
+
+    <div class="card">
+      <h2>Game Type</h2>
+      <div class="grid2-flat">
+        ${Object.values(GAME_TYPES).map(g => `
+          <button class="btn-game ${S.gameType === g.id ? 'active' : ''}"
+            onclick="D('gameType','${g.id}')">
+            ${g.ballHtml('sel')}
+            ${g.name}
+          </button>
+        `).join('')}
+      </div>
+    </div>
+
+    <div class="grid2">${teamCards}</div>
+
+    <div class="card">
+      <h3>Add a guest player</h3>
+      <div class="row">
+        <input type="text" id="adhoc" placeholder="Name…" style="margin:0" class="flex1">
+        <button class="btn-ghost" style="white-space:nowrap" onclick="
+          const n=document.getElementById('adhoc').value.trim();
+          if(n){D('addAdHoc',n);document.getElementById('adhoc').value=''}
+        ">+ Add</button>
+      </div>
+      ${S.adHoc.length ? `
+        <div class="pills mt-sm">
+          ${S.adHoc.map(p => `<span class="pill" style="cursor:default">${x(p)}</span>`).join('')}
+        </div>` : ''}
+    </div>
+
+    <button class="btn-primary btn-lg" onclick="D('start')" ${canStart ? '' : 'disabled'}>
+      Start Game →
+    </button>`;
+}
+
+// ── GAME VIEW ───────────────────────────────────────────────────────────────
+function viewGame() {
+  const gt = GAME_TYPES[S.gameType];
+  const colors  = ['var(--a)', 'var(--b)'];
+  const bgAlpha = ['rgba(90,143,212,0.15)', 'rgba(212,147,90,0.15)'];
+
+  const scorecards = S.teams.map((t, i) => {
+    const players = t.players.length
+      ? t.players.map((p, pi) => {
+          const shooting = pi === t.shooterIdx;
+          return `<div class="player-box ${shooting ? 'shooting' : 'bench'}">
+            <div class="pb-label">${shooting ? '▶ shooting' : 'on deck'}</div>
+            <div class="pb-name">${x(p)}</div>
+          </div>`;
+        }).join('')
+      : '<div class="player-box bench"><div class="pb-name muted">—</div></div>';
+
+    return `
+      <div class="score-card" style="border-color:${colors[i]};background:${bgAlpha[i]}">
+        <div class="sc-name">${x(t.name)}</div>
+        <div style="display:flex;align-items:center;justify-content:center;gap:0.5rem">
+          ${gt.teamBadge ? gt.teamBadge(i, S.extras) : ''}
+          <div class="sc-wins" style="color:${colors[i]}">${t.wins}</div>
+        </div>
+        <div class="sc-players">${players}</div>
+        ${t.players.length > 1
+          ? `<button class="sc-swap" onclick="D('swapShooter',${i})">↕ next shooter</button>`
+          : ''}
+      </div>`;
+  }).join('');
+
+  return `
+    <div class="game-header">
+      <div class="game-badge">${gt.ballHtml('sm')} ${x(gt.name)} · Game ${S.gamesPlayed + 1}</div>
+      <h1>${x(S.teams[0].name)} vs ${x(S.teams[1].name)}</h1>
+    </div>
+
+    <div class="grid2">${scorecards}</div>
+
+    ${S.lastWinner === null ? gt.renderExtras(S.extras, S.teams) : ''}
+
+    ${S.lastWinner !== null ? `
+    <div class="card" style="text-align:center;padding:1.5rem">
+      <div style="font-size:2rem;font-weight:800;margin-bottom:0.75rem">
+        🏆 ${x(S.teams[S.lastWinner].name)} wins!
+      </div>
+      <button class="btn-primary btn-lg" onclick="D('playAgain')">▶ Play Again</button>
+    </div>
+    ` : `
+    <div class="card">
+      <h3>Record Win</h3>
+      <div class="grid2">
+        <button class="btn-a btn-lg" onclick="D('win',0)">${x(S.teams[0].name)} Wins</button>
+        <button class="btn-b btn-lg" onclick="D('win',1)">${x(S.teams[1].name)} Wins</button>
+      </div>
+    </div>
+    `}
+
+    <div class="bottom-row">
+      <button class="btn-danger" onclick="if(confirm('End this session and see results?'))D('endSession')">
+        End Session
+      </button>
+    </div>`;
+}
+
+// ── SUMMARY VIEW ─────────────────────────────────────────────────────────────
+function viewSummary() {
+  const [a, b] = S.teams;
+  const winner = a.wins > b.wins ? a : b.wins > a.wins ? b : null;
+  const colors  = ['var(--a)', 'var(--b)'];
+  const bgAlpha = ['rgba(90,143,212,0.2)', 'rgba(212,147,90,0.2)'];
+
+  const cards = S.teams.map((t, i) => `
+    <div class="summary-card" style="border-color:${colors[i]};background:${bgAlpha[i]}">
+      <div class="sc-name" style="font-size:1.2rem;font-weight:700">${x(t.name)}</div>
+      <div class="big-score" style="color:${colors[i]}">${t.wins}–${S.teams[i^1].wins}</div>
+      <div class="label">${x(t.players.join(' · '))}</div>
+    </div>`).join('');
+
+  return `
+    <h1>Session Over</h1>
+    ${winner
+      ? `<p class="big-msg">🏆 ${x(winner.name)} wins the session!</p>`
+      : `<p class="big-msg muted">It's a tie!</p>`}
+    <div class="grid2 mt-1">${cards}</div>
+    <p class="center muted mt-1">${S.gamesPlayed} game${S.gamesPlayed !== 1 ? 's' : ''} · ${x(GAME_TYPES[S.gameType].name)}</p>
+    <div class="action-stack mt-1">
+      <button class="btn-primary btn-lg" onclick="D('newGame')">Play Again (same teams)</button>
+      <button class="btn-ghost btn-lg" onclick="D('newSession')">New Session</button>
+    </div>`;
+}
+
+// ── RENDER ───────────────────────────────────────────────────────────────────
+function render() {
+  const el = document.getElementById('app');
+  if      (S.view === 'setup')   el.innerHTML = viewSetup();
+  else if (S.view === 'game')    el.innerHTML = viewGame();
+  else                           el.innerHTML = viewSummary();
+}
+
+window.D = D;
+render();
+</script>
+</body>
+</html>

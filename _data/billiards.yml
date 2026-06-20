@@ -1,0 +1,13 @@
+# Billiards scorekeeper player roster.
+# Add or remove names here to change who appears in the player list.
+players:
+  - Jamie
+  - Amy
+  - Miles
+  - Luna
+  - Paula
+  - Payton
+  - Wilson
+  - Bob
+  - Emily
+  - Kyle
