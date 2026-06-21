@@ -315,12 +315,15 @@ const GAME_TYPES = {
   'straight-pool': {
     id: 'straight-pool', name: 'Straight Pool',
     ballHtml: (size='lg') => ballImg('billiard-straight-pool.png', size),
-    initExtras: () => ({ scores: [0, 0] }),
+    initExtras: () => ({ scores: [0, 0], target: 100 }),
     renderExtras(ex, teams) {
+      const target = ex.target || 0;
       return `<div class="card">
         <h3>Running Score</h3>
         <div class="sp-grid">
-          ${[0,1].map(i => `
+          ${[0,1].map(i => {
+            const pct = target ? Math.min(100, Math.round(ex.scores[i] / target * 100)) : 0;
+            return `
             <div>
               <div class="label">${x(teams[i].name)}</div>
               <div class="sp-controls">
@@ -328,7 +331,20 @@ const GAME_TYPES = {
                 <span class="sp-score">${ex.scores[i]}</span>
                 <button class="btn-ghost btn-round" onclick="D('adjScore',${i},1)">+</button>
               </div>
-            </div>`).join('')}
+              ${target ? `<div style="margin-top:0.4rem;height:6px;background:var(--surface2);border-radius:3px;overflow:hidden">
+                <div style="height:100%;width:${pct}%;background:${i===0?'var(--a)':'var(--b)'};border-radius:3px;transition:width 0.2s"></div>
+              </div>
+              <div class="label" style="text-align:center;margin-top:0.2rem">${ex.scores[i]} / ${target}</div>` : ''}
+            </div>`;
+          }).join('')}
+        </div>
+        <hr class="divider">
+        <div class="label" style="text-align:center;margin-bottom:0.4rem">Race to</div>
+        <div style="display:flex;gap:0.4rem;justify-content:center">
+          ${[50,75,100,125,150].map(n => `
+            <button class="btn-ghost btn-sm ${target===n?'ss-btn active':''}"
+              style="flex:1" onclick="D('setTarget',${n})">${n}</button>
+          `).join('')}
         </div>
       </div>`;
     },
@@ -409,10 +425,13 @@ function D(action, a, b) {
       break;
     }
 
-    case 'playAgain':
+    case 'playAgain': {
+      const prevTarget = S.extras.target;
       S.lastWinner = null;
       S.extras = GAME_TYPES[S.gameType].initExtras();
+      if (prevTarget !== undefined) S.extras.target = prevTarget;
       break;
+    }
 
     case 'swapShooter':
       if (T[a].players.length > 1) T[a].shooterIdx ^= 1;
@@ -425,8 +444,14 @@ function D(action, a, b) {
       const scores = [...S.extras.scores];
       scores[a] = Math.max(0, scores[a] + b);
       S.extras.scores = scores;
+      const target = S.extras.target;
+      if (target && scores[a] >= target) D('win', a);
       break;
     }
+
+    case 'setTarget':
+      S.extras.target = a;
+      break;
 
     case 'endSession': S.view = 'summary'; break;
 
@@ -550,8 +575,9 @@ function viewGame() {
       <div class="score-card" style="border-color:${colors[i]};background:${bgAlpha[i]}">
         <div class="sc-name">${x(t.name)}</div>
         <div style="display:flex;align-items:center;justify-content:center;gap:0.5rem">
-          ${gt.teamBadge ? gt.teamBadge(i, S.extras) : ''}
+          ${gt.teamBadge && i === 0 ? gt.teamBadge(i, S.extras) : ''}
           <div class="sc-wins" style="color:${colors[i]}">${t.wins}</div>
+          ${gt.teamBadge && i === 1 ? gt.teamBadge(i, S.extras) : ''}
         </div>
         <div class="sc-players">${players}</div>
         ${t.players.length > 1
@@ -622,11 +648,18 @@ function viewSummary() {
 }
 
 // ── RENDER ───────────────────────────────────────────────────────────────────
+const BANNER = `<div style="text-align:center;margin-bottom:1.25rem">
+  <div style="font-size:0.75rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--muted);margin-bottom:0.2rem">🎱 Pool House Rocks 🎱</div>
+  <div style="height:2px;background:linear-gradient(90deg,transparent,var(--accent),transparent)"></div>
+</div>`;
+
 function render() {
   const el = document.getElementById('app');
-  if      (S.view === 'setup')   el.innerHTML = viewSetup();
-  else if (S.view === 'game')    el.innerHTML = viewGame();
-  else                           el.innerHTML = viewSummary();
+  let html = BANNER;
+  if      (S.view === 'setup')   html += viewSetup();
+  else if (S.view === 'game')    html += viewGame();
+  else                           html += viewSummary();
+  el.innerHTML = html;
 }
 
 window.D = D;
