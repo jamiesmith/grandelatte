@@ -160,6 +160,7 @@ layout: none
     }
     .score-card .sc-name  { font-size: 1.7rem; font-weight: 700; margin-bottom: 0.25rem; }
     .score-card .sc-wins  { font-size: 6rem; font-weight: 800; line-height: 1; margin-bottom: 0.4rem; }
+    .sc-wins-row { display: flex; align-items: center; justify-content: center; gap: 0.5rem; }
     .sc-players { display: flex; gap: 0.5rem; margin-bottom: 0.5rem; }
     .player-box {
       flex: 1;
@@ -206,6 +207,44 @@ layout: none
     /* ── Bottom action row ───────────────────────────────────────────────── */
     .bottom-row { display: flex; flex-wrap: wrap; gap: 0.7rem; }
     .bottom-row button { flex: 1; min-width: 120px; }
+
+    /* ── Play mode ───────────────────────────────────────────────────────── */
+    .play-overlay {
+      position: fixed; inset: 0; z-index: 999;
+      background: var(--bg);
+      display: flex; flex-direction: column;
+      padding: 1.5vh 1.5vw 1vh;
+    }
+    .play-overlay .play-cards {
+      flex: 1; display: grid; grid-template-columns: 1fr 1fr; gap: 1.5vw;
+      min-height: 0;
+    }
+    .play-overlay .score-card {
+      border-radius: 2vw;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      padding: 2vh 2vw;
+      border-width: 3px;
+    }
+    .play-overlay .score-card .sc-name  { font-size: clamp(1.4rem, 4vw, 4rem); margin-bottom: 0.5vh; }
+    .play-overlay .score-card .sc-wins  { font-size: clamp(4rem, 22vw, 26rem); line-height: 0.9; margin-bottom: 0.5vh; }
+    .play-overlay .score-card .sc-wins-row { display: flex; align-items: center; justify-content: center; gap: 2vw; }
+    .play-overlay .score-card .sc-wins-row img { width: clamp(3rem, 16vw, 18rem); height: clamp(3rem, 16vw, 18rem); }
+    .play-overlay .sc-players { width: 100%; }
+    .play-overlay .player-box .pb-label { font-size: clamp(0.6rem, 1.2vw, 1.1rem); }
+    .play-overlay .player-box .pb-name  { font-size: clamp(1rem, 3.5vw, 3.5rem); }
+    .play-overlay .sc-swap { display: none; }
+    .play-exit {
+      text-align: center; padding-top: 0.8vh;
+      flex-shrink: 0;
+    }
+    .play-exit button {
+      background: transparent; border: 1px solid var(--border);
+      color: var(--muted); font-size: 0.9rem; min-height: 36px;
+      padding: 0.3rem 1.2rem; border-radius: 20px;
+      opacity: 0.7;
+    }
+    .play-exit button:hover { opacity: 1; }
 
 
     /* ── Game header ─────────────────────────────────────────────────────── */
@@ -353,14 +392,15 @@ const GAME_TYPES = {
 
 // ── STATE ───────────────────────────────────────────────────────────────────
 let S = freshState();
+let playMode = false;
 
 function freshState() {
   return {
     view: 'setup',
     gameType: 'eight-ball',
     teams: [
-      { name: 'Team A', players: [], shooterIdx: 0, wins: 0 },
-      { name: 'Team B', players: [], shooterIdx: 0, wins: 0 },
+      { name: 'Home', players: [], shooterIdx: 0, wins: 0 },
+      { name: 'Visitors', players: [], shooterIdx: 0, wins: 0 },
     ],
     extras: {},
     gamesPlayed: 0,
@@ -452,6 +492,8 @@ function D(action, a, b) {
     case 'setTarget':
       S.extras.target = a;
       break;
+
+    case 'togglePlay': playMode = !playMode; break;
 
     case 'endSession': S.view = 'summary'; break;
 
@@ -557,34 +599,7 @@ function viewSetup() {
 // ── GAME VIEW ───────────────────────────────────────────────────────────────
 function viewGame() {
   const gt = GAME_TYPES[S.gameType];
-  const colors  = ['var(--a)', 'var(--b)'];
-  const bgAlpha = ['rgba(90,143,212,0.15)', 'rgba(212,147,90,0.15)'];
-
-  const scorecards = S.teams.map((t, i) => {
-    const players = t.players.length
-      ? t.players.map((p, pi) => {
-          const shooting = pi === t.shooterIdx;
-          return `<div class="player-box ${shooting ? 'shooting' : 'bench'}">
-            <div class="pb-label">${shooting ? '▶ shooting' : 'on deck'}</div>
-            <div class="pb-name">${x(p)}</div>
-          </div>`;
-        }).join('')
-      : '<div class="player-box bench"><div class="pb-name muted">—</div></div>';
-
-    return `
-      <div class="score-card" style="border-color:${colors[i]};background:${bgAlpha[i]}">
-        <div class="sc-name">${x(t.name)}</div>
-        <div style="display:flex;align-items:center;justify-content:center;gap:0.5rem">
-          ${gt.teamBadge && i === 0 ? gt.teamBadge(i, S.extras) : ''}
-          <div class="sc-wins" style="color:${colors[i]}">${t.wins}</div>
-          ${gt.teamBadge && i === 1 ? gt.teamBadge(i, S.extras) : ''}
-        </div>
-        <div class="sc-players">${players}</div>
-        ${t.players.length > 1
-          ? `<button class="sc-swap" onclick="D('swapShooter',${i})">↕ next shooter</button>`
-          : ''}
-      </div>`;
-  }).join('');
+  const scorecards = buildScorecards().join('');
 
   return `
     <div class="game-header">
@@ -614,6 +629,7 @@ function viewGame() {
     `}
 
     <div class="bottom-row">
+      <button class="btn-ghost" onclick="D('togglePlay')">⛶ Play Mode</button>
       <button class="btn-danger" onclick="if(confirm('End this session and see results?'))D('endSession')">
         End Session
       </button>
@@ -653,8 +669,50 @@ const BANNER = `<div style="text-align:center;margin-bottom:1.25rem">
   <div style="height:2px;background:linear-gradient(90deg,transparent,var(--accent),transparent)"></div>
 </div>`;
 
+function buildScorecards() {
+  const gt = GAME_TYPES[S.gameType];
+  const colors  = ['var(--a)', 'var(--b)'];
+  const bgAlpha = ['rgba(90,143,212,0.15)', 'rgba(212,147,90,0.15)'];
+  return S.teams.map((t, i) => {
+    const players = t.players.length
+      ? t.players.map((p, pi) => {
+          const shooting = pi === t.shooterIdx;
+          return `<div class="player-box ${shooting ? 'shooting' : 'bench'}">
+            <div class="pb-label">${shooting ? '▶ shooting' : 'on deck'}</div>
+            <div class="pb-name">${x(p)}</div>
+          </div>`;
+        }).join('')
+      : '<div class="player-box bench"><div class="pb-name muted">—</div></div>';
+    const badge = gt.teamBadge ? gt.teamBadge(i, S.extras) : '';
+    return `
+      <div class="score-card" style="border-color:${colors[i]};background:${bgAlpha[i]}">
+        <div class="sc-name">${x(t.name)}</div>
+        <div class="sc-wins-row">
+          ${i === 0 ? badge : ''}
+          <div class="sc-wins" style="color:${colors[i]}">${t.wins}</div>
+          ${i === 1 ? badge : ''}
+        </div>
+        <div class="sc-players">${players}</div>
+        ${t.players.length > 1
+          ? `<button class="sc-swap" onclick="D('swapShooter',${i})">↕ next shooter</button>`
+          : ''}
+      </div>`;
+  });
+}
+
 function render() {
   const el = document.getElementById('app');
+
+  if (playMode && S.view === 'game') {
+    const [cardA, cardB] = buildScorecards();
+    el.innerHTML = `
+      <div class="play-overlay">
+        <div class="play-cards">${cardA}${cardB}</div>
+        <div class="play-exit"><button onclick="D('togglePlay')">✕ Exit Play Mode</button></div>
+      </div>`;
+    return;
+  }
+
   let html = BANNER;
   if      (S.view === 'setup')   html += viewSetup();
   else if (S.view === 'game')    html += viewGame();
