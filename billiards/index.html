@@ -222,18 +222,40 @@ layout: none
     .play-overlay .score-card {
       border-radius: 2vw;
       display: flex; flex-direction: column;
-      justify-content: center; align-items: center;
+      align-items: center;
       padding: 2vh 2vw;
       border-width: 3px;
     }
-    .play-overlay .score-card .sc-name  { font-size: clamp(1.4rem, 4vw, 4rem); margin-bottom: 0.5vh; }
-    .play-overlay .score-card .sc-wins  { font-size: clamp(4rem, 22vw, 26rem); line-height: 0.9; margin-bottom: 0.5vh; }
-    .play-overlay .score-card .sc-wins-row { display: flex; align-items: center; justify-content: center; gap: 2vw; }
-    .play-overlay .score-card .sc-wins-row img { width: clamp(3rem, 16vw, 18rem); height: clamp(3rem, 16vw, 18rem); }
+    .play-overlay .score-card .sc-name  { font-size: clamp(1.4rem, 4vw, 4rem); margin-bottom: 1vh; }
+    .play-overlay .play-ball { margin-bottom: 1vh; }
+    .play-overlay .play-ball img { width: clamp(4rem, 18vw, 20rem); height: clamp(4rem, 18vw, 20rem); }
     .play-overlay .sc-players { width: 100%; }
     .play-overlay .player-box .pb-label { font-size: clamp(0.6rem, 1.2vw, 1.1rem); }
     .play-overlay .player-box .pb-name  { font-size: clamp(1rem, 3.5vw, 3.5rem); }
     .play-overlay .sc-swap { display: none; }
+    .play-tally {
+      margin-top: 1.5vh;
+      text-align: center;
+    }
+    .play-tally .tally-label {
+      font-size: clamp(0.8rem, 2vw, 1.6rem);
+      font-weight: 700; letter-spacing: 0.08em;
+      text-transform: uppercase; opacity: 0.6;
+    }
+    .play-tally .tally-score {
+      font-size: clamp(1.8rem, 7vw, 7rem);
+      font-weight: 900; line-height: 1;
+    }
+    .play-win-btn { display: none; }
+    .play-overlay .play-win-btn {
+      display: block; width: 80%; margin-top: auto; margin-bottom: 1vh;
+      background: var(--accent); color: #fff;
+      font-size: clamp(1.4rem, 4.5vw, 4rem); font-weight: 900;
+      letter-spacing: 0.04em;
+      min-height: unset; padding: 1.5vh 2vw;
+      border-radius: 999px;
+      text-shadow: 0 1px 3px rgba(0,0,0,0.4);
+    }
     .play-exit {
       text-align: center; padding-top: 0.8vh;
       flex-shrink: 0;
@@ -246,6 +268,25 @@ layout: none
     }
     .play-exit button:hover { opacity: 1; }
 
+
+    /* ── Custom confirm dialog ───────────────────────────────────────────── */
+    .modal-backdrop {
+      position: fixed; inset: 0; z-index: 1000;
+      background: rgba(0,0,0,0.6);
+      display: flex; align-items: center; justify-content: center;
+    }
+    .modal {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 2rem 1.75rem 1.5rem;
+      max-width: 340px; width: 90%;
+      text-align: center;
+      box-shadow: 0 8px 40px rgba(0,0,0,0.5);
+    }
+    .modal p { font-size: 1.15rem; font-weight: 600; margin-bottom: 1.25rem; line-height: 1.4; }
+    .modal .modal-btns { display: flex; gap: 0.75rem; }
+    .modal .modal-btns button { flex: 1; }
 
     /* ── Game header ─────────────────────────────────────────────────────── */
     .game-header { text-align: center; margin-bottom: 1rem; }
@@ -288,6 +329,7 @@ layout: none
 </head>
 <body>
 <div id="app"></div>
+<div id="modal-root"></div>
 <script>
 // ── CONFIG ──────────────────────────────────────────────────────────────────
 // Player roster comes from _data/billiards.yml
@@ -355,6 +397,26 @@ const GAME_TYPES = {
     id: 'straight-pool', name: 'Straight Pool',
     ballHtml: (size='lg') => ballImg('billiard-straight-pool.png', size),
     initExtras: () => ({ scores: [0, 0], target: 100 }),
+    playExtras(teamIdx, ex, color) {
+      const score = ex.scores[teamIdx];
+      const target = ex.target || 0;
+      const pct = target ? Math.min(100, Math.round(score / target * 100)) : 0;
+      return `
+        <div style="text-align:center;width:100%;margin-bottom:0.5vh">
+          <div style="font-size:0.7rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;opacity:0.55;margin-bottom:0.3vh">Score${target ? ' / '+target : ''}</div>
+          <div style="display:grid;grid-template-columns:clamp(2.5rem,6vw,5rem) 1fr clamp(2.5rem,6vw,5rem);align-items:center;width:90%">
+            <button class="btn-ghost btn-round" style="font-size:clamp(1rem,2.5vw,2rem);width:clamp(2rem,5vw,4rem);min-height:clamp(2rem,5vw,4rem);justify-self:center"
+              onclick="D('adjScore',${teamIdx},-1)">−</button>
+            <span style="font-size:clamp(2.5rem,12vw,13rem);font-weight:900;line-height:1;color:${color};text-align:center">${score}</span>
+            <button class="btn-ghost btn-round" style="font-size:clamp(1rem,2.5vw,2rem);width:clamp(2rem,5vw,4rem);min-height:clamp(2rem,5vw,4rem);justify-self:center"
+              onclick="D('adjScore',${teamIdx},1)">+</button>
+          </div>
+          ${target ? `<div style="margin-top:0.5vh;height:6px;background:rgba(255,255,255,0.1);border-radius:3px;overflow:hidden;width:80%;margin-left:auto;margin-right:auto">
+            <div style="height:100%;width:${pct}%;background:${color};border-radius:3px;transition:width 0.2s"></div>
+          </div>
+          <div style="font-size:clamp(0.7rem,1.4vw,1.1rem);opacity:0.45;margin-top:0.4vh;letter-spacing:0.04em">Playing to ${target}</div>` : ''}
+        </div>`;
+    },
     renderExtras(ex, teams) {
       const target = ex.target || 0;
       return `<div class="card">
@@ -630,7 +692,7 @@ function viewGame() {
 
     <div class="bottom-row">
       <button class="btn-ghost" onclick="D('togglePlay')">⛶ Play Mode</button>
-      <button class="btn-danger" onclick="if(confirm('End this session and see results?'))D('endSession')">
+      <button class="btn-danger" onclick="modal('End this session and see results?',()=>D('endSession'))">
         End Session
       </button>
     </div>`;
@@ -669,11 +731,12 @@ const BANNER = `<div style="text-align:center;margin-bottom:1.25rem">
   <div style="height:2px;background:linear-gradient(90deg,transparent,var(--accent),transparent)"></div>
 </div>`;
 
-function buildScorecards() {
+function buildScorecards(forPlay = false) {
   const gt = GAME_TYPES[S.gameType];
   const colors  = ['var(--a)', 'var(--b)'];
   const bgAlpha = ['rgba(90,143,212,0.15)', 'rgba(212,147,90,0.15)'];
   return S.teams.map((t, i) => {
+    const other = i ^ 1;
     const players = t.players.length
       ? t.players.map((p, pi) => {
           const shooting = pi === t.shooterIdx;
@@ -683,19 +746,46 @@ function buildScorecards() {
           </div>`;
         }).join('')
       : '<div class="player-box bench"><div class="pb-name muted">—</div></div>';
+
+    if (forPlay) {
+      const myW = t.wins, theirW = S.teams[other].wins;
+      const tallyLabel = myW > theirW ? 'Leads' : myW < theirW ? 'Down' : 'Tied';
+      const tallyScore = `${myW}–${theirW}`;
+      const ballHtml = gt.teamBadge && gt.teamBadge(i, S.extras)
+        ? `<div class="play-ball">${gt.teamBadge(i, S.extras)}</div>` : '';
+      const playExtrasHtml = gt.playExtras ? gt.playExtras(i, S.extras, colors[i]) : '';
+      return `
+        <div class="score-card" style="border-color:${colors[i]};background:${bgAlpha[i]}">
+          <div class="sc-name">${x(t.name)}</div>
+          ${ballHtml}
+          ${playExtrasHtml}
+          <div class="sc-players">${players}</div>
+          <div class="play-tally">
+            <div class="tally-label">${tallyLabel}</div>
+            <div class="tally-score" style="color:${colors[i]}">${tallyScore}</div>
+          </div>
+          <button class="play-win-btn" onclick="playMode=false;D('win',${i})">🏆 Win</button>
+        </div>`;
+    }
+
     const badge = gt.teamBadge ? gt.teamBadge(i, S.extras) : '';
+    const myW = t.wins, theirW = S.teams[other].wins;
+    const tallyLabel = myW > theirW ? 'Leads' : myW < theirW ? 'Down' : 'Tied';
+    const tallyScore = `${myW}–${theirW}`;
+    const tallyHtml = `<div style="text-align:center;margin-top:0.5rem">
+      <div style="font-size:0.75rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;opacity:0.55;margin-bottom:0.1rem">${tallyLabel}</div>
+      <div class="sc-wins" style="color:${colors[i]}">${tallyScore}</div>
+    </div>`;
     return `
       <div class="score-card" style="border-color:${colors[i]};background:${bgAlpha[i]}">
         <div class="sc-name">${x(t.name)}</div>
-        <div class="sc-wins-row">
-          ${i === 0 ? badge : ''}
-          <div class="sc-wins" style="color:${colors[i]}">${t.wins}</div>
-          ${i === 1 ? badge : ''}
-        </div>
+        ${badge ? `<div class="sc-wins-row">${badge}</div>` : ''}
         <div class="sc-players">${players}</div>
         ${t.players.length > 1
           ? `<button class="sc-swap" onclick="D('swapShooter',${i})">↕ next shooter</button>`
           : ''}
+        ${tallyHtml}
+        <button class="play-win-btn" onclick="playMode=false;D('win',${i})">🏆 Win</button>
       </div>`;
   });
 }
@@ -704,7 +794,7 @@ function render() {
   const el = document.getElementById('app');
 
   if (playMode && S.view === 'game') {
-    const [cardA, cardB] = buildScorecards();
+    const [cardA, cardB] = buildScorecards(true);
     el.innerHTML = `
       <div class="play-overlay">
         <div class="play-cards">${cardA}${cardB}</div>
@@ -720,7 +810,27 @@ function render() {
   el.innerHTML = html;
 }
 
+function modal(msg, onConfirm) {
+  const root = document.getElementById('modal-root');
+  root.innerHTML = `
+    <div class="modal-backdrop" onclick="if(event.target===this)closeModal()">
+      <div class="modal">
+        <p>${x(msg)}</p>
+        <div class="modal-btns">
+          <button class="btn-ghost" onclick="closeModal()">Cancel</button>
+          <button class="btn-danger" id="modal-ok">Confirm</button>
+        </div>
+      </div>
+    </div>`;
+  document.getElementById('modal-ok').onclick = () => { closeModal(); onConfirm(); };
+}
+function closeModal() { document.getElementById('modal-root').innerHTML = ''; }
 window.D = D;
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape' && playMode) { playMode = false; render(); }
+});
+
 render();
 </script>
 </body>
