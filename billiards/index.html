@@ -229,10 +229,14 @@ layout: none
     .play-overlay .score-card .sc-name  { font-size: clamp(1.4rem, 4vw, 4rem); margin-bottom: 1vh; }
     .play-overlay .play-ball { margin-bottom: 1vh; }
     .play-overlay .play-ball img { width: clamp(4rem, 18vw, 20rem); height: clamp(4rem, 18vw, 20rem); }
-    .play-overlay .sc-players { width: 100%; }
+    .play-overlay .sc-players { width: 100%; margin-top: 1.5vh; }
     .play-overlay .player-box .pb-label { font-size: clamp(0.6rem, 1.2vw, 1.1rem); }
     .play-overlay .player-box .pb-name  { font-size: clamp(1rem, 3.5vw, 3.5rem); }
-    .play-overlay .sc-swap { display: none; }
+    .play-overlay .sc-swap {
+      width: 80%; margin-top: 0.75vh;
+      font-size: clamp(0.9rem, 2vw, 1.6rem);
+      min-height: unset; padding: 0.75vh 1vw;
+    }
     .play-tally {
       margin-top: 1.5vh;
       text-align: center;
@@ -357,6 +361,27 @@ const GAME_TYPES = {
       const file = ex.solidsTeam === teamIdx ? 'billiard-ball-4.png' : 'billiard-ball-13.png';
       return ballImg(file, 'score');
     },
+    playBallPicker(teamIdx, ex, color) {
+      const { solidsTeam } = ex;
+      const assigned = solidsTeam !== null;
+      const isSolids = solidsTeam === teamIdx;
+      const sz = 'clamp(4rem,18vw,18rem)';
+      if (assigned) {
+        const file = isSolids ? 'billiard-ball-4.png' : 'billiard-ball-13.png';
+        return `<div class="play-ball" style="margin-bottom:3vh">
+          <img src="/assets/images/billiards/${file}" style="width:${sz};height:${sz};display:block">
+        </div>`;
+      }
+      const pickSz = 'clamp(2.5rem,10vw,10rem)';
+      return `<div class="play-ball" style="display:flex;gap:3vw;align-items:center;justify-content:center;margin-bottom:3vh">
+        <button onclick="D('setSolids',${teamIdx})" style="background:none;border:none;padding:0;min-height:0;cursor:pointer">
+          <img src="/assets/images/billiards/billiard-ball-4.png" style="width:${pickSz};height:${pickSz};display:block">
+        </button>
+        <button onclick="D('setStripes',${teamIdx})" style="background:none;border:none;padding:0;min-height:0;cursor:pointer">
+          <img src="/assets/images/billiards/billiard-ball-13.png" style="width:${pickSz};height:${pickSz};display:block">
+        </button>
+      </div>`;
+    },
     renderExtras(ex, teams) {
       const { solidsTeam } = ex;
       const cls = (teamIdx, type) =>
@@ -404,12 +429,12 @@ const GAME_TYPES = {
       return `
         <div style="text-align:center;width:100%;margin-bottom:0.5vh">
           <div style="font-size:0.7rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;opacity:0.55;margin-bottom:0.3vh">Score${target ? ' / '+target : ''}</div>
-          <div style="display:grid;grid-template-columns:clamp(2.5rem,6vw,5rem) 1fr clamp(2.5rem,6vw,5rem);align-items:center;width:90%">
-            <button class="btn-ghost btn-round" style="font-size:clamp(1rem,2.5vw,2rem);width:clamp(2rem,5vw,4rem);min-height:clamp(2rem,5vw,4rem);justify-self:center"
+          <div style="display:grid;grid-template-columns:clamp(3rem,8vw,7rem) 1fr clamp(3rem,8vw,7rem);align-items:center;width:90%;margin:0 auto">
+            <button class="btn-ghost btn-round" style="font-size:clamp(1.2rem,3.5vw,3rem);width:clamp(3rem,7vw,6rem);min-height:clamp(3rem,7vw,6rem);justify-self:center"
               onclick="D('adjScore',${teamIdx},-1)">−</button>
             <span style="font-size:clamp(2.5rem,12vw,13rem);font-weight:900;line-height:1;color:${color};text-align:center">${score}</span>
-            <button class="btn-ghost btn-round" style="font-size:clamp(1rem,2.5vw,2rem);width:clamp(2rem,5vw,4rem);min-height:clamp(2rem,5vw,4rem);justify-self:center"
-              onclick="D('adjScore',${teamIdx},1)">+</button>
+            <button class="btn-ghost btn-round" style="font-size:clamp(1.2rem,3.5vw,3rem);width:clamp(3rem,7vw,6rem);min-height:clamp(3rem,7vw,6rem);justify-self:center"
+              onclick="D('adjScore',${teamIdx},1)" ${target && score >= target ? 'disabled' : ''}>+</button>
           </div>
           ${target ? `<div style="margin-top:0.5vh;height:6px;background:rgba(255,255,255,0.1);border-radius:3px;overflow:hidden;width:80%;margin-left:auto;margin-right:auto">
             <div style="height:100%;width:${pct}%;background:${color};border-radius:3px;transition:width 0.2s"></div>
@@ -588,7 +613,7 @@ function viewSetup() {
       if (p) return `
         <div class="player-slot">
           <span class="name">${x(p)}</span>
-          ${si === team.shooterIdx ? '<span class="badge">shoots first</span>' : ''}
+          ${team.players.length === 2 && si === team.shooterIdx ? '<span class="badge">shoots first</span>' : ''}
           <button class="btn-ghost btn-sm"
             onclick="D('removePlayer',${ti},${si})">✕</button>
         </div>`;
@@ -747,19 +772,26 @@ function buildScorecards(forPlay = false) {
         }).join('')
       : '<div class="player-box bench"><div class="pb-name muted">—</div></div>';
 
+    const displayName = t.players.length === 1 ? t.players[0] : t.name;
+
     if (forPlay) {
       const myW = t.wins, theirW = S.teams[other].wins;
       const tallyLabel = myW > theirW ? 'Leads' : myW < theirW ? 'Down' : 'Tied';
       const tallyScore = `${myW}–${theirW}`;
-      const ballHtml = gt.teamBadge && gt.teamBadge(i, S.extras)
-        ? `<div class="play-ball">${gt.teamBadge(i, S.extras)}</div>` : '';
+      const ballHtml = gt.playBallPicker
+        ? gt.playBallPicker(i, S.extras, colors[i])
+        : (gt.teamBadge && gt.teamBadge(i, S.extras))
+          ? `<div class="play-ball">${gt.teamBadge(i, S.extras)}</div>` : '';
       const playExtrasHtml = gt.playExtras ? gt.playExtras(i, S.extras, colors[i]) : '';
       return `
         <div class="score-card" style="border-color:${colors[i]};background:${bgAlpha[i]}">
-          <div class="sc-name">${x(t.name)}</div>
+          <div class="sc-name">${x(displayName)}</div>
           ${ballHtml}
           ${playExtrasHtml}
           <div class="sc-players">${players}</div>
+          ${t.players.length > 1
+            ? `<button class="sc-swap" onclick="D('swapShooter',${i})">↕ next shooter</button>`
+            : ''}
           <div class="play-tally">
             <div class="tally-label">${tallyLabel}</div>
             <div class="tally-score" style="color:${colors[i]}">${tallyScore}</div>
@@ -778,7 +810,7 @@ function buildScorecards(forPlay = false) {
     </div>`;
     return `
       <div class="score-card" style="border-color:${colors[i]};background:${bgAlpha[i]}">
-        <div class="sc-name">${x(t.name)}</div>
+        <div class="sc-name">${x(displayName)}</div>
         ${badge ? `<div class="sc-wins-row">${badge}</div>` : ''}
         <div class="sc-players">${players}</div>
         ${t.players.length > 1
