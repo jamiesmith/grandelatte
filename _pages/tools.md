@@ -143,7 +143,7 @@ bookmark_entries:
     - name: Misc CNC
       links:
       - name: Makera
-      - url: https://www.makera.com
+        url: https://www.makera.com
 
   - column: Column 4
     groups:
