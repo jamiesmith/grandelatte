@@ -140,7 +140,10 @@ bookmark_entries:
         url: https://ocoochhardwoods.com/scroll-saw-lumber/
       - name: Eagle Drawers
         url: https://www.eaglewoodworking.com
-
+    - name: Misc CNC
+      links:
+      - name: Makera
+      - url: https://www.makera.com
 
   - column: Column 4
     groups:
