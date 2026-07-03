@@ -216,8 +216,10 @@ layout: none
       padding: 1.5vh 1.5vw 1vh;
     }
     .play-overlay .play-cards {
-      flex: 1; display: grid; grid-template-columns: 1fr 1fr; gap: 1.5vw;
-      min-height: 0;
+      flex: 1; display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      gap: 1.5vw; min-height: 0;
     }
     .play-overlay .score-card {
       border-radius: 2vw;
@@ -225,38 +227,26 @@ layout: none
       align-items: center;
       padding: 2vh 2vw;
       border-width: 3px;
+      height: 100%; box-sizing: border-box; overflow: hidden;
     }
-    .play-overlay .score-card .sc-name  { font-size: clamp(1.4rem, 4vw, 4rem); margin-bottom: 1vh; }
-    .play-overlay .play-ball { margin-bottom: 1vh; }
-    .play-overlay .play-ball img { width: clamp(4rem, 18vw, 20rem); height: clamp(4rem, 18vw, 20rem); }
-    .play-overlay .sc-players { width: 100%; margin-top: 1.5vh; }
+    .play-overlay .score-card .sc-name  { font-size: clamp(1.4rem, 4vw, 4rem); margin-bottom: 1vh; flex-shrink: 0; }
+    .play-overlay .play-ball            { flex-shrink: 0; margin-bottom: 1vh; }
+    .play-overlay .play-ball img        { width: min(16vw, 22vh); height: min(16vw, 22vh); display: block; }
+    .play-overlay .sc-players           { width: 100%; margin-top: 1vh; flex-shrink: 0; }
     .play-overlay .player-box .pb-label { font-size: clamp(0.6rem, 1.2vw, 1.1rem); }
     .play-overlay .player-box .pb-name  { font-size: clamp(1rem, 3.5vw, 3.5rem); }
     .play-overlay .sc-swap {
-      width: 80%; margin-top: 0.75vh;
+      width: 80%; margin-top: 0.75vh; flex-shrink: 0;
       font-size: clamp(0.9rem, 2vw, 1.6rem);
       min-height: unset; padding: 0.75vh 1vw;
     }
-    .play-tally {
-      margin-top: 1.5vh;
-      text-align: center;
-    }
-    .play-tally .tally-label {
-      font-size: clamp(0.8rem, 2vw, 1.6rem);
-      font-weight: 700; letter-spacing: 0.08em;
-      text-transform: uppercase; opacity: 0.6;
-    }
-    .play-tally .tally-score {
-      font-size: clamp(1.8rem, 7vw, 7rem);
-      font-weight: 900; line-height: 1;
-    }
     .play-win-btn { display: none; }
     .play-overlay .play-win-btn {
-      display: block; width: 80%; margin-top: auto; margin-bottom: 1vh;
+      display: block; width: 80%; margin-top: auto; margin-bottom: 1vh; flex-shrink: 0;
       background: var(--accent); color: #fff;
-      font-size: clamp(1.4rem, 4.5vw, 4rem); font-weight: 900;
+      font-size: clamp(1.2rem, 3.5vw, 3rem); font-weight: 900;
       letter-spacing: 0.04em;
-      min-height: unset; padding: 1.5vh 2vw;
+      min-height: unset; padding: 1.2vh 2vw;
       border-radius: 999px;
       text-shadow: 0 1px 3px rgba(0,0,0,0.4);
     }
@@ -365,7 +355,7 @@ const GAME_TYPES = {
       const { solidsTeam } = ex;
       const assigned = solidsTeam !== null;
       const isSolids = solidsTeam === teamIdx;
-      const sz = 'clamp(6rem,28vw,28rem)';
+      const sz = 'min(32vw, 42vh)';
       if (assigned) {
         const file = isSolids ? 'billiard-ball-4.png' : 'billiard-ball-13.png';
         return `<div class="play-ball" style="margin-bottom:3vh">
@@ -791,12 +781,9 @@ function buildScorecards(forPlay = false) {
         }).join('')
       : '<div class="player-box bench"><div class="pb-name muted">—</div></div>';
 
-    const displayName = t.players.length === 1 ? t.players[0] : t.name;
+    const displayName = t.players.length > 0 ? t.players.join(' & ') : t.name;
 
     if (forPlay) {
-      const myW = t.wins, theirW = S.teams[other].wins;
-      const tallyLabel = myW > theirW ? 'Leads' : myW < theirW ? 'Down' : 'Tied';
-      const tallyScore = `${myW}–${theirW}`;
       const ballHtml = gt.playBallPicker
         ? gt.playBallPicker(i, S.extras, colors[i])
         : (gt.teamBadge && gt.teamBadge(i, S.extras))
@@ -811,10 +798,6 @@ function buildScorecards(forPlay = false) {
           ${t.players.length > 1
             ? `<button class="sc-swap" onclick="D('swapShooter',${i})">↕ next shooter</button>`
             : ''}
-          <div class="play-tally">
-            <div class="tally-label">${tallyLabel}</div>
-            <div class="tally-score" style="color:${colors[i]}">${tallyScore}</div>
-          </div>
           <button class="play-win-btn" onclick="playMode=false;D('win',${i})">🏆 Win</button>
         </div>`;
     }
