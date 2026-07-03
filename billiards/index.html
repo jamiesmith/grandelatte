@@ -6,6 +6,7 @@ layout: none
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="color-scheme" content="dark light">
   <title>Billiards Scorekeeper</title>
   <style>
     :root {
@@ -215,6 +216,13 @@ layout: none
       display: flex; flex-direction: column;
       padding: 1.5vh 1.5vw 1vh;
     }
+    .play-close {
+      position: absolute; top: 1vh; left: 1vw; z-index: 1000;
+      background: rgba(128,128,128,0.25); border: none; border-radius: 50%;
+      width: clamp(2.5rem, 5vw, 4rem); height: clamp(2.5rem, 5vw, 4rem);
+      font-size: clamp(1.2rem, 2.5vw, 2rem); line-height: 1; cursor: pointer;
+      color: var(--text); display: flex; align-items: center; justify-content: center;
+    }
     .play-overlay .play-cards {
       flex: 1; display: grid;
       grid-template-columns: 1fr 1fr;
@@ -232,6 +240,7 @@ layout: none
     .play-overlay .score-card .sc-name  { font-size: clamp(1.4rem, 4vw, 4rem); margin-bottom: 1vh; flex-shrink: 0; }
     .play-overlay .play-ball            { flex-shrink: 0; margin-bottom: 1vh; }
     .play-overlay .play-ball img        { width: min(16vw, 22vh); height: min(16vw, 22vh); display: block; }
+    img[src*="billiard-ball"] { filter: none !important; }
     .play-overlay .sc-players           { width: 100%; margin-top: 1vh; flex-shrink: 0; }
     .play-overlay .player-box .pb-label { font-size: clamp(0.6rem, 1.2vw, 1.1rem); }
     .play-overlay .player-box .pb-name  { font-size: clamp(1rem, 3.5vw, 3.5rem); }
@@ -592,6 +601,7 @@ function D(action, a, b) {
     case 'togglePlay': playMode = !playMode; break;
 
     case 'endSession': S.view = 'summary'; break;
+    case 'goHome': playMode = false; S.view = 'setup'; break;
 
     case 'newGame':
       S.extras = GAME_TYPES[S.gameType].initExtras();
@@ -632,8 +642,6 @@ function viewSetup() {
     return `
       <div class="card" style="border-color:${color}">
         <h2>Team ${ti === 0 ? 'A' : 'B'}</h2>
-        <input type="text" placeholder="Team name" value="${xa(team.name)}"
-          oninput="D('teamName',${ti},this.value)">
         ${slots}
         ${team.players.length === 2
           ? `<button class="btn-ghost btn-sm mt-sm" onclick="D('swapOrder',${ti})">↕ Swap shooting order</button>`
@@ -831,6 +839,7 @@ function render() {
     const [cardA, cardB] = buildScorecards(true);
     el.innerHTML = `
       <div class="play-overlay">
+        <button class="play-close" onclick="modal('End this game and return to setup?',()=>D('goHome'))">✕</button>
         <div class="play-cards">${cardA}${cardB}</div>
         <div class="play-exit"><button onclick="D('togglePlay')">⚙ Game Settings</button></div>
       </div>`;
