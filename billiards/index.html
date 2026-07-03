@@ -502,8 +502,8 @@ function freshState() {
     view: 'setup',
     gameType: 'eight-ball',
     teams: [
-      { name: 'Home', players: [], shooterIdx: 0, wins: 0 },
-      { name: 'Visitors', players: [], shooterIdx: 0, wins: 0 },
+      { players: [], shooterIdx: 0, wins: 0 },
+      { players: [], shooterIdx: 0, wins: 0 },
     ],
     extras: {},
     gamesPlayed: 0,
@@ -515,6 +515,7 @@ function freshState() {
 // ── HELPERS ─────────────────────────────────────────────────────────────────
 function allPlayers() { return [...BASE_PLAYERS, ...S.adHoc]; }
 function takenSet()   { return new Set([...S.teams[0].players, ...S.teams[1].players]); }
+function teamLabel(i) { return S.teams[i].players.join(' & ') || (i === 0 ? 'Team A' : 'Team B'); }
 
 // HTML-escape for display
 function x(s) {
@@ -530,8 +531,6 @@ function D(action, a, b) {
   const T = S.teams;
   switch (action) {
     case 'gameType': S.gameType = a; break;
-
-    case 'teamName': T[a].name = b; return; // skip render — input already shows correct value
 
     case 'addPlayer':
       if (T[a].players.length < 2 && !takenSet().has(b))
@@ -697,7 +696,8 @@ function viewSetup() {
 
     <button class="btn-primary btn-lg" onclick="D('start')" ${canStart ? '' : 'disabled'}>
       Start Game →
-    </button>`;
+    </button>
+    <p style="text-align:center;font-size:0.65rem;opacity:0.35;margin-top:1.5rem">Ball icons by Boris Farias – Flaticon</p>`;
 }
 
 // ── GAME VIEW ───────────────────────────────────────────────────────────────
@@ -708,7 +708,7 @@ function viewGame() {
   return `
     <div class="game-header">
       <div class="game-badge">${gt.ballHtml('sm')} ${x(gt.name)} · Game ${S.gamesPlayed + 1}</div>
-      <h1>${x(S.teams[0].name)} vs ${x(S.teams[1].name)}</h1>
+      <h1>${x(teamLabel(0))} vs ${x(teamLabel(1))}</h1>
     </div>
 
     <div class="grid2">${scorecards}</div>
@@ -718,7 +718,7 @@ function viewGame() {
     ${S.lastWinner !== null ? `
     <div class="card" style="text-align:center;padding:1.5rem">
       <div style="font-size:2rem;font-weight:800;margin-bottom:0.75rem">
-        🏆 ${x(S.teams[S.lastWinner].name)} wins!
+        🏆 ${x(teamLabel(S.lastWinner))} wins!
       </div>
       <button class="btn-primary btn-lg" onclick="D('playAgain')">▶ Play Again</button>
     </div>
@@ -726,8 +726,8 @@ function viewGame() {
     <div class="card">
       <h3>Record Win</h3>
       <div class="grid2">
-        <button class="btn-a btn-lg" onclick="D('win',0)">${x(S.teams[0].name)} Wins</button>
-        <button class="btn-b btn-lg" onclick="D('win',1)">${x(S.teams[1].name)} Wins</button>
+        <button class="btn-a btn-lg" onclick="D('win',0)">${x(teamLabel(0))} Wins</button>
+        <button class="btn-b btn-lg" onclick="D('win',1)">${x(teamLabel(1))} Wins</button>
       </div>
     </div>
     `}
@@ -743,21 +743,20 @@ function viewGame() {
 // ── SUMMARY VIEW ─────────────────────────────────────────────────────────────
 function viewSummary() {
   const [a, b] = S.teams;
-  const winner = a.wins > b.wins ? a : b.wins > a.wins ? b : null;
+  const winnerIdx = a.wins > b.wins ? 0 : b.wins > a.wins ? 1 : null;
   const colors  = ['var(--a)', 'var(--b)'];
   const bgAlpha = ['rgba(90,143,212,0.2)', 'rgba(212,147,90,0.2)'];
 
   const cards = S.teams.map((t, i) => `
     <div class="summary-card" style="border-color:${colors[i]};background:${bgAlpha[i]}">
-      <div class="sc-name" style="font-size:1.2rem;font-weight:700">${x(t.name)}</div>
+      <div class="sc-name" style="font-size:1.2rem;font-weight:700">${x(teamLabel(i))}</div>
       <div class="big-score" style="color:${colors[i]}">${t.wins}–${S.teams[i^1].wins}</div>
-      <div class="label">${x(t.players.join(' · '))}</div>
     </div>`).join('');
 
   return `
     <h1>Session Over</h1>
-    ${winner
-      ? `<p class="big-msg">🏆 ${x(winner.name)} wins the session!</p>`
+    ${winnerIdx !== null
+      ? `<p class="big-msg">🏆 ${x(teamLabel(winnerIdx))} wins the session!</p>`
       : `<p class="big-msg muted">It's a tie!</p>`}
     <div class="grid2 mt-1">${cards}</div>
     <p class="center muted mt-1">${S.gamesPlayed} game${S.gamesPlayed !== 1 ? 's' : ''} · ${x(GAME_TYPES[S.gameType].name)}</p>
@@ -789,7 +788,7 @@ function buildScorecards(forPlay = false) {
         }).join('')
       : '<div class="player-box bench"><div class="pb-name muted">—</div></div>';
 
-    const displayName = t.players.length > 0 ? t.players.join(' & ') : t.name;
+    const displayName = teamLabel(i);
 
     if (forPlay) {
       const ballHtml = gt.playBallPicker
