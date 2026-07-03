@@ -95,7 +95,8 @@ bookmark_entries:
       links:
       - name: PX Labels
         url: https://labelworks.epson.com/for-work/supplies/labelworks-px-labels-tapes-labeling-supplies-for-epson-printers.html?printer=282
-
+      - name: Billiards - Debug
+        url: /billiards/?debug
   - column: Column 3
     groups:
     - name: Fabrication resources
