@@ -241,14 +241,6 @@ layout: none
     .play-overlay .play-ball            { flex-shrink: 0; margin-bottom: 1vh; }
     .play-overlay .play-ball img        { width: min(16vw, 22vh); height: min(16vw, 22vh); display: block; }
     img[src*="billiard-ball"] { filter: none !important; }
-    .play-overlay .sc-players           { width: 100%; margin-top: 1vh; flex-shrink: 0; }
-    .play-overlay .player-box .pb-label { font-size: clamp(0.6rem, 1.2vw, 1.1rem); }
-    .play-overlay .player-box .pb-name  { font-size: clamp(1rem, 3.5vw, 3.5rem); }
-    .play-overlay .sc-swap {
-      width: 80%; margin-top: 0.75vh; flex-shrink: 0;
-      font-size: clamp(0.9rem, 2vw, 1.6rem);
-      min-height: unset; padding: 0.75vh 1vw;
-    }
     .play-win-btn { display: none; }
     .play-overlay .play-win-btn {
       display: block; width: 80%; margin-top: auto; margin-bottom: 1vh; flex-shrink: 0;
@@ -260,8 +252,8 @@ layout: none
       text-shadow: 0 1px 3px rgba(0,0,0,0.4);
     }
     .play-exit {
-      text-align: center; padding-top: 0.8vh;
-      flex-shrink: 0;
+      display: flex; justify-content: center; align-items: center;
+      gap: 0.75rem; padding-top: 0.8vh; flex-shrink: 0;
     }
     .play-exit button {
       background: transparent; border: 1px solid var(--border);
@@ -270,6 +262,13 @@ layout: none
       opacity: 0.7;
     }
     .play-exit button:hover { opacity: 1; }
+    .break-badge {
+      font-size: clamp(0.65rem, 1.4vw, 1.1rem);
+      font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase;
+      background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.3);
+      border-radius: 20px; padding: 0.2em 0.75em; margin-bottom: 0.5vh;
+      display: inline-block;
+    }
 
 
     /* ── Custom confirm dialog ───────────────────────────────────────────── */
@@ -364,14 +363,14 @@ const GAME_TYPES = {
       const { solidsTeam } = ex;
       const assigned = solidsTeam !== null;
       const isSolids = solidsTeam === teamIdx;
-      const sz = 'min(32vw, 42vh)';
+      const sz = 'min(44vw, 58vh)';
       if (assigned) {
         const file = isSolids ? 'billiard-ball-4.png' : 'billiard-ball-13.png';
         return `<div class="play-ball" style="margin-bottom:3vh">
           <img src="/assets/images/billiards/${file}" style="width:${sz};height:${sz};display:block">
         </div>`;
       }
-      const pickSz = 'clamp(3.5rem,14vw,14rem)';
+      const pickSz = 'clamp(3.5rem,18vw,18rem)';
       return `<div class="play-ball" style="display:flex;gap:3vw;align-items:center;justify-content:center;margin-bottom:3vh">
         <button onclick="D('setSolids',${teamIdx})" style="background:none;border:none;padding:0;min-height:0;cursor:pointer">
           <img src="/assets/images/billiards/billiard-ball-4.png" style="width:${pickSz};height:${pickSz};display:block">
@@ -390,7 +389,7 @@ const GAME_TYPES = {
         <div class="ss-grid">
           ${[0,1].map(i => `
             <div class="ss-team">
-              <div class="label">${x(teams[i].name)}</div>
+              <div class="label">${x(teamLabel(i))}</div>
               <button class="ss-btn ${cls(i,'solids')}" onclick="D('setSolids',${i})">
                 ${ballImg('billiard-ball-4.png','sm')} Solids
               </button>
@@ -450,7 +449,7 @@ const GAME_TYPES = {
             const pct = target ? Math.min(100, Math.round(ex.scores[i] / target * 100)) : 0;
             return `
             <div>
-              <div class="label">${x(teams[i].name)}</div>
+              <div class="label">${x(teamLabel(i))}</div>
               <div class="sp-controls">
                 <button class="btn-ghost btn-round" onclick="D('adjScore',${i},-1)">−</button>
                 <span class="sp-score">${ex.scores[i]}</span>
@@ -508,6 +507,7 @@ function freshState() {
     extras: {},
     gamesPlayed: 0,
     lastWinner: null,
+    breakTeam: null,
     adHoc: [],
   };
 }
@@ -516,6 +516,7 @@ function freshState() {
 function allPlayers() { return [...BASE_PLAYERS, ...S.adHoc]; }
 function takenSet()   { return new Set([...S.teams[0].players, ...S.teams[1].players]); }
 function teamLabel(i) { return S.teams[i].players.join(' & ') || (i === 0 ? 'Team A' : 'Team B'); }
+function winVerb(i)   { return S.teams[i].players.length > 1 ? 'win' : 'wins'; }
 
 // HTML-escape for display
 function x(s) {
@@ -551,6 +552,7 @@ function D(action, a, b) {
     case 'start':
       S.extras = GAME_TYPES[S.gameType].initExtras();
       S.gamesPlayed = 0;
+      S.breakTeam = null;
       T.forEach(t => { t.wins = 0; t.shooterIdx = 0; });
       S.view = 'game';
       playMode = true;
@@ -571,6 +573,7 @@ function D(action, a, b) {
     case 'playAgain': {
       const prevTarget = S.extras.target;
       S.lastWinner = null;
+      S.breakTeam = null;
       S.extras = GAME_TYPES[S.gameType].initExtras();
       if (prevTarget !== undefined) S.extras.target = prevTarget;
       playMode = true;
@@ -602,8 +605,11 @@ function D(action, a, b) {
     case 'endSession': S.view = 'summary'; break;
     case 'goHome': playMode = false; S.view = 'setup'; break;
 
+    case 'coinFlip': { const b = new Uint8Array(1); crypto.getRandomValues(b); S.breakTeam = b[0] & 1; break; }
+
     case 'newGame':
       S.extras = GAME_TYPES[S.gameType].initExtras();
+      S.breakTeam = null;
       S.view = 'game';
       break;
 
@@ -718,7 +724,7 @@ function viewGame() {
     ${S.lastWinner !== null ? `
     <div class="card" style="text-align:center;padding:1.5rem">
       <div style="font-size:2rem;font-weight:800;margin-bottom:0.75rem">
-        🏆 ${x(teamLabel(S.lastWinner))} wins!
+        🏆 ${x(teamLabel(S.lastWinner))} ${winVerb(S.lastWinner)}!
       </div>
       <button class="btn-primary btn-lg" onclick="D('playAgain')">▶ Play Again</button>
     </div>
@@ -756,7 +762,7 @@ function viewSummary() {
   return `
     <h1>Session Over</h1>
     ${winnerIdx !== null
-      ? `<p class="big-msg">🏆 ${x(teamLabel(winnerIdx))} wins the session!</p>`
+      ? `<p class="big-msg">🏆 ${x(teamLabel(winnerIdx))} ${winVerb(winnerIdx)} the session!</p>`
       : `<p class="big-msg muted">It's a tie!</p>`}
     <div class="grid2 mt-1">${cards}</div>
     <p class="center muted mt-1">${S.gamesPlayed} game${S.gamesPlayed !== 1 ? 's' : ''} · ${x(GAME_TYPES[S.gameType].name)}</p>
@@ -799,12 +805,9 @@ function buildScorecards(forPlay = false) {
       return `
         <div class="score-card" style="border-color:${colors[i]};background:${bgAlpha[i]}">
           <div class="sc-name">${x(displayName)}</div>
+          ${S.breakTeam === i ? '<div class="break-badge">Break</div>' : ''}
           ${ballHtml}
           ${playExtrasHtml}
-          <div class="sc-players">${players}</div>
-          ${t.players.length > 1
-            ? `<button class="sc-swap" onclick="D('swapShooter',${i})">↕ next shooter</button>`
-            : ''}
           <button class="play-win-btn" onclick="playMode=false;D('win',${i})">🏆 Win</button>
         </div>`;
     }
@@ -820,6 +823,7 @@ function buildScorecards(forPlay = false) {
     return `
       <div class="score-card" style="border-color:${colors[i]};background:${bgAlpha[i]}">
         <div class="sc-name">${x(displayName)}</div>
+        ${S.breakTeam === i ? '<div class="break-badge">Break</div>' : ''}
         ${badge ? `<div class="sc-wins-row">${badge}</div>` : ''}
         <div class="sc-players">${players}</div>
         ${t.players.length > 1
@@ -840,7 +844,10 @@ function render() {
       <div class="play-overlay">
         <button class="play-close" onclick="modal('End this game and return to setup?',()=>D('goHome'))">✕</button>
         <div class="play-cards">${cardA}${cardB}</div>
-        <div class="play-exit"><button onclick="D('togglePlay')">⚙ Game Settings</button></div>
+        <div class="play-exit">
+          <button onclick="D('coinFlip')"><img src="/assets/images/billiards/coin.png" width="18" height="18" style="vertical-align:middle;margin-right:0.35em">Flip for break</button>
+          <button onclick="D('togglePlay')">⚙ Game Settings</button>
+        </div>
       </div>`;
     return;
   }
