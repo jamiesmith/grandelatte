@@ -581,7 +581,7 @@ function D(action, a, b) {
       scores[a] = Math.max(0, scores[a] + b);
       S.extras.scores = scores;
       const target = S.extras.target;
-      if (target && scores[a] >= target) D('win', a);
+      if (target && scores[a] >= target) { playMode = false; D('win', a); }
       break;
     }
 
