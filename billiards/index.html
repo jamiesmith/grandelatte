@@ -75,7 +75,7 @@ layout: none
     .btn-b        { background: var(--b-dark); }
     .btn-sm       { font-size: 0.85rem; min-height: 36px; padding: 0.3rem 0.7rem; }
     .btn-lg       { font-size: 1.25rem; min-height: 64px; padding: 1rem 1.2rem; width: 100%; }
-    .btn-round    { border-radius: 50%; width: 48px; min-height: 48px; padding: 0; font-size: 1.4rem; }
+    .btn-round    { border-radius: 50%; width: 48px; min-height: 48px; padding: 0; font-size: 1.4rem; display:inline-flex; align-items:center; justify-content:center; }
 
     .btn-game {
       background: var(--surface2);
@@ -365,14 +365,14 @@ const GAME_TYPES = {
       const { solidsTeam } = ex;
       const assigned = solidsTeam !== null;
       const isSolids = solidsTeam === teamIdx;
-      const sz = 'clamp(4rem,18vw,18rem)';
+      const sz = 'clamp(6rem,28vw,28rem)';
       if (assigned) {
         const file = isSolids ? 'billiard-ball-4.png' : 'billiard-ball-13.png';
         return `<div class="play-ball" style="margin-bottom:3vh">
           <img src="/assets/images/billiards/${file}" style="width:${sz};height:${sz};display:block">
         </div>`;
       }
-      const pickSz = 'clamp(2.5rem,10vw,10rem)';
+      const pickSz = 'clamp(3.5rem,14vw,14rem)';
       return `<div class="play-ball" style="display:flex;gap:3vw;align-items:center;justify-content:center;margin-bottom:3vh">
         <button onclick="D('setSolids',${teamIdx})" style="background:none;border:none;padding:0;min-height:0;cursor:pointer">
           <img src="/assets/images/billiards/billiard-ball-4.png" style="width:${pickSz};height:${pickSz};display:block">
@@ -430,16 +430,16 @@ const GAME_TYPES = {
         <div style="text-align:center;width:100%;margin-bottom:0.5vh">
           <div style="font-size:0.7rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;opacity:0.55;margin-bottom:0.3vh">Score${target ? ' / '+target : ''}</div>
           <div style="display:grid;grid-template-columns:clamp(3rem,8vw,7rem) 1fr clamp(3rem,8vw,7rem);align-items:center;width:90%;margin:0 auto">
-            <button class="btn-ghost btn-round" style="font-size:clamp(1.2rem,3.5vw,3rem);width:clamp(3rem,7vw,6rem);min-height:clamp(3rem,7vw,6rem);justify-self:center"
+            <button class="btn-ghost btn-round" style="font-size:clamp(1.5rem,4vw,3.5rem);width:clamp(4rem,9vw,8rem);min-height:clamp(4rem,9vw,8rem);justify-self:center"
               onclick="D('adjScore',${teamIdx},-1)">−</button>
-            <span style="font-size:clamp(2.5rem,12vw,13rem);font-weight:900;line-height:1;color:${color};text-align:center">${score}</span>
-            <button class="btn-ghost btn-round" style="font-size:clamp(1.2rem,3.5vw,3rem);width:clamp(3rem,7vw,6rem);min-height:clamp(3rem,7vw,6rem);justify-self:center"
+            <span style="font-size:clamp(4rem,20vw,22rem);font-weight:900;line-height:1;color:${color};text-align:center">${score}</span>
+            <button class="btn-ghost btn-round" style="font-size:clamp(1.5rem,4vw,3.5rem);width:clamp(4rem,9vw,8rem);min-height:clamp(4rem,9vw,8rem);justify-self:center"
               onclick="D('adjScore',${teamIdx},1)" ${target && score >= target ? 'disabled' : ''}>+</button>
           </div>
           ${target ? `<div style="margin-top:0.5vh;height:6px;background:rgba(255,255,255,0.1);border-radius:3px;overflow:hidden;width:80%;margin-left:auto;margin-right:auto">
             <div style="height:100%;width:${pct}%;background:${color};border-radius:3px;transition:width 0.2s"></div>
           </div>
-          <div style="font-size:clamp(0.7rem,1.4vw,1.1rem);opacity:0.45;margin-top:0.4vh;letter-spacing:0.04em">Playing to ${target}</div>` : ''}
+          <button onclick="showTargetPicker()" style="background:none;border:none;padding:0;min-height:0;cursor:pointer;font-size:clamp(0.9rem,2vw,1.6rem);opacity:0.6;margin-top:0.5vh;letter-spacing:0.04em;color:var(--text);text-decoration:underline dotted">Playing to ${target}</button>` : ''}
         </div>`;
     },
     renderExtras(ex, teams) {
@@ -480,6 +480,23 @@ const GAME_TYPES = {
 // ── STATE ───────────────────────────────────────────────────────────────────
 let S = freshState();
 let playMode = false;
+
+// ── DEBUG MODE ───────────────────────────────────────────────────────────────
+(function applyDebug() {
+  const p = new URLSearchParams(location.search);
+  if (!p.has('debug')) return;
+  const all = BASE_PLAYERS.slice();
+  // Pre-fill two players per team from the roster
+  S.teams[0].players = all.slice(0, 2);
+  S.teams[1].players = all.slice(2, 4);
+  // Optional overrides: ?game=nine-ball  ?target=50  ?go=1 (auto-start)
+  if (p.get('game') && GAME_TYPES[p.get('game')]) S.gameType = p.get('game');
+  if (p.get('go') === '1') {
+    S.extras = GAME_TYPES[S.gameType].initExtras();
+    if (p.get('target')) S.extras.target = +p.get('target');
+    S.view = 'game';
+  }
+})();
 
 function freshState() {
   return {
@@ -538,6 +555,7 @@ function D(action, a, b) {
       S.gamesPlayed = 0;
       T.forEach(t => { t.wins = 0; t.shooterIdx = 0; });
       S.view = 'game';
+      playMode = true;
       break;
 
     case 'win': {
@@ -557,6 +575,7 @@ function D(action, a, b) {
       S.lastWinner = null;
       S.extras = GAME_TYPES[S.gameType].initExtras();
       if (prevTarget !== undefined) S.extras.target = prevTarget;
+      playMode = true;
       break;
     }
 
@@ -830,7 +849,7 @@ function render() {
     el.innerHTML = `
       <div class="play-overlay">
         <div class="play-cards">${cardA}${cardB}</div>
-        <div class="play-exit"><button onclick="D('togglePlay')">✕ Exit Play Mode</button></div>
+        <div class="play-exit"><button onclick="D('togglePlay')">⚙ Game Settings</button></div>
       </div>`;
     return;
   }
@@ -841,6 +860,26 @@ function render() {
   else                           html += viewSummary();
   el.innerHTML = html;
 }
+
+function showTargetPicker() {
+  const root = document.getElementById('modal-root');
+  const current = S.extras.target;
+  root.innerHTML = `
+    <div class="modal-backdrop" onclick="if(event.target===this)closeModal()">
+      <div class="modal">
+        <p>Playing to…</p>
+        <div style="display:flex;flex-direction:column;gap:0.6rem">
+          ${[50,75,100,125,150].map(n => `
+            <button class="${n === current ? 'btn-primary' : 'btn-ghost'}"
+              onclick="D('setTarget',${n});closeModal()">
+              ${n}${n === current ? ' ✓' : ''}
+            </button>`).join('')}
+        </div>
+        <button class="btn-ghost" style="width:100%;margin-top:0.75rem" onclick="closeModal()">Cancel</button>
+      </div>
+    </div>`;
+}
+window.showTargetPicker = showTargetPicker;
 
 function modal(msg, onConfirm) {
   const root = document.getElementById('modal-root');
