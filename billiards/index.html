@@ -216,6 +216,10 @@ layout: none
       display: flex; flex-direction: column;
       padding: 1.5vh 1.5vw 1vh;
     }
+    .play-next-chip {
+      text-align: center; font-size: clamp(0.8rem, 1.8vw, 1.4rem);
+      font-weight: 600; opacity: 0.6; padding: 0.3vh 0; letter-spacing: 0.03em;
+    }
     .play-close {
       position: absolute; top: 1vh; left: 1vw; z-index: 1000;
       background: rgba(128,128,128,0.25); border: none; border-radius: 50%;
@@ -478,6 +482,7 @@ const GAME_TYPES = {
 // ── STATE ───────────────────────────────────────────────────────────────────
 let S = freshState();
 let playMode = false;
+let queuePending = [];
 
 // ── DEBUG MODE ───────────────────────────────────────────────────────────────
 (function applyDebug() {
@@ -509,6 +514,7 @@ function freshState() {
     lastWinner: null,
     breakTeam: null,
     adHoc: [],
+    queue: [],
   };
 }
 
@@ -567,6 +573,9 @@ function D(action, a, b) {
           T[i].shooterIdx = T[i].shooterIdx ^ 1;
       });
       S.lastWinner = a;
+      // loser goes to back of queue if queue exists
+      if (S.queue.length > 0)
+        S.queue.push({ players: [...T[other].players] });
       break;
     }
 
@@ -579,6 +588,31 @@ function D(action, a, b) {
       playMode = true;
       break;
     }
+
+    case 'playNext': {
+      if (S.queue.length === 0) break;
+      const loser = S.lastWinner ^ 1;
+      const next = S.queue.shift();
+      T[loser].players = next.players;
+      T[loser].shooterIdx = 0;
+      T[loser].wins = 0;
+      const prevTarget = S.extras.target;
+      S.lastWinner = null;
+      S.breakTeam = null;
+      S.extras = GAME_TYPES[S.gameType].initExtras();
+      if (prevTarget !== undefined) S.extras.target = prevTarget;
+      playMode = true;
+      break;
+    }
+
+    case 'queueAdd': {
+      if (a && a.length > 0) S.queue.push({ players: a });
+      break;
+    }
+
+    case 'queueRemove':
+      S.queue.splice(a, 1);
+      break;
 
     case 'swapShooter':
       if (T[a].players.length > 1) T[a].shooterIdx ^= 1;
@@ -651,7 +685,7 @@ function viewSetup() {
         ${team.players.length === 2
           ? `<button class="btn-ghost btn-sm mt-sm" onclick="D('swapOrder',${ti})">↕ Swap shooting order</button>`
           : ''}
-        ${canAdd && available.length > 0 ? `
+        ${canAdd ? `
           <div class="divider"></div>
           <div class="label">Add to this team</div>
           <div class="pills">
@@ -661,6 +695,7 @@ function viewSetup() {
                 onclick="D('addPlayer',+this.dataset.ti,this.dataset.p)">
                 + ${x(p)}
               </button>`).join('')}
+            <button class="pill" style="border-style:dashed" onclick="promptPlayer(${ti})">+ New…</button>
           </div>` : ''}
       </div>`;
   }).join('');
@@ -684,22 +719,7 @@ function viewSetup() {
 
     <div class="grid2">${teamCards}</div>
 
-    <div class="card">
-      <h3>Add a guest player</h3>
-      <div class="row">
-        <input type="text" id="adhoc" placeholder="Name…" style="margin:0" class="flex1">
-        <button class="btn-ghost" style="white-space:nowrap" onclick="
-          const n=document.getElementById('adhoc').value.trim();
-          if(n){D('addAdHoc',n);document.getElementById('adhoc').value=''}
-        ">+ Add</button>
-      </div>
-      ${S.adHoc.length ? `
-        <div class="pills mt-sm">
-          ${S.adHoc.map(p => `<span class="pill" style="cursor:default">${x(p)}</span>`).join('')}
-        </div>` : ''}
-    </div>
-
-    <button class="btn-primary btn-lg" onclick="D('start')" ${canStart ? '' : 'disabled'}>
+<button class="btn-primary btn-lg" onclick="D('start')" ${canStart ? '' : 'disabled'}>
       Start Game →
     </button>
     <p style="text-align:center;font-size:0.65rem;opacity:0.35;margin-top:1.5rem">Ball icons by Boris Farias – Flaticon</p>`;
@@ -725,7 +745,9 @@ function viewGame() {
       <div style="font-size:2rem;font-weight:800;margin-bottom:0.75rem">
         🏆 ${x(teamLabel(S.lastWinner))} ${winVerb(S.lastWinner)}!
       </div>
-      <button class="btn-primary btn-lg" onclick="D('playAgain')">▶ Play Again</button>
+      ${S.queue.length > 0
+        ? `<button class="btn-primary btn-lg" onclick="D('playNext')">▶ Play Next: ${x(S.queue[0].players.join(' & '))}</button>`
+        : `<button class="btn-primary btn-lg" onclick="D('playAgain')">▶ Play Again</button>`}
     </div>
     ` : `
     <div class="card">
@@ -839,12 +861,17 @@ function render() {
 
   if (playMode && S.view === 'game') {
     const [cardA, cardB] = buildScorecards(true);
+    const nextUp = S.queue.length > 0
+      ? `<div class="play-next-chip">Up next: ${x(S.queue[0].players.join(' & '))}</div>`
+      : '';
     el.innerHTML = `
       <div class="play-overlay">
         <button class="play-close" onclick="modal('End this game and return to setup?',()=>D('goHome'))">✕</button>
         <div class="play-cards">${cardA}${cardB}</div>
+        ${nextUp}
         <div class="play-exit">
           <button onclick="D('coinFlip')"><img src="/assets/images/billiards/coin.png" width="18" height="18" style="vertical-align:middle;margin-right:0.35em">Flip for break</button>
+          <button onclick="showQueueModal()">👥 Up Next</button>
           <button onclick="D('togglePlay')">⚙ Game Settings</button>
         </div>
       </div>`;
@@ -878,6 +905,92 @@ function showTargetPicker() {
 }
 window.showTargetPicker = showTargetPicker;
 
+function showQueueModal() {
+  const root = document.getElementById('modal-root');
+  const isPartner = S.teams.some(t => t.players.length === 2);
+  const maxSize = isPartner ? 2 : 1;
+  const inGame = new Set([...S.teams[0].players, ...S.teams[1].players]);
+  const inQueue = new Set(S.queue.flatMap(e => e.players));
+  const available = allPlayers().filter(p => !inGame.has(p) && !inQueue.has(p) && !queuePending.includes(p));
+
+  const queueHtml = S.queue.length === 0
+    ? `<p style="opacity:0.5;text-align:center;margin:0.5rem 0">No one waiting</p>`
+    : S.queue.map((entry, idx) => `
+        <div style="display:flex;align-items:center;gap:0.5rem;background:var(--surface2);border-radius:9px;padding:0.5rem 0.75rem;margin-bottom:0.4rem">
+          <span style="font-size:0.85rem;opacity:0.5;min-width:1.2rem">${idx + 1}.</span>
+          <span style="flex:1;font-weight:600">${x(entry.players.join(' & '))}</span>
+          <button class="btn-ghost btn-sm" onclick="D('queueRemove',${idx});showQueueModal()">✕</button>
+        </div>`).join('');
+
+  const pendingHtml = queuePending.length > 0 ? `
+    <div style="display:flex;align-items:center;gap:0.5rem;background:rgba(46,138,87,0.15);border:1px solid var(--accent);border-radius:9px;padding:0.5rem 0.75rem;margin-bottom:0.5rem">
+      <span style="flex:1;font-weight:600">${x(queuePending.join(' & '))}</span>
+      <button class="btn-ghost btn-sm" onclick="queuePending=[];showQueueModal()">✕</button>
+      ${queuePending.length === maxSize
+        ? `<button class="btn-primary btn-sm" onclick="D('queueAdd',[...queuePending]);queuePending=[];showQueueModal()">Add →</button>`
+        : isPartner ? `<span style="opacity:0.5;font-size:0.85rem">pick 2nd</span>` : ''}
+    </div>` : '';
+
+  const pillsHtml = available.length > 0 ? `
+    <div class="label" style="margin-bottom:0.3rem">${queuePending.length === 0 ? 'Add to queue' : 'Add partner'}:</div>
+    <div class="pills">
+      ${available.map(p => `
+        <button class="pill" data-p="${xa(p)}"
+          onclick="queuePending.push(this.dataset.p);${queuePending.length + 1 >= maxSize ? "D('queueAdd',[...queuePending]);queuePending=[];" : ''}showQueueModal()">
+          + ${x(p)}
+        </button>`).join('')}
+    </div>` : '';
+
+  const newPlayerForm = `
+    <div style="display:flex;gap:0.5rem;margin-top:0.6rem">
+      <input id="q-new" type="text" placeholder="New player name…" style="margin:0;flex:1">
+      <button class="btn-ghost" style="white-space:nowrap" onclick="
+        const n=document.getElementById('q-new').value.trim();
+        if(n){D('addAdHoc',n);queuePending.push(n);${`if(queuePending.length>=${maxSize}){D('queueAdd',[...queuePending]);queuePending=[];}`}showQueueModal();}
+      ">+ Add</button>
+    </div>`;
+
+  root.innerHTML = `
+    <div class="modal-backdrop" onclick="if(event.target===this){queuePending=[];closeModal()}">
+      <div class="modal" style="min-width:min(90vw,420px)">
+        <p style="font-weight:700;font-size:1.1rem;margin-bottom:0.75rem">Up Next Queue</p>
+        ${queueHtml}
+        <div style="margin-top:0.75rem">
+          ${pendingHtml}
+          ${pillsHtml}
+          ${newPlayerForm}
+        </div>
+        <button class="btn-ghost" style="width:100%;margin-top:0.75rem" onclick="queuePending=[];closeModal()">Done</button>
+      </div>
+    </div>`;
+}
+window.showQueueModal = showQueueModal;
+
+function promptPlayer(ti) {
+  const root = document.getElementById('modal-root');
+  root.innerHTML = `
+    <div class="modal-backdrop" onclick="if(event.target===this)closeModal()">
+      <div class="modal">
+        <p>New player name</p>
+        <input id="prompt-input" type="text" placeholder="Name…" style="margin-bottom:0.75rem">
+        <div class="modal-btns">
+          <button class="btn-ghost" onclick="closeModal()">Cancel</button>
+          <button class="btn-primary" id="prompt-ok">Add</button>
+        </div>
+      </div>
+    </div>`;
+  const input = document.getElementById('prompt-input');
+  const ok = document.getElementById('prompt-ok');
+  const submit = () => {
+    const n = input.value.trim();
+    if (n) { closeModal(); D('addAdHoc', n); D('addPlayer', ti, n); }
+  };
+  ok.onclick = submit;
+  input.addEventListener('keydown', e => { if (e.key === 'Enter') submit(); });
+  input.focus();
+}
+window.promptPlayer = promptPlayer;
+
 function modal(msg, onConfirm) {
   const root = document.getElementById('modal-root');
   root.innerHTML = `
@@ -896,7 +1009,7 @@ function closeModal() { document.getElementById('modal-root').innerHTML = ''; }
 window.D = D;
 
 document.addEventListener('keydown', e => {
-  if (e.key === 'Escape' && playMode) { playMode = false; render(); }
+  if (e.key === 'Escape') { queuePending = []; closeModal(); }
 });
 
 render();
