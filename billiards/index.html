@@ -805,7 +805,7 @@ function buildScorecards(forPlay = false) {
       return `
         <div class="score-card" style="border-color:${colors[i]};background:${bgAlpha[i]}">
           <div class="sc-name">${x(displayName)}</div>
-          ${S.breakTeam === i ? '<div class="break-badge">Break</div>' : ''}
+          ${S.breakTeam === i && S.extras.solidsTeam == null ? '<div class="break-badge">Break</div>' : ''}
           ${ballHtml}
           ${playExtrasHtml}
           <button class="play-win-btn" onclick="playMode=false;D('win',${i})">🏆 Win</button>
@@ -823,7 +823,7 @@ function buildScorecards(forPlay = false) {
     return `
       <div class="score-card" style="border-color:${colors[i]};background:${bgAlpha[i]}">
         <div class="sc-name">${x(displayName)}</div>
-        ${S.breakTeam === i ? '<div class="break-badge">Break</div>' : ''}
+        ${S.breakTeam === i && S.extras.solidsTeam == null ? '<div class="break-badge">Break</div>' : ''}
         ${badge ? `<div class="sc-wins-row">${badge}</div>` : ''}
         <div class="sc-players">${players}</div>
         ${t.players.length > 1
