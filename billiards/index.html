@@ -356,7 +356,7 @@ const GAME_TYPES = {
     initExtras: () => ({ solidsTeam: null }),
     teamBadge(teamIdx, ex) {
       if (ex.solidsTeam === null) return '';
-      const file = ex.solidsTeam === teamIdx ? 'billiard-ball-4.png' : 'billiard-ball-13.png';
+      const file = ex.solidsTeam === teamIdx ? 'billiard-ball-5.png' : 'billiard-ball-12.png';
       return ballImg(file, 'score');
     },
     playBallPicker(teamIdx, ex, color) {
@@ -365,7 +365,7 @@ const GAME_TYPES = {
       const isSolids = solidsTeam === teamIdx;
       const sz = 'min(44vw, 58vh)';
       if (assigned) {
-        const file = isSolids ? 'billiard-ball-3.png' : 'billiard-ball-13.png';
+        const file = isSolids ? 'billiard-ball-3.png' : 'billiard-ball-12.png';
         return `<div class="play-ball" style="margin-bottom:3vh">
           <img src="/assets/images/billiards/${file}" style="width:${sz};height:${sz};display:block">
         </div>`;
@@ -376,7 +376,7 @@ const GAME_TYPES = {
           <img src="/assets/images/billiards/billiard-ball-3.png" style="width:${pickSz};height:${pickSz};display:block">
         </button>
         <button onclick="D('setStripes',${teamIdx})" style="background:none;border:none;padding:0;min-height:0;cursor:pointer">
-          <img src="/assets/images/billiards/billiard-ball-13.png" style="width:${pickSz};height:${pickSz};display:block">
+          <img src="/assets/images/billiards/billiard-ball-12.png" style="width:${pickSz};height:${pickSz};display:block">
         </button>
       </div>`;
     },
@@ -394,7 +394,7 @@ const GAME_TYPES = {
                 ${ballImg('billiard-ball-3.png','sm')} Solids
               </button>
               <button class="ss-btn ${cls(i,'stripes')}" onclick="D('setStripes',${i})">
-                ${ballImg('billiard-ball-13.png','sm')} Stripes
+                ${ballImg('billiard-ball-12.png','sm')} Stripes
               </button>
             </div>`).join('')}
         </div>
