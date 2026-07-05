@@ -369,7 +369,7 @@ const GAME_TYPES = {
       const isSolids = solidsTeam === teamIdx;
       const sz = 'min(44vw, 58vh)';
       if (assigned) {
-        const file = isSolids ? 'billiard-ball-3.png' : 'billiard-ball-12.png';
+        const file = isSolids ? 'billiard-ball-5.png' : 'billiard-ball-12.png';
         return `<div class="play-ball" style="margin-bottom:3vh">
           <img src="/assets/images/billiards/${file}" style="width:${sz};height:${sz};display:block">
         </div>`;
@@ -377,7 +377,7 @@ const GAME_TYPES = {
       const pickSz = 'clamp(3.5rem,18vw,18rem)';
       return `<div class="play-ball" style="display:flex;gap:3vw;align-items:center;justify-content:center;margin-bottom:3vh">
         <button onclick="D('setSolids',${teamIdx})" style="background:none;border:none;padding:0;min-height:0;cursor:pointer">
-          <img src="/assets/images/billiards/billiard-ball-3.png" style="width:${pickSz};height:${pickSz};display:block">
+          <img src="/assets/images/billiards/billiard-ball-5.png" style="width:${pickSz};height:${pickSz};display:block">
         </button>
         <button onclick="D('setStripes',${teamIdx})" style="background:none;border:none;padding:0;min-height:0;cursor:pointer">
           <img src="/assets/images/billiards/billiard-ball-12.png" style="width:${pickSz};height:${pickSz};display:block">
@@ -395,7 +395,7 @@ const GAME_TYPES = {
             <div class="ss-team">
               <div class="label">${x(teamLabel(i))}</div>
               <button class="ss-btn ${cls(i,'solids')}" onclick="D('setSolids',${i})">
-                ${ballImg('billiard-ball-3.png','sm')} Solids
+                ${ballImg('billiard-ball-5.png','sm')} Solids
               </button>
               <button class="ss-btn ${cls(i,'stripes')}" onclick="D('setStripes',${i})">
                 ${ballImg('billiard-ball-12.png','sm')} Stripes
