@@ -91,6 +91,10 @@ bookmark_entries:
       - name: ...Tool List
         url: http://www.normstools.com/index.shtml
         indent: 1
+    - name: Online Calcs
+      links:
+        - name: Spindle Calc
+          url: https://www.blocklayer.com/baluster-spacingeng
     - name: Networking adjacent
       links:
       - name: PX Labels
