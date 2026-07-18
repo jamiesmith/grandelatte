@@ -42,6 +42,8 @@ bookmark_entries:
         url: http://www.sony.com/
       - name: Klipsch
         url: http://www.klipsch.com/
+      - name: KScape Forum
+        url: https://www.kscapeowners.com
   - column: Column 2
     groups:
     - name: Utilities

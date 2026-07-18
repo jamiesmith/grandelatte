@@ -166,7 +166,7 @@ bookmark_entries:
       - name: IMDB
         url: https://www.imdb.com
       - name: Watchlist
-        url: https://www.imdb.com/list/watchlist/
+        url: https://www.imdb.com/list/watchlist/?sort=alpha%2Casc
         indent: 1
       - name: YouTube
         url: https://www.youtube.com
