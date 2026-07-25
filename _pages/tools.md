@@ -21,6 +21,9 @@ bookmark_entries:
       - name: Studio
         url: https://studio.shapertools.com
         indent: 1
+      - name: My Files
+        url: https://hub.shapertools.com/v1/cloud
+        indent: 1
       - name: Community
         url: https://community.shapertools.com
         indent: 1
