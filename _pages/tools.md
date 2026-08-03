@@ -140,14 +140,14 @@ bookmark_entries:
         url: https://www.weaverleathersupply.com/collections/veg-tan-natural
       - name: Laser Materials
         url: https://www.gravotech.us/products/materials-consumables/engraving-materials
-      - name: LaserBricks
-        url: https://www.lasersketch.com/
       - name: Boards4engraving
         url: https://boards4engraving.com/
       - name: Ocooch Woods
         url: https://ocoochhardwoods.com/scroll-saw-lumber/
       - name: Eagle Drawers
         url: https://www.eaglewoodworking.com
+      - name: Metal Drops
+        url: https://www.schupanboneyard.com
     - name: Misc CNC
       links:
       - name: Makera
