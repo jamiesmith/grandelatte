@@ -51,7 +51,7 @@ bookmark_entries:
       - name: DigitalTrends
         url: https://www.digitaltrends.com
       - name: Cool Material
-        url: https://coolmaterial.com/
+        url: https://www.coolmaterial.com/
       - name: Geeky Gadgets
         url: https://www.geeky-gadgets.com
       - name: sdotd
