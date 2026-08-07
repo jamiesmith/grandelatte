@@ -100,6 +100,8 @@ bookmark_entries:
         indent: 1
       - name: Mail
         url: https://mail.google.com/a/cloudsmith.io
+      - name: App (test)
+        url: https://app.cloudsmith.com/cloudsmith-test
       - name: Google Drive
         url: https://drive.google.com/a/cloudsmith.io
         indent: 1
