@@ -95,6 +95,10 @@ bookmark_entries:
       links:
       - name: CivitAI
         url:  https://civitai.com
+    - name: Take Note!
+      links:
+      - name: Pen Shop List
+        url:  https://www.reddit.com/r/fountainpens/comments/mudz1k/the_online_pen_shop_master_list/
   - column: Column 4
     groups:
     - name: Misc Unix
