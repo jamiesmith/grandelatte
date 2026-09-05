@@ -278,6 +278,8 @@ bookmark_entries:
       - name: 10 Day
         url: https://www.wunderground.com/forecast/us/nc/wilmington
         indent: 1
+      - name: Belfast 10-day
+        url: https://www.wunderground.com/forecast/gb/belfast
       - name: USGS Earthquakes
         url: https://goo.gl/xKRxeP
       - name: Arcgis Map
