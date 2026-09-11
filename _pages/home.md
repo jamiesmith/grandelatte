@@ -98,6 +98,9 @@ bookmark_entries:
       - name: Blogs
         url: https://cloudsmith.com/blog
         indent: 1
+      - name: SSO
+        url: https://sso.cloudsmith.com
+        indent: 1
       - name: App (test)
         url: https://app.cloudsmith.com/cloudsmith-test
       - name: Mail
