@@ -142,9 +142,6 @@ bookmark_entries:
         url: https://www.bmwusa.com
       - name: Obsessed Garage
         url: https://www.obsessedgarage.com
-      - name: Members
-        url: https://www.obsessedgarage.com/pages/membership-home
-        indent: 1
       - name: Griot's Garage
         url: https://www.griotsgarage.com
   - column: Column 2
