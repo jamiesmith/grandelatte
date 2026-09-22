@@ -98,6 +98,12 @@ bookmark_entries:
       - name: Blogs
         url: https://cloudsmith.com/blog
         indent: 1
+      - name: Partners
+        url: https://cloudsmith.com/partners
+        indent: 1
+      - name: Integrations
+        url: https://cloudsmith.com/product/integrations
+        indent: 1
       - name: SSO
         url: https://sso.cloudsmith.com
         indent: 1
