@@ -152,6 +152,8 @@ bookmark_entries:
       links:
       - name: Makera
         url: https://www.makera.com
+      - name: GCode Viewer
+        url: https://ncviewer.com
 
   - column: Column 4
     groups:
