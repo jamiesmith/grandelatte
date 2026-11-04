@@ -42,8 +42,14 @@ bookmark_entries:
         url: http://www.sony.com/
       - name: Klipsch
         url: http://www.klipsch.com/
+      - name: Kaleidescape
+        url: https://www.kaleidescape.com
       - name: KScape Forum
         url: https://www.kscapeowners.com
+        indent: 1
+      - name: KScape Movies
+        url: https://www.kaleidescape.com/movie-store/
+        indent: 1
   - column: Column 2
     groups:
     - name: Utilities
